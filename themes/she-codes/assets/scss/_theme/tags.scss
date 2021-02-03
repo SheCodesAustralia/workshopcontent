@@ -14,12 +14,9 @@
     padding: 0 10px 0 12px;
     background: #8451a1;    
     
-    -webkit-border-bottom-right-radius: 3px;    
     border-bottom-right-radius: 3px;
-    -webkit-border-top-right-radius: 3px;    
     border-top-right-radius: 3px;
 
-    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.2);
     box-shadow: 0 1px 2px rgba(0,0,0,0.2);
     color: #fff;
 }
@@ -43,7 +40,6 @@
     left: 1px;
     width: 5px;
     height: 5px;
-    -webkit-border-radius: 50%;
     border-radius: 100%;
     background: #fff;    
 }

@@ -1,16 +1,6 @@
-@charset "UTF-8";
-/* Tags */
-@import "tags.css";
-/* attachments shortcode */
-/* Children shortcode */
-/* Children shortcode */
 #top-github-link {
 	position: relative;
 	top: 50%;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
 	transform: translateY(-50%);
 	position: relative;
 	z-index: 1;
@@ -21,10 +11,6 @@
 	#breadcrumbs {
 		position: relative;
 		top: 50%;
-		-webkit-transform: translateY(-50%);
-		-moz-transform: translateY(-50%);
-		-o-transform: translateY(-50%);
-		-ms-transform: translateY(-50%);
 		transform: translateY(-50%);
 		height: auto;
 		margin-bottom: 0;
@@ -40,21 +26,16 @@
 			padding: 0 0.1rem;
 		}
 	}
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
+
 	transition: all 0.5s ease;
 	position: relative;
 	margin-left: 300px;
 	min-height: 100%;
 	.padding {
-		-webkit-transition: all 0.5s ease;
-		-moz-transition: all 0.5s ease;
 		transition: all 0.5s ease;
 		padding: 3rem 6rem;
 	}
 	.nav {
-		-webkit-transition: all 0.5s ease;
-		-moz-transition: all 0.5s ease;
 		transition: all 0.5s ease;
 		position: fixed;
 		top: 0;
@@ -180,20 +161,14 @@ th {
 	padding: 0.5rem;
 }
 .default-animation {
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 }
 #header {
 	#logo-svg {
-		-webkit-transition: all 0.5s ease;
-		-moz-transition: all 0.5s ease;
 		transition: all 0.5s ease;
 		width: 8rem;
 		height: 2rem;
 		path {
-			-webkit-transition: all 0.5s ease;
-			-moz-transition: all 0.5s ease;
 			transition: all 0.5s ease;
 			fill: #fff;
 		}
@@ -203,8 +178,6 @@ th {
 	}
 }
 #sidebar {
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 	font-weight: 300 !important;
 	background-color: #322A38;
@@ -216,8 +189,6 @@ th {
 	font-weight: 400;
 	font-size: 15px;
 	ul {
-		-webkit-transition: all 0.5s ease;
-		-moz-transition: all 0.5s ease;
 		transition: all 0.5s ease;
 		list-style: none;
 		padding: 0;
@@ -1391,8 +1362,6 @@ td {
 	}
 }
 .parent-element {
-	-webkit-transform-style: preserve-3d;
-	-moz-transform-style: preserve-3d;
 	transform-style: preserve-3d;
 }
 #homelinks {

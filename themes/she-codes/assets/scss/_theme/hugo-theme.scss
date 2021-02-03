@@ -86,9 +86,6 @@ body {
 			height: 1px;
 			width: 0%;
 			background-color: #0082a7;
-			-webkit-transition: width 0.5s ease;
-			-moz-transition: width 0.5s ease;
-			-ms-transition: width 0.5s ease;
 			transition: width 0.5s ease;
 		}
 	}
@@ -113,18 +110,12 @@ body {
 	text-align: center !important;
 	white-space: nowrap !important;
 	vertical-align: middle !important;
-	-ms-touch-action: manipulation !important;
 	touch-action: manipulation !important;
 	cursor: pointer !important;
-	-webkit-user-select: none !important;
-	-moz-user-select: none !important;
-	-ms-user-select: none !important;
 	user-select: none !important;
 	background-image: none !important;
 	border: 1px solid transparent !important;
 	border-radius: 4px !important;
-	-webkit-transition: all 0.15s !important;
-	-moz-transition: all 0.15s !important;
 	transition: all 0.15s !important;
 	&:focus {
 		outline: none !important;
