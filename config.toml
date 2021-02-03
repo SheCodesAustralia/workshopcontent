@@ -3,6 +3,7 @@ baseURL = "https://zealous-swanson-1ff836.netlify.app"
 languageCode = "en-us"
 title = "SheCodes Australia Tutorials"
 theme = "hugo-theme-learn"
+ignoreFiles = ["README.md"]
 # For search functionality
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
