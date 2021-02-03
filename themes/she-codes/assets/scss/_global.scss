@@ -1,3 +1,17 @@
 body {
 	background: #fff;
 }
+
+.logo {
+	.cls-p {
+		fill: $primary;
+	}
+
+	.cls-s {
+		fill: $secondary;
+	}
+
+	.cls-w {
+		fill: #fff;
+	}
+}
