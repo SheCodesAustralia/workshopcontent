@@ -1,0 +1,40 @@
+@import 'a11y-dark.scss';
+
+pre, code, kbd, asmp {
+	font-family: $font_code;
+}
+
+pre {
+	position: relative;
+	color: #ffffff;
+	font-size: 92%;
+	padding: 1rem;
+	margin: 2rem 0;
+	background: #282c34;
+	border: 0;
+	border-radius: 2px;
+	line-height: 1.15;
+
+	code {
+		color: whitesmoke;
+		background: inherit;
+		white-space: inherit;
+		border: 0;
+		padding: 0;
+		margin: 0;
+		font-size: 15px;
+	}
+
+	.copy-to-clipboard {
+		position: absolute;
+		right: 4px;
+		top: 4px;
+		background-color: #C1C4C6;
+		color: #ccc;
+		border-radius: 2px;
+		&:hover {
+			background-color: #00bdf3;
+			color: #fff;
+		}
+	}
+}
