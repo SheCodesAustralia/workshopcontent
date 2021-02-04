@@ -8,13 +8,17 @@ pre = "<b>c. </b>"
 
 # Introduction to Python
 
-> Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+{{% notice info %}}
+Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+{{% /notice %}}
 
 Let's write some code!
 
 ## Python prompt
 
-> For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
+{{% notice info %}}
+For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
+{{% /notice %}}
 
 We want to open up a Python console, so open your `python` IDE application, or type in `python` on Windows or `python3` on Mac/Linux and hit `enter`.
 
