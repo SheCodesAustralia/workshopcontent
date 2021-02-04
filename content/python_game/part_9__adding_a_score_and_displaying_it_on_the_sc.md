@@ -62,6 +62,6 @@ Step 5.  Add the undo option to the top of the \#Draw the score on the screen
 
 Step 6.  Save and Run your module
 
-Your code should look like this: Mac/Linux [kbgame9.py](/src/kbgame9.py), Windows [kbgame9.py](/src/kbgame9_win.py)
+Your code should look like this: Mac/Linux [kbgame9.py](/python_game/src/kbgame9.py), Windows [kbgame9.py](/python_game/src/kbgame9_win.py)
 
 **Congratulations Module 9 Completed**

@@ -42,6 +42,6 @@ if isCollision(player, food):
 
 Step 3.  Save your game as kbgame5 and run your module.
 
-Your code should now look like this: [kbgame5.py](/src/kbgame5.py)
+Your code should now look like this: [kbgame5.py](/python_game/src/kbgame5.py)
 
 **Congratulations Module 5 Completed**

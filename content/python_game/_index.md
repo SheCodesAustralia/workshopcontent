@@ -10,4 +10,13 @@ pre = "<i class='fab fa-python'></i> "
 
 # Building a Game with Python
 
-Lorem Ipsum.
+![space turtle chomp](images/Space%20Turtle%20Chomp.png)
+
+Original Game Created by Christian Thompson aka @TokyoEdTech
+
+Transcribed and adapted by Kieran McCluskey
+with some help from Adrian Smith
+
+Reformatted and re-adapted for SheCodes Australia by Ben Fitzhardinge
+
+For more Python tutorials visits [www.christianthompson.com](http://www.christianthompson.com)

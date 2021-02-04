@@ -1,4 +1,4 @@
-# ![](/src/Space Turtle Chomp.png) {#space-turtle-chomp}
+# ![](/python_game/src/Space Turtle Chomp.png) {#space-turtle-chomp}
 
 Original Game Created by Christian Thompson aka @TokyoEdTech
 

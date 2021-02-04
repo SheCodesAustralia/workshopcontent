@@ -83,6 +83,6 @@ Step 7.  Save and run your module
 Before moving on have a play at modify your code changing the bounce angle and
  speed of the space cabbage.
 
-Your code should now look like this: [kbgame6.py](/src/kbgame6.py)
+Your code should now look like this: [kbgame6.py](/python_game/src/kbgame6.py)
 
 **Congratulations Module 6 Completed**

@@ -114,6 +114,6 @@ Before moving onto the next section you can have a play with your code by
  trying different colours, shapes and speeds and for some fun you could change
  `player.penup()` to `player.pendown()`
 
-Your code should now look like this: [kbgame1.py](/src/kbgame1.py)
+Your code should now look like this: [kbgame1.py](/python_game/src/kbgame1.py)
 
 **Congratulations Module 1 Completed**

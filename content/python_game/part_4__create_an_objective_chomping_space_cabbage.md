@@ -123,6 +123,6 @@ food.setposition(random.randint(-290, 290), random.randint(-290, 290))
 
 Step 11.  Save and Run kbgame4
 
-Your code should now look like this: [kbgame4.py](/src/kbgame4.py)
+Your code should now look like this: [kbgame4.py](/python_game/src/kbgame4.py)
 
 **Congratulations Module 4 Completed**

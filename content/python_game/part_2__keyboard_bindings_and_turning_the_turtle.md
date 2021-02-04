@@ -104,6 +104,6 @@ Before moving to the next section have a play with your code you could change
  the angle the turtle moves when a either left or right key is pressed or you
  could add a slowdown function and keyboard binding using the 'Down' arrow.
 
-Your code should now look like this: [kbgame2.py](/src/kbgame2.py)
+Your code should now look like this: [kbgame2.py](/python_game/src/kbgame2.py)
 
 **Congratulations Module 2 Completed**

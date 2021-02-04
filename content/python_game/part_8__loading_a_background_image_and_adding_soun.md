@@ -17,18 +17,18 @@ So you now have your space turtle running around the screen chasing and
 
 Step 1.  The first we want to do is download the background image and sound
  files into the folder where your kbgame files are stored. You can do this by
- selecting the image file here [kbgame-bg.gif](/src/kbgame-bg.gif).
+ selecting the image file here [kbgame-bg.gif](/python_game/src/kbgame-bg.gif).
 
 Step 2.  
 For Windows users download the following .wav files:
 
-* [bounce.wav](/src/bounce.wav)
-* [chomp.wav](/src/chomp.wav)
+* [bounce.wav](/python_game/src/bounce.wav)
+* [chomp.wav](/python_game/src/chomp.wav)
 
 For Apple Mac users download the following .mp3 files:
 
-* [bounce.mp3](/src/bounce.mp3)
-* [chomp.mp3](/src/chomp.mp3)
+* [bounce.mp3](/python_game/src/bounce.mp3)
+* [chomp.mp3](/python_game/src/chomp.mp3)
 
 Step 3.  You load the background image by adding the wn.bgpic to the \#Set up
  screen section after wnbgcolor\('navy'\) :
@@ -181,6 +181,6 @@ wn.bgcolor('black')
 
 Step 9.  Save and Run your model
 
-Your code should look like this: Mac/Linux [kbgame8.py](/src/kbgame8.py), Windows [kbgame8.py](/src/kbgame8_win.py)
+Your code should look like this: Mac/Linux [kbgame8.py](/python_game/src/kbgame8.py), Windows [kbgame8.py](/python_game/src/kbgame8_win.py)
 
 **Congratulations Module 8 Completed**

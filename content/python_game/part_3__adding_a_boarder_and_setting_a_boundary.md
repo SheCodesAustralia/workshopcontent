@@ -81,7 +81,7 @@ Again before moving to the next section you can edit your code to make changes
  such as changing the angle your turtle bounces at or making the border wall
  thicker or thinner or adding a colour.
 
-Your code should now look like this: [kbgame3.py](/src/kbgame3.py)
+Your code should now look like this: [kbgame3.py](/python_game/src/kbgame3.py)
 
 **Congratulations Module 3 Completed**
 

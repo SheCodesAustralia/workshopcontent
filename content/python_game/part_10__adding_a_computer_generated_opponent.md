@@ -131,6 +131,6 @@ Step 10.  Edit the pasted code to:
 
 Step 11. Save and run your module
 
-Your code should look like this: Mac/Linux [kbgame10.py](/src/kbgame10.py), Windows [kbgame10.py](/src/kbgame10_win.py)
+Your code should look like this: Mac/Linux [kbgame10.py](/python_game/src/kbgame10.py), Windows [kbgame10.py](/python_game/src/kbgame10_win.py)
 
 **Congratulations Module 10 Completed**

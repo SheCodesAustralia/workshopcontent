@@ -136,6 +136,6 @@ Step 7.  Save and run your module
 
 You can play with your code by increasing the maxFood number
 
-Your code should now look like this: [kbgame7.py](/src/kbgame7.py)
+Your code should now look like this: [kbgame7.py](/python_game/src/kbgame7.py)
 
 **Congratulations Module 7 Completed**
