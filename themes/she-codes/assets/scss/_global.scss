@@ -1,5 +1,5 @@
 body {
-	background: #fff;
+	background: #ffffff;
 }
 
 .logo {
@@ -12,6 +12,21 @@ body {
 	}
 
 	.cls-w {
-		fill: #fff;
+		fill: #ffffff;
 	}
 }
+
+// 404 inline styles
+// :root #header + #content > #left > #rlblock_left {
+// 	display: none !important;
+// }
+
+// p,
+// li,
+// ul {
+// 	text-align: center
+// }
+
+// ul {
+// 	list-style-type: none;
+// }

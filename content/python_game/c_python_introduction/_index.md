@@ -23,7 +23,7 @@ For readers at home: this part is covered in the [Python Basics: Integers, Strin
 We want to open up a Python console, so open your `python` IDE application, or type in `python` on Windows or `python3` on Mac/Linux and hit `enter`.
 
 {% filename %}command-line{% endfilename %}
-```
+```bash
 $ python3
 Python 3.5.1 (...)
 Type "help", "copyright", "credits" or "license" for more information.

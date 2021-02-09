@@ -6,6 +6,10 @@ draft: false
 
 # Welcome to SheCodes
 
-### Please select a tutorial?
+### Please select a tutorial
 
-Honestly I think it might be better if we did one of these per tutorial? 
+- [Intro to HTML](/intro_to_html)
+- [Intro to CSS](/intro_to_css)
+- [Build a blog with Django](/django_blog)
+- [Build a Website with WordPress](/wordpress)
+- [Space Turtle Chomp Python Game](/python_game)
