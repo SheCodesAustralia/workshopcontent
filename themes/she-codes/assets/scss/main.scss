@@ -2,6 +2,12 @@
 
 @import 'global.scss';
 
+// Old Theme styles, to phase out
+@import '_theme/nucleus.scss';
+@import '_theme/tags.scss';
+@import '_theme/theme.scss';
+@import '_theme/hugo-theme.scss';
+
 @import '_code/main.scss';
 @import '_typo/main.scss';
 
@@ -11,8 +17,4 @@
 
 @import '_partials/sidebar.scss';
 
-// Old Theme styles, to phase out
-@import '_theme/tags.scss';
-@import '_theme/theme.scss';
-@import '_theme/hugo-theme.scss';
-@import '_theme/nucleus.scss';
+
