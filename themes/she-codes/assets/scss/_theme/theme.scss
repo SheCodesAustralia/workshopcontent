@@ -563,6 +563,8 @@ select[multiple='multiple'] {
 	align-items: center;
 	justify-content: center;
 	height: 100%;
+	max-width: 800px;
+	margin: 0 auto;
 	padding: 2rem 0;
 
 	#body-inner {
