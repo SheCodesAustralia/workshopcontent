@@ -1,5 +1,5 @@
 # baseURL = "http://tutorial.shecodes.com.au/"
-baseURL = "https://zealous-swanson-1ff836.netlify.app"
+baseURL = "https://shecodes-tutorials.netlify.app/"
 languageCode = "en-us"
 title = "SheCodes Australia Tutorials"
 theme = "she-codes"
