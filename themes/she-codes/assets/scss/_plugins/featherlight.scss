@@ -1,0 +1,135 @@
+/**
+ * Featherlight - ultra slim jQuery lightbox
+ * Version 1.7.13 - http://noelboss.github.io/featherlight/
+ *
+ * Copyright 2018, Noël Raoul Bossart (http://www.noelboss.com)
+ * MIT Licensed.
+**/
+
+html.with-featherlight {
+	overflow: hidden;
+}
+
+.featherlight {
+	display: none;
+	position: fixed;
+	z-index: 2147483647;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #333333;
+	background: rgba(0, 0, 0, 0);
+	text-align: center;
+	white-space: nowrap;
+	cursor: pointer;
+
+	&:last-of-type {
+		background: rgba(0, 0, 0, .8);
+	}
+
+	&:before {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		vertical-align: middle;
+	}
+
+	.featherlight-content {
+		display: inline-block;
+		position: relative;
+		max-height: 95%;
+		margin-right: 5%;
+		margin-left: 5%;
+		padding: 25px 25px 0;
+		overflow: auto;
+		border-bottom: 25px solid transparent;
+		background: #ffffff;
+		text-align: left;
+		vertical-align: middle;
+		white-space: normal;
+		cursor: auto;
+	}
+
+	.featherlight-inner {
+		display: block;
+	}
+
+	link.featherlight-inner {
+		display: none;
+	}
+
+	script.featherlight-inner {
+		display: none;
+	}
+
+	style.featherlight-inner {
+		display: none;
+	}
+
+	.featherlight-close-icon {
+		position: absolute;
+		z-index: 9999;
+		top: 0;
+		right: 0;
+		width: 25px;
+		padding: 0;
+		border: 0;
+		background: #ffffff;
+		background: rgba(255, 255, 255, .3);
+		color: #000000;
+		font-family: Arial,sans-serif;
+		line-height: 25px;
+		text-align: center;
+		cursor: pointer;
+
+		&::-moz-focus-inner {
+			padding: 0;
+			border: 0;
+		}
+	}
+
+	.featherlight-image {
+		width: 100%;
+	}
+
+	iframe {
+		border: 0;
+	}
+
+	* {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+}
+
+.featherlight-iframe {
+	.featherlight-content {
+		padding: 0;
+		border-bottom: 0;
+		-webkit-overflow-scrolling: touch;
+	}
+}
+@media only screen and (max-width:1024px) {
+	.featherlight {
+		.featherlight-content {
+			max-height: 98%;
+			margin-right: 0;
+			margin-left: 0;
+			padding: 10px 10px 0;
+			border-bottom: 10px solid transparent;
+		}
+	}
+}
+@media print {
+	html.with-featherlight {
+		>* {
+			>* {
+				&:not(.featherlight) {
+					display: none;
+				}
+			}
+		}
+	}
+}

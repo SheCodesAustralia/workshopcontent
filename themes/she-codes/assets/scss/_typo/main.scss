@@ -1,0 +1,30 @@
+@import 'fonts.scss';
+
+$fa-font-path: '/fonts';
+
+@import 'fontawesome/fontawesome.scss';
+@import 'fontawesome/regular.scss';
+@import 'fontawesome/brands.scss';
+@import 'fontawesome/solid.scss';
+
+body {
+	color: $neutral;
+	font-family: $font_main;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.6;
+
+	#chapter {
+		h1 {
+			font-size: 3.5rem;
+		}
+	}
+}
+
+a {
+	color: #00bdf3;
+
+	&:hover {
+		color: #0082a7;
+	}
+}

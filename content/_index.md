@@ -6,6 +6,6 @@ draft: false
 
 # Welcome to SheCodes
 
-### Please select a tutorial?
+### Please select a tutorial
 
-Honestly I think it might be better if we did one of these per tutorial? 
+- [Space Turtle Chomp Python Game](/python_game)

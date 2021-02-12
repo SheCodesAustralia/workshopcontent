@@ -1,0 +1,45 @@
+/* Tags */
+
+#head-tags{
+	margin-top:1em;
+	margin-left:1em;
+}
+
+#body .tags a.tag-link {
+	display: inline-block;
+	position: relative;
+	margin: 0 16px 8px 0;
+	padding: 0 10px 0 12px;
+	border-top-right-radius: 3px;
+
+	border-bottom-right-radius: 3px;
+	background: #8451a1;
+
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	color: #ffffff;
+	font-size: 0.8em;
+	line-height: 2em;
+}
+
+#body .tags a.tag-link:before {
+	content: '';
+	position: absolute;
+	top:0;
+	left: -1em;
+	width: 0;
+	height: 0;
+	border-width: 1em 1em 1em 0;
+	border-style: solid;
+	border-color: transparent #8451a1 transparent transparent;
+}
+
+#body .tags a.tag-link:after {
+	content: '';
+	position: absolute;
+	top: 10px;
+	left: 1px;
+	width: 5px;
+	height: 5px;
+	border-radius: 100%;
+	background: #ffffff;
+}

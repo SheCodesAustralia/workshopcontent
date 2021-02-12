@@ -1,0 +1,78 @@
+@import 'a11y-dark.scss';
+
+pre, code, kbd, samp {
+	font-family: $font_code;
+}
+
+pre {
+	position: relative;
+	margin: 1.7rem 0;
+	padding: 1rem;
+	overflow: auto;
+	border: 0;
+	border-radius: 2px;
+	background: $neutral;
+	color: #ffffff;
+	font-size: 92%;
+	line-height: 1.15;
+	
+
+	code {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		background: inherit;
+		color: #f5f5f5 ;
+		font-size: 15px;
+		vertical-align: bottom;
+		white-space: pre;
+	}
+
+	.copy-to-clipboard {
+		position: absolute;
+		top: 4px;
+		right: 4px;
+		border-radius: 2px;
+		background-color: #c1c4c6;
+		color: #cccccc;
+
+		&:hover {
+			background-color: #00bdf3;
+			color: #ffffff;
+		}
+	}
+}
+
+.hljs {
+	&::selection {
+		background: #b7b7b7;
+	}
+
+	span {
+		&::selection {
+			background: #b7b7b7;
+		}
+	}
+
+	&:before {
+		position: absolute;
+		top: 0;
+		padding: 5px 10px;
+		border-radius: 0 0 5px 5px;
+		background: $purple;
+	}
+
+	&[data-lang] {
+		margin-top: 1.5rem;
+
+		&:before {
+			content: attr(data-lang);
+		}
+
+		&[data-lang='bash'] {
+			&:before {
+				content: 'terminal';
+			}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+body {
+	background: #ffffff;
+}
+
+.logo {
+	.cls-p {
+		fill: $primary;
+	}
+
+	.cls-s {
+		fill: $secondary;
+	}
+
+	.cls-w {
+		fill: #ffffff;
+	}
+}
+
+// 404 inline styles
+// :root #header + #content > #left > #rlblock_left {
+// 	display: none !important;
+// }
+
+// p,
+// li,
+// ul {
+// 	text-align: center
+// }
+
+// ul {
+// 	list-style-type: none;
+// }
