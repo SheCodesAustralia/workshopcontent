@@ -1,13 +1,12 @@
 +++
-title = "HTML & CSS."
-date = 2021-01-25T14:55:24+08:00
+title = "HTML & CSS"
 weight = 2
 chapter = true
 pre = "<i class='fab fa-html5'></i> "
 +++
 
-### HTML and CSS
+# HTML and CSS
 
-# Building the foundations of a web site
+Everything you see when you're navigating around the Internet - from fonts and colours, to dropdown menus and sliders - is a combination of HTML, CSS and JavaScript being controlled by your computer's browser.
 
-Lorem Ipsum.
+This tutorial covers the basics of HTML & CSS with minimal setup required. Dive straight in!

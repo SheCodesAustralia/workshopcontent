@@ -74,5 +74,9 @@ pre {
 				content: 'terminal';
 			}
 		}
+
+		&[data-lang="html"] {
+			white-space: pre-wrap;
+		}
 	}
 }
