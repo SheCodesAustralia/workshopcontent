@@ -1,0 +1,9 @@
+<p class='codepen' data-height='500' data-theme-id='dark' data-default-tab={{ if (.Get "default" ) }}'{{ index .Params "default" }}'{{else}}"html,result"{{ end }} data-user='{{ index .Params "user"}}' data-slug-hash='{{ index .Params "id"}}' data-editable='true' style='height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;' data-pen-title='{{ index .Params "title"}}'>
+	<span>See the Pen
+		<a href='https://codepen.io/{{ index .Params "user"}}/pen/{{ index .Params "id"}}'>
+			{{ index .Params "title"}}
+		</a>
+		on <a href='https://codepen.io'>CodePen</a>.
+	</span>
+</p>
+<script async src='https://cpwebassets.codepen.io/assets/embed/ei.js'></script>
