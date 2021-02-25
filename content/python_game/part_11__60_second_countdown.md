@@ -1,5 +1,5 @@
 +++
-title = "Setting a time limit"
+title = "60 second, countdown!"
 date = 2021-02-04T20:22:00+08:00
 weight = 110
 chapter = true
@@ -8,7 +8,7 @@ pre = "<b>11. </b>"
 
 ### Part 11
 
-# Setting a time limit
+# 60 second, countdown!
 
 You have most of your Space Turtle Chomp game developed now, however at the
  moment it can go on forever, like most games what you can do is set a time

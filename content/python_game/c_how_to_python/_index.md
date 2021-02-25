@@ -1,12 +1,12 @@
 +++
-title = "Introduction to Python"
+title = "How to Python"
 date = 2021-02-04T20:42:00+08:00
 weight = 8
 chapter = true
 pre = "<b>c. </b>"
 +++
 
-# Introduction to Python
+# How to Python
 
 {{% notice info %}}
 Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).

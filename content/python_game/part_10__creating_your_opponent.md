@@ -1,5 +1,5 @@
 +++
-title = "Adding a computer generated opponent"
+title = "Creating your opponent"
 date = 2021-02-04T20:09:00+08:00
 weight = 100
 chapter = true
@@ -8,7 +8,7 @@ pre = "<b>10. </b>"
 
 ### Part 10
 
-# Adding a computer generated opponent
+# Creating your opponent
 
 In general games are more fun if you get to compete against an opponent,
  for Space Turtle Chomp this is very easy to do as we have already written

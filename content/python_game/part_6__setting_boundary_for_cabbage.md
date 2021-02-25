@@ -1,5 +1,5 @@
 +++
-title = "Moving and setting boundary checking for the food"
+title = "Setting the boundary’s for cabbage"
 date = 2021-01-25T14:55:24+08:00
 weight = 60
 chapter = true
@@ -8,7 +8,7 @@ pre = "<b>6. </b>"
 
 ### Part 6
 
-# Moving and setting boundary checking for the food (cabbage)
+# Setting the boundary’s for cabbage
 
 So what you will do next is make the food move around the screen, this is
  fairly easy to do by using the same forward option we used for your player.

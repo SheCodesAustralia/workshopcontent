@@ -1,5 +1,5 @@
 +++
-title = "Getting Started"
+title = "Space Turtle Chomp"
 date = 2021-01-25T14:55:24+08:00
 weight = 10
 chapter = true
@@ -9,7 +9,7 @@ pre = "<b>1. </b>"
 
 ### Part 1
 
-# Getting Started
+# Space Turtle Chomp
 
 We will start of today creating a simple Python game using Python Turtle
  Graphics. Turtle Graphics a prebuilt set of python instructions that allow you

@@ -1,5 +1,5 @@
 +++
-title = "Loading a background image and adding sound"
+title = "Creating space & sounds"
 date = 2021-02-04T18:47:00+08:00
 weight = 80
 chapter = true
@@ -9,7 +9,7 @@ pre = "<b>8. </b>"
 
 ### Part 8
 
-# Loading a background image and adding sound
+# Creating space & sounds
 
 So you now have your space turtle running around the screen chasing and
  chomping moving space cabbages. Now you want to add a nice background and
