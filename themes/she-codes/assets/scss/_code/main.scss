@@ -75,7 +75,7 @@ pre {
 			}
 		}
 
-		&[data-lang="html"] {
+		&[data-lang="html"], &[data-lang="css"] {
 			white-space: pre-wrap;
 			word-break: break-all;
 		}
