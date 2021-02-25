@@ -1,5 +1,5 @@
 +++
-title = "Create an objective and collision checking"
+title = "Whats the turtle chomping?"
 date = 2021-01-25T14:55:24+08:00
 weight = 40
 chapter = true
@@ -8,7 +8,7 @@ pre = "<b>4. </b>"
 
 ### Part 4
 
-# Create an objective (chomping space cabbage) and collision checking
+# Whats the turtle chomping?
 
 OK so now you have your turtle that we can move around the screen and if we
  bump into any of the borders your turtle will bounce off at 180&deg;.

@@ -1,5 +1,5 @@
 +++
-title = "Collision checking using a function"
+title = "Collisions become a function"
 date = 2021-01-25T14:55:24+08:00
 weight = 50
 chapter = true
@@ -8,7 +8,7 @@ pre = "<b>5. </b>"
 
 ### Part 5
 
-# Collision checking using a function
+# Collisions become a function
 
 You have collision checking working but as we add more cabbages it makes the
  code easier if you convert your existing collision code to a function

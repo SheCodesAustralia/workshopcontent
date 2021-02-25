@@ -1,5 +1,5 @@
 +++
-title = "Adding a border and setting a boundary"
+title = "Know your boundary’s, Turtle"
 date = 2021-01-25T14:55:24+08:00
 weight = 30
 chapter = true
@@ -9,7 +9,8 @@ pre = "<b>3. </b>"
 
 ### Part 3
 
-# Adding a border and setting a boundary
+# Know your boundary’s, Turtle
+
 
 Currently with our turtle game you can move your player turtle off the screen
  which we don’t want to do so in this exercise we are going to draw a border
@@ -29,6 +30,7 @@ mypen.penup()
 mypen.setposition(-300,-300)
 mypen.pendown()
 mypen.pensize(3)
+mypen.color(“white”)
 for side in range(4):
     mypen.forward(600)
     mypen.left(90)

@@ -1,5 +1,5 @@
 +++
-title = "Making multiple food items to chase"
+title = "More cabbage, more!"
 date = 2021-02-04T18:39:00+08:00
 weight = 70
 chapter = true
@@ -8,7 +8,7 @@ pre = "<b>7. </b>"
 
 ### Part 7
 
-# Making multiple food items \(Space Cabbages\) to chase
+# More cabbage, more!
 
 In this section you are going to develop a way of having multiple space
  cabbages \(food\) moving around the screen for your turtle to chomp.

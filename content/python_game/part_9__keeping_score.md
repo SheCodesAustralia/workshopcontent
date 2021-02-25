@@ -1,5 +1,5 @@
 +++
-title = "Adding a score"
+title = "Keeping score"
 date = 2021-02-04T20:02:00+08:00
 weight = 90
 chapter = true
@@ -8,7 +8,7 @@ pre = "<b>9. </b>"
 
 ### Part 9
 
-# Adding a score and displaying it on the screen
+# Keeping score
 
 To make this more like a game you can add a score for each time your turtle
  chomps on a cabbage. To do this you create a new score variable by typing

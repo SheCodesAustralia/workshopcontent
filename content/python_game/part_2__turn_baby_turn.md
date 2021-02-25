@@ -1,5 +1,5 @@
 +++
-title = "Keyboard Bindings and Turning the Turtle"
+title = "Turn baby turn"
 date = 2021-01-25T14:55:24+08:00
 weight = 20
 chapter = true
@@ -8,7 +8,8 @@ pre = "<b>2. </b>"
 
 ### Part 2
 
-# Keyboard Bindings and Turning the Turtle
+# Turn baby turn
+
 
 In part 2 we will assign keys on the keyboard to control the turtle and help
  it move left, right and speed up.
