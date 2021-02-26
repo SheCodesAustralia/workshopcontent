@@ -1,9 +1,9 @@
 +++
 title = "Code Editor"
 date = 2021-02-04T20:02:00+08:00
-weight = 6
+weight = 20
 chapter = true
-pre = "<b>b. </b>"
+pre = "<b>2. </b>"
 +++
 # Code editor
 
