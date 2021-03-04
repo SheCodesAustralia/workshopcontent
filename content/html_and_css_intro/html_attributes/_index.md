@@ -7,7 +7,7 @@ pre = "<b>3. </b>"
 
 # HTML Attributes
 
-So far we've included all of our content within opening and closing HTML tags, but what do we do if we have a self-closing HTML element? There aren't tags for us to put the content between, so how can we give the browser information about our content?
+Until now we've included all of our content within opening and closing HTML tags, but what do we do if we have a self-closing HTML element? There aren't tags for us to put the content between, so how can we give the browser information about our content?
 
 ![](images/tag.png)
 

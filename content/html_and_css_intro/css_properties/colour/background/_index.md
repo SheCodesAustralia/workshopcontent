@@ -7,7 +7,7 @@ pre = "<b>2. </b>"
 
 # Background Colour
 
-It's not just the text colour we can change as well, we can also use `background-color` to change the colour of the background.
+It's not only the text colour we can change as well, we can also use `background-color` to change the colour of the background.
 
 ```css
 h1 {

@@ -7,7 +7,7 @@ pre = "<b>4. </b>"
 
 # Nesting HTML Elements
 
-So far we've just been writing content inside our HTML elements, but did you know that you can nest other HTML elements inside them as well?
+So far we've been writing content inside our HTML elements, but did you know that you can nest other HTML elements inside them as well?
 
 ```html
 <p>I have a paragraph of text here, which also has a <a href="https://google.com">link</a> inside it!</p>
