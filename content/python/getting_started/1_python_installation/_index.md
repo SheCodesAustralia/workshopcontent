@@ -1,33 +1,24 @@
 +++
 title = "Python installation"
 date = 2021-02-04T20:02:00+08:00
-weight = 4
+weight = 10
 chapter = true
-pre = "<b>a. </b>"
+pre = "<b>1. </b>"
 +++
 
 # Let’s start with Python
 
 We're finally here!
 
-But first, let us tell you what Python is. Python is a very popular programming
- language that can be used for creating websites, games, scientific software,
- graphics, and much, much more.
-
-Python originated in the late 1980s and its main goal is to be readable by
- human beings (not only machines!). This is why it looks much simpler than
- other programming languages. This makes it easy to learn, but don't worry
- – Python is also really powerful!
-
-{{% notice info %}}
-For readers at home: this chapter is covered in the
-[Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) video.  
-This section is based on [a tutorial by Geek Girls Carrots](https://github.com/ggcarrots/django-carrots).
-{{% /notice %}}
-
 We need Python before we can start.
  Let's start by installing it! We want you to install Python 3.5 or later,
  so if you have any earlier version, you will need to upgrade it.
+
+{{% notice info %}}
+For readers at home: this chapter is covered in the
+[Installing Python and Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) video.  
+This section is based on [a tutorial by Geek Girls Carrots](https://github.com/ggcarrots/django-carrots).
+{{% /notice %}}
 
 
 ## Install on Windows

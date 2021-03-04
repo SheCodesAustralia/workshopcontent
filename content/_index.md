@@ -8,4 +8,4 @@ draft: false
 
 ### Please select a tutorial
 
-- [Space Turtle Chomp Python Game](/python_game)
+{{% children description="true" %}}
