@@ -24,16 +24,17 @@ Step 2.  Select File --&gt; New File you should see your program window
 Step 3.  As it is a great idea to save your project at the beginning of any new
  development, select File --&gt; Save and name the file, I called mine kbgame1.
 
-Step 4. When coding one of the first things we should always do as a developer
- is leave a comment explaining what the program does at the top of the screen.
- Write the below on the top line:
+Step 4. When coding one of the first things we should always do as a developer is leave a comment explaining what the program does at the top of the screen.
+
+Write the below on the top line:
 
 ```python
 # Turtle Graphics Game – Space Turtle Chomp
 ```
 
-Step 5. Next we need to import the Turtle libraries and set up the screen,
- we do this by typing:
+Step 5. Next we need to import the Turtle libraries and set up the screen, we do this by typing:
+
+{{% codecaption title="kbgame1.py" %}}
 
 ```python
 import turtle
@@ -43,6 +44,9 @@ turtle.setup(650,650)
 wn = turtle.Screen()
 wn.bgcolor('navy')
 ```
+
+{{% /codecaption %}}
+
 
 `turtle.setup` sets the size of the Turtle game window \(it’s not necessary
  but helps when using different screen sizes\).
