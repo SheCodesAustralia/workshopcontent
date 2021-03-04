@@ -7,6 +7,8 @@ ignoreFiles = ["README.md"]
 # For search functionality
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
+[markup.goldmark.renderer]
+unsafe= true
 
 [params]
   # Prefix URL to edit current page. Will display an "Edit this page" button on top right hand corner of every page.
