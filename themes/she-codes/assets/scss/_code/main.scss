@@ -81,3 +81,18 @@ pre {
 		}
 	}
 }
+
+.code-caption {
+	padding: 0;
+	margin: 0.5rem 0;
+
+	figcaption {
+		background: #f6f6f6;
+		padding: 0.5rem 1rem;
+		font-family: $font_code;
+	}
+
+	pre {
+		margin-top: 0;
+	}
+}

@@ -1,6 +1,6 @@
 # SheCodes Australia Tutorial Content
 
-Hosted at [https://shecodes-tutorials.netlify.app]
+Hosted at [https://tutorials.shecodes.com.au/]
 
 Deployment is automated from this repo.
 
