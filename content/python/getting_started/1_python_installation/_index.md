@@ -64,7 +64,7 @@ You need to go to the website https://www.python.org/downloads/ and download the
 
 It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
 
-{% filename %}command-line{% endfilename %}
+<!-- {% filename %}command-line{% endfilename %} -->
 ```
 $ python3 --version
 Python 3.7.3
@@ -76,7 +76,7 @@ If you have a different 'micro version' of Python installed, e.g. 3.7.0, then yo
 
 Type this command into your console:
 
-{% filename %}command-line{% endfilename %}
+<!-- {% filename %}command-line {% filename %} -->
 ```
 $ sudo apt-get install python3
 ```
@@ -85,7 +85,7 @@ $ sudo apt-get install python3
 
 Use this command in your console:
 
-{% filename %}command-line{% endfilename %}
+<!-- {% filename %}command-line<!-- {% filename %} -->
 ```
 $ sudo yum install python3
 ```
@@ -94,7 +94,7 @@ $ sudo yum install python3
 
 Use this command in your console:
 
-{% filename %}command-line{% endfilename %}
+<!-- {% filename %}command-line<!-- {% filename %} -->
 ```
 $ sudo dnf install python3
 ```
@@ -103,14 +103,14 @@ $ sudo dnf install python3
 
 Use this command in your console:
 
-{% filename %}command-line{% endfilename %}
+<!-- {% filename %}command-line<!-- {% filename %} -->
 ```
 $ sudo zypper install python3
 ```
 
 Verify the installation was successful by opening the *Terminal* application and running the `python3` command:
 
-{% filename %}command-line{% endfilename %}
+<!-- {% filename %}command-line<!-- {% filename %} -->
 ```
 $ python3 --version
 Python 3.7.3
