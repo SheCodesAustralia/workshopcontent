@@ -22,6 +22,6 @@ When you learn something new, it's good to start learning with something familia
 Today we will be using the Django Girls Tutorial!  
 Click below to get started!!
 
-<a href="https://djangogirls.com" target="_blank">
+<a href="https://tutorial.djangogirls.org/" target="_blank">
 	<img src="images/djangogirls.png" />
 </a>
