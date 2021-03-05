@@ -11,4 +11,4 @@ Basically every small business, product, organisation or influencer has their ow
 
 WordPress is the most popular CMS on the planet, used by more than 60 million websites. It's also free, and always will be!
 
-In this tutorial we'll cover the basics - like how to set up your first website (either in your own local development environment, or on the internet) as well as some of the more complex concepts that will turn you into a WordPress power user in no time!
+In this tutorial we'll cover the basics - like how to set up your first website (either in your own local development environment, or on the internet) as well as some of the more complex concepts that will turn you into a WordPress power user in no time.
