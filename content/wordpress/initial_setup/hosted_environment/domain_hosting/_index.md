@@ -17,7 +17,7 @@ The first step is to click this link. Once you land on the page, choose the firs
 Make sure you don't close this tab as you will want to refer back to the instructions along the way to make sure you select the right options. It might be a good idea to bookmark this page in case you accidentally lose it!
 {{% /notice %}}
 
-**[VentraIP hosting &amp; domains](https://ventraip.com.au/web-hosting/business-hosting/)** <-- Click this link!
+**[VentraIP hosting and domains](https://ventraip.com.au/web-hosting/business-hosting/)** &nbsp; <-- Click this link!
 
 ![](images/choose_plan.jpg)
 
