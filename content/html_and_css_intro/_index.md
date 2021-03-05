@@ -2,7 +2,7 @@
 title = "HTML & CSS"
 weight = 2
 chapter = true
-pre = "<i class='fab fa-html5'></i> "
+pre = "<i class='fab fa-html5'></i>&nbsp; "
 +++
 
 # HTML and CSS
