@@ -2,7 +2,7 @@
 title = "WordPress 101"
 weight = 3
 chapter = true
-pre = "<i class='fab fa-wordpress'></i> "
+pre = "<i class='fab fa-wordpress'></i>&nbsp; "
 +++
 
 # WordPress 101
