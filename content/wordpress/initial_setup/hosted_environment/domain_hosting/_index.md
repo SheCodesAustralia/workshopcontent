@@ -4,6 +4,9 @@ weight = 2
 chapter = true
 +++
 
+# Domains & Hosting
+
+## Getting Started
 Now that we (hopefully) are a little clearer on what hosting and domain names are all about, it's time to register your own! As mentioned on the previous page, VentraIP have partnered with the She Codes organisation and offer our attendees 3 months free hosting along with 12 months free domain registration for ".co" domains.
 
 In order to take advantage of this offer, you will need to make sure you follow the instructions in the following steps and add the coupon codes right at the end as per the screenshots. We've provided screenshots of every step of the process, so you don't have to guess what to tick (or not)!
@@ -14,7 +17,7 @@ The first step is to click this link. Once you land on the page, choose the firs
 Make sure you don't close this tab as you will want to refer back to the instructions along the way to make sure you select the right options. It might be a good idea to bookmark this page in case you accidentally lose it!
 {{% /notice %}}
 
-[VentraIP hosting & domains](https://ventraip.com.au/web-hosting/business-hosting/)
+**[VentraIP hosting &amp; domains](https://ventraip.com.au/web-hosting/business-hosting/)** <-- Click this link!
 
 ![](images/choose_plan.jpg)
 
