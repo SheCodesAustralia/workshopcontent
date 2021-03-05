@@ -30,7 +30,7 @@ Once you have completed the installation, you may need to launch MAMP. If the pr
 
 ![](images/mamp_folder.png)
 
-# Start Your Engines
+## Start Your Engines
 
 Ok, servers. But engines sounds way cooler...
 
