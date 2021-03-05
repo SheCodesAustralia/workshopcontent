@@ -4,7 +4,9 @@ weight = 1
 chapter = true
 +++
 
-# Install MAMP
+# Local on Mac
+
+## Installing MAMP
 
 {{% notice tip %}}
 Make sure you don't close this tab as you will want to refer back to the instructions along the way to make sure you select the right options during installation. It might be a good idea to bookmark this page in case you accidentally lose it!
@@ -38,7 +40,7 @@ Clicking the Open start page button should open the Welcome page for MAMP in a b
 
 ![](images/start_servers.png)
 
-# Download WordPress
+## Downloading WordPress
 
 Next you will need to [download the latest version of WordPress](https://wordpress.org/download/#download-install) as a zip file. We'll need this file in just a moment so make sure you remember where you saved it!
 
@@ -49,7 +51,7 @@ Applications > MAMP > htdocs > wp_demo
 
 ![](images/wp_demo_folder.png)
 
-# Create Your Database
+## Creating Your Database
 
 Woohoo, you're doing great! Before we can install WordPress, we need a database.
 
@@ -71,7 +73,7 @@ You can actually call your database whatever you like, but it's a great idea to 
 
 ![](images/phpmyadmin.png)
 
-# Complete the WordPress Install
+## Completing the WordPress Install
 
 Go to the following URL in your browser:
 
