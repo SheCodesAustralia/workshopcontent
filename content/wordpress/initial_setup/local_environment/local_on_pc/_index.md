@@ -18,6 +18,8 @@ Go to the [Apache Friends website](https://www.apachefriends.org/index.html) and
 
 Once downloaded, launch the installer. If you get a warning about UAC permissions, don't worry too much - we'll show you how to work around this in a later step.
 
+![](images/uac_next.gif)
+
 Now the XAMPP setup wizard will guide you through the installation.
 
 {{% notice tip %}}
