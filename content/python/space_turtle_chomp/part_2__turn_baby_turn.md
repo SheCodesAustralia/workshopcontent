@@ -42,6 +42,7 @@ turtle.onkey(turn_left, 'Left')
 turtle.onkey(turn_right, 'Right')
 turtle.onkey(increase_speed, 'Up')
 while True:
+    player.forward(speed)
 ```
 
 We use the `turtle.onkey` method to set the computer to listen for a certain
