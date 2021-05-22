@@ -53,8 +53,7 @@ wn.bgcolor('navy')
  `wn` is the name we are calling the screen \(as we learnt in the Python
  introduction all variables need a name\). `bgcolor` allows us to set the
  background colour. There are lots of colours to choose from.
-
-![colour chart](images/100_Color_names_python.png)
+![colour chart](/python_game/100_Color_names_python.png)
 
 {{% notice note %}}
 note the American spelling of color, this is something to watch out for when
