@@ -52,9 +52,9 @@ wn.bgcolor('navy')
  but helps when using different screen sizes\).
  `wn` is the name we are calling the screen \(as we learnt in the Python
  introduction all variables need a name\). `bgcolor` allows us to set the
- background colour. There are lots of colours to choose from. See this colour
- chart https://python-graph-gallery.com/wp-content/uploads/100_Color_names_python.png
- for options.
+ background colour. There are lots of colours to choose from.
+
+![colour chart](images/100_Color_names_python.png)
 
 {{% notice note %}}
 note the American spelling of color, this is something to watch out for when
