@@ -1,5 +1,5 @@
 +++
-title = "Know your boundary’s, Turtle"
+title = "Know your boundaries, Turtle"
 date = 2021-01-25T14:55:24+08:00
 weight = 30
 chapter = true
@@ -9,7 +9,7 @@ pre = "<b>3. </b>"
 
 ### Part 3
 
-# Know your boundary’s, Turtle
+# Know your boundaries, Turtle
 
 
 Currently with our turtle game you can move your player turtle off the screen
