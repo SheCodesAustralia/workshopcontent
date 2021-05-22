@@ -134,4 +134,4 @@ while True:
 
 
 
-delay = raw_input("Press Enter to finish.")
+delay = input("Press Enter to finish.")
