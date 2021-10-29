@@ -1,6 +1,6 @@
 baseURL = "https://tutorials.shecodes.com.au/"
 languageCode = "en-us"
-title = "SheCodes Australia Tutorials"
+title = "She Codes Australia Tutorials"
 theme = "she-codes"
 ignoreFiles = ["README.md"]
 # For search functionality
