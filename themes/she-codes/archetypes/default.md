@@ -1,6 +1,6 @@
 ---
 title: "Title"
-weight: 1
+weight: "{{ replaceRE "(?:^\\d+)" "$0" .Name }}"
 ---
 
 TODO
