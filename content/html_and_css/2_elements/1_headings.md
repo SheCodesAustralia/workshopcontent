@@ -1,6 +1,6 @@
 ---
-title: "Title"
-weight: "1_headings"
+title: "Headings"
+weight: 1
 ---
 
 TODO
