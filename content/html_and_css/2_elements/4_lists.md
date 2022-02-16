@@ -14,10 +14,10 @@ For example, the code below represents an ordered list:
 <h1>HTML and CSS Workshop</h1>
 
 <ol>
-	<li>Intro to HTML</li>
-	<li>HTML Elements</li>
-	<li>HTML Attributes</li>
-	<li>Structure</li>
+    <li>Intro to HTML</li>
+    <li>HTML Elements</li>
+    <li>HTML Attributes</li>
+    <li>Structure</li>
 </ol>
 ```
 
@@ -30,10 +30,10 @@ The code below represents an unordered list:
 <h1>HTML and CSS Workshop</h1>
 
 <ul>
-	<li>Intro to HTML</li>
-	<li>HTML Elements</li>
-	<li>HTML Attributes</li>
-	<li>Structure</li>
+    <li>Intro to HTML</li>
+    <li>HTML Elements</li>
+    <li>HTML Attributes</li>
+    <li>Structure</li>
 </ul>
 ```
 
@@ -43,13 +43,13 @@ This would render the following:
 {{% notice challenge %}}
 
 Add an ordered list to your page.
-[Here\'s a list of turtle species](https://www.britannica.com/topic/list-of-turtles-2073117) to help you out.
+[Here\'s a list of turtle species](https://www.britannica.com/topic/list-of-turtles-2073117) if you need some content inspiration.
 
 {{% /notice %}}
 
 {{% notice challenge %}}
 
 Add an unordered list to your page.
-[Here\'s some information about where turtles are found](https://animals.net/turtle/) to help you out.
+[Here\'s some information about where turtles are found](https://animals.net/turtle/) if you need some content for inspiration.
 
 {{% /notice %}}
