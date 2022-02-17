@@ -40,4 +40,24 @@ Most of our content goes inside the `body` element, this is content for the user
 </html>
 ```
 
-For the purposes of this workshop, all the HTML that we write in Codepen is being put inside our `body` element.
+Fortunately, Codepen takes care of a lot of the structure for us, so we only have to worry about the visible page content.
+All the HTML we write is being put inside the `body` element.
+
+Next we are going to learn how to structure the content in the `body`.
+
+Todo this, we are going to build a webpage step by step.
+When we're done, our page will look like this:
+
+![Screenshot of webpage with different background colours for each element type.](../images/myrtle_the_turtle_preview.png.png)
+
+We've already written some CSS for you, this is what gives the page colour and layout.
+
+You'll know if you've built your page correctly because it should look identical in colour and layout to the above screenshot.
+
+Once again, we've created a template for you to get started with.
+Open the template by [clicking this link](). TODO
+
+Once you've opened the pen, click the `fork` button on the bottom left of the page to make a copy of the pen under your account.
+
+![Screenshot of CodePen with "fork" button highlighted.](../../images/forking_a_pen.png)
+
