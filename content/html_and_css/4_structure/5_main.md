@@ -1,5 +1,5 @@
 ---
-title: "Aside"
+title: "Main"
 weight: 5
 ---
 
