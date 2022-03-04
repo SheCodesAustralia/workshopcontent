@@ -4,7 +4,7 @@ weight: 2
 ---
 
 Take a look at the HTML provided to you.
-You should notice that we don't just have plain divs, they all have classes and ids:
+You should notice that our `div` elements look a bit different to what we've seen before. They all have **classes** and **ids**:
 
 ```html
 <div class="first-row" id="box-1">
@@ -20,6 +20,10 @@ You should notice that we don't just have plain divs, they all have classes and 
   <p>Box 4</p>
 </div>
 ```
+
+We'll use type, class and ID selectors to change the colour of different elements on the page.
+
+## Type Selectors
 
 First, let's change the colour of the text.
 We can use a **type selector** to do this.
@@ -44,6 +48,7 @@ The text should now be blue.
 
 {{% /notice %}}
 
+## ID Selectors
 
 Each box has a unique `id`, which means that we can reference each box individually.
 
@@ -53,11 +58,11 @@ Let's try changing the background colour of `box-1` only:
 /* Your CSS here */
 
 
-p {
+body {
   background-color: orange;
 }
 
-.box {
+p {
   color: blue;
 }
 
@@ -72,6 +77,8 @@ p {
 The top left box should now be pink.
 
 {{% /notice %}}
+
+## Class Selectors
 
 The top two boxes have the `first-row` class, and the bottom two boxes have the `bottom-row` class.
 This means that we could use these classes to reference each row individually, i.e. two boxes at a time.

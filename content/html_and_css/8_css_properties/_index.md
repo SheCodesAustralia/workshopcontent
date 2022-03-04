@@ -5,4 +5,7 @@ weight: 8
 
 TODO
 
-![](../images/animals.png)
+![Screenshot of completed webpage.](../images/animals.png)
+
+
+Open the template on CodePen.
