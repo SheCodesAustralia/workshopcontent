@@ -111,10 +111,7 @@ Here are some docs on [vertical-align](https://developer.mozilla.org/en-US/docs/
 It's really starting to come together now!
 Here's what your page should look like so far:
 
+
+TODO UPDATE SCREENSHOT
+
 ![](../../images/animals_layout.png)
-
-**Done!**
-
-![Gif of thumbs up.](../../images/gifs/celebration_1.gif)
-
-Next up: let's learn about colours...

@@ -34,4 +34,3 @@ The content in the main should have a purple background.
 
 {{% /notice %}}
 
-TODO screenshot of expected result.

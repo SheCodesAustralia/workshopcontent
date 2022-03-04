@@ -242,12 +242,8 @@ For images inside the divs with the `column` class: set their `height` to `200px
 
 Here's what your page should look like at this stage:
 
+TODO UPDATE SCREENSHOT
+
 ![](../../images/animals_size.png)
 
-^^ TODO
 
-**Done! Nice work!**
-
-![Gif of thumbs up.](../../images/gifs/done_1.gif)
-
-Next up: let's learn about layout.

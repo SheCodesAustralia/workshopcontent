@@ -19,4 +19,3 @@ The footer will have a peach background.
 
 {{% /notice %}}
 
-TODO screenshot of expected result.

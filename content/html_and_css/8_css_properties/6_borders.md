@@ -42,6 +42,3 @@ Try changing the style of the border.
 Adding a border to each card.
 
 {{% /notice %}}
-
-
-![](../../images/gifs/celebration_3.gif)

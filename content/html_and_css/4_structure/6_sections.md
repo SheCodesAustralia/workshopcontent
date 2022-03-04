@@ -35,4 +35,3 @@ The two sections will have a lighter purple background, compared to the main.
 
 {{% /notice %}}
 
-TODO screenshot of expected result.

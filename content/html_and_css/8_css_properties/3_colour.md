@@ -89,8 +89,3 @@ Change the background colour of the each column in `section-5`.
 Change the background colour of the `footer`.
 
 {{% /notice %}}
-
-
-**Done! Woooo!**
-
-![](../../images/gifs/it_works_1.gif)

@@ -5,7 +5,10 @@ weight: 8
 
 TODO
 
+[Fork the template on CodePen.](https://codepen.io/shecodesaus/pen/JjOezbg)
+
+
 ![Screenshot of completed webpage.](../images/animals.png)
 
 
-Open the template on CodePen.
+

@@ -25,5 +25,3 @@ The background of the nav should appear as darker pink.
 The links should be on the right, each with a white background.
 
 {{% /notice %}}
-
-TODO screenshot of expected result.

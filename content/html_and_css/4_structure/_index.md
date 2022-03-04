@@ -55,9 +55,9 @@ We've already written some CSS for you, this is what gives the page colour and l
 You'll know if you've built your page correctly because it should look identical in colour and layout to the above screenshot.
 
 Once again, we've created a template for you to get started with.
-Open the template by [clicking this link](https://codepen.io/shecodesaus/pen/MWOOeoZ). TODO
+Open the template by [clicking this link](https://codepen.io/shecodesaus/pen/MWOOeoZ).
 
 Once you've opened the pen, click the `fork` button on the bottom left of the page to make a copy of the pen under your account.
 
-![Screenshot of CodePen with "fork" button highlighted.](../../images/forking_a_pen.png)
+![Screenshot of CodePen with "fork" button highlighted.](../images/forking_a_pen.png)
 

@@ -29,4 +29,3 @@ The image and header text should now be side by side.
 
 {{% /notice %}}
 
-TODO screenshot of expected result.

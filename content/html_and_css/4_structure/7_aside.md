@@ -36,4 +36,3 @@ The three images will have a lighter background than the `main` and be on the ri
 
 {{% /notice %}}
 
-TODO screenshot of expected result.

@@ -24,4 +24,3 @@ The background of the header should appear pink.
 
 {{% /notice %}}
 
-TODO screenshot of expected result.
