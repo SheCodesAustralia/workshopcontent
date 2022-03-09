@@ -123,3 +123,7 @@ Try adding text or box shadows to other elements!
 Here's a [handy tool for generating shadows](https://webcode.tools/generators/css/box-shadow).
 
 {{% /notice %}}
+
+Here's how our page looks like completed, hopefully you've made yours your own!
+
+![](../../images/animals_complete.jpeg)

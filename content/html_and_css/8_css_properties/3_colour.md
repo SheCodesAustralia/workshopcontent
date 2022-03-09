@@ -87,3 +87,7 @@ Change the background colour of the each column in `section-5`.
 Change the background colour of the `footer`.
 
 {{% /notice %}}
+
+Here's what your page should look like so far:
+
+![](../../images/animals_colour.jpeg)

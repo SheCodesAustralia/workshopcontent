@@ -37,3 +37,6 @@ The three images will have a lighter background than the `main` and be on the ri
 
 {{% /notice %}}
 
+Here's our page so far:
+
+![Screenshot of page with images on the right.](../../images/myrtle_aside.png)

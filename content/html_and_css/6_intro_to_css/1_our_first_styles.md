@@ -4,13 +4,13 @@ weight: 1
 chapter: false
 ---
 
+Let's write our first line of CSS!
+
 Fork the [template on CodePen.](https://codepen.io/shecodesaus/pen/KKyrEvB)
 
 You should see four boxes (divs) like the below:
 
 ![](../../images/boxes.png)
-
-Let's write our first line of CSS!
 
 Navigate to the CSS editor in CodePen and look for the line that says `Your CSS here`.
 We'll be adding all of our CSS below this line.

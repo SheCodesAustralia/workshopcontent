@@ -8,8 +8,6 @@ For this challenge, we will give you most of the HTML, and you'll need to fill i
 
 Here's a preview of the end product:
 
-TODO update screenshot
-
 ![Screenshot of website about hula hooping.](../../images/hoops.png)
 
 Go ahead and fork the

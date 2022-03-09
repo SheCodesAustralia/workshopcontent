@@ -9,7 +9,7 @@ The next thing that we are going to do is figure out how to modify the layout of
 
 Once again, we'll start at the top of the page and work our way down, using our preview as a guide:
 
-![Screenshot of completed webpage.](../../images/animals.png)
+![Screenshot of completed webpage.](../../images/animals_complete.jpeg)
 
 ## Step 1
 
@@ -81,7 +81,7 @@ There are several different values for `display`, but right now we'll just focus
 When we set the cards to be `inline-block`, we told them they can be side by side while still maintaining the width we set earlier of `25%`.
 
 
-# Step 3 TODO remove?
+# Step 3
 
 The cards are side by side, but they aren't quite aligned evenly.
 
@@ -113,6 +113,4 @@ It's really starting to come together now!
 Here's what your page should look like so far:
 
 
-TODO UPDATE SCREENSHOT
-
-![](../../images/animals_layout.png)
+![](../../images/animals_layout.jpeg)

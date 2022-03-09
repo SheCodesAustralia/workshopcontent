@@ -25,3 +25,6 @@ The background of the header should appear pink.
 
 {{% /notice %}}
 
+Here's our header so far:
+
+![Screenshot of page with pink header.](../../images/myrtle_header.png)

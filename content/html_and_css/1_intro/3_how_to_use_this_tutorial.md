@@ -6,7 +6,7 @@ chapter: false
 
 Before we get too ahead of ourselves, here are a couple quick instructions for how to use this tutorial.
 
-A **code block** like this:
+A code block like this:
 
 ```html
 <h1>Myrtle the Turtle</h1>

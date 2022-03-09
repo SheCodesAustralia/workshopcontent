@@ -100,3 +100,7 @@ The colour of the `a` tags in the `nav` should turn white.
 Change the colour of the `h1`, `h2` and `h3` headings.
 
 {{% /notice %}}
+
+Here's what your page should look like so far (using your own fonts):
+
+![](../../images/animals_fonts.jpeg)

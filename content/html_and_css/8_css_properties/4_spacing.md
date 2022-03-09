@@ -165,3 +165,7 @@ You might find this graphic useful in comparing margin and padding:
 ![Graphic showing CSS box model.](../../images/box_model.png)
 
 (We'll get to the border property shortly...)
+
+Here's what your page should look like so far:
+
+![](../../images/animals_spacing.jpeg)

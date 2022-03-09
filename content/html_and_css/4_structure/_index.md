@@ -49,7 +49,7 @@ Next, we are going to learn how to structure the content in the `body`.
 To do this, we are going to build a webpage step by step.
 When we're done, our page will look like this:
 
-![Screenshot of webpage with different background colours for each element type.](../images/myrtle_the_turtle_preview.png.png)
+![Screenshot of webpage with different background colours for each element type.](../images/myrtle_the_turtle_preview.png)
 
 We've already written some CSS for you, this is what gives the page colour and layout.
 You’ll be learning more about this soon!
@@ -61,7 +61,7 @@ Open the template by [clicking this link](https://codepen.io/shecodesaus/pen/MWO
 
 Once you've opened the pen, click the `fork` button on the bottom right of the page to make a copy of the pen under your account.
 
-TODO should be template 2 screenshot.
+Here's what the template should look like:
 
-![Screenshot of CodePen with "fork" button highlighted.](../images/forking_a_pen.png)
+![Screenshot of CodePen with "fork" button highlighted.](../images/part_2_codepen.png)
 

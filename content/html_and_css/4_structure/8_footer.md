@@ -20,3 +20,6 @@ The footer will have a peach background.
 
 {{% /notice %}}
 
+Here's our completed page:
+
+![Screenshot of webpage.](../../images/myrtle_footer.png)

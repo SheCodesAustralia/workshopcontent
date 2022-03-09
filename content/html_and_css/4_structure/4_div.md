@@ -30,3 +30,6 @@ The image and header text should now be side by side.
 
 {{% /notice %}}
 
+Here's our header so far:
+
+![Screenshot of header with image and h1 side by side.](../../images/myrtle_div.png)

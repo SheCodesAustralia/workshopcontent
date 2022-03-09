@@ -43,3 +43,7 @@ Try changing the style of the border.
 Add a border to each card.
 
 {{% /notice %}}
+
+Here's what your page should look like so far:
+
+![](../../images/animals_borders.jpeg)

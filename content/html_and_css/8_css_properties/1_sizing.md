@@ -32,7 +32,7 @@ Every image on the page should now have the same height.
 
 Every image now has the same height, but if we have a look at our preview of the final product, we can see images of different sizes:
 
-![Screenshot of completed webpage.](../../images/animals.png)
+![Screenshot of completed webpage.](../../images/animals_complete.jpeg)
 
 Instead of changing the height of all images in one go, let's start at the top of the page and, working our way top to bottom, resize each group of images.
 
@@ -101,7 +101,7 @@ The next two images will be `200px` wide.
 The next three images are a bit different.
 They are in white boxes, and each have a heading and paragraph to go with them:
 
-![](../../images/animals_cards.png)
+![](../../images/animals_cards.jpeg)
 
 Let's take a look at the HTML to see the structure of this part of the page:
 
@@ -249,8 +249,6 @@ For images inside the divs with the `column` class: set their `height` to `200px
 
 Here's what your page should look like at this stage:
 
-TODO UPDATE SCREENSHOT
-
-![](../../images/animals_size.png)
+![](../../images/animals_sizing.jpeg)
 
 

@@ -35,3 +35,7 @@ The content in the main should have a purple background.
 
 {{% /notice %}}
 
+
+Here's our page so far:
+
+![Screenshot of page with purple background.](../../images/myrtle_main.png)

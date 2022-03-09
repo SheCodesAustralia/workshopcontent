@@ -24,9 +24,9 @@ The `src` attribute means **source** and it expects a URL to an image.
 The next challenge asks you to add images to your page.
 Here are three image URLs to use for this challenge:
 
-- <a href="../../images/turtle_1.jpg" target="_blank">Turtle 1</a>
-- <a href="../../images/turtle_2.jpg" target="_blank">Turtle 2</a>
-- <a href="../../images/turtle_3.jpg" target="_blank">Turtle 3</a>
+- <a href="https://assets.codepen.io/5804361/turtle_1.jpg" target="_blank">Turtle 1</a>
+- <a href="https://assets.codepen.io/5804361/turtle_2.jpg" target="_blank">Turtle 2</a>
+- <a href="https://assets.codepen.io/5804361/turtle_3.jpg" target="_blank">Turtle 3</a>
 
 {{% notice challenge %}}
 

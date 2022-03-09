@@ -36,3 +36,6 @@ The two sections will have a lighter purple background, compared to the main.
 
 {{% /notice %}}
 
+Here's our page so far:
+
+![Screenshot of page with purple background behind sections.](../../images/myrtle_sections.png)

@@ -16,7 +16,9 @@ For example:
 <p>The size of a turtle varies depending on it's species, age, diet, gender, habitat and UV light.</p>
 ```
 
-TODO add screenshot
+This should be the resulting page:
+
+![Screenshot of webpage with paragraph elements.](../../images/myrtle_paragraphs.png)
 
 {{% notice challenge %}}
 

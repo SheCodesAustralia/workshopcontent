@@ -32,6 +32,10 @@ Try adding the above `h2` and `h3` headings to your page.
 
 {{% /notice %}}
 
+This should be the resulting page:
+
+![Screenshot of webpage with h1, h2 and h3 elements.](../../images/myrtle_headings.png)
+
 {{% notice challenge %}}
 
 Use an `h2` and `h3` to add another section and subsection to your page ([Wikipedia](https://en.wikipedia.org/wiki/Turtle) might be a good place to look for inspiration).

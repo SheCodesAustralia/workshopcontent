@@ -17,13 +17,12 @@ A comment looks like this:
 <h1>Myrtle the Turtle</h1>
 <!-- This is a comment to myself -->
 <h2>Anatomy and Physiology</h2>
+<h3>Size</h3>
 ```
 
 The above html looks like this when rendered:
 
-TODO typo in screenshot
-
-![The resulting webpage from the comment code snippet.](../../images/comments.png)
+![The resulting webpage from the comment code snippet.](../../images/myrtle_headings.png)
 
 {{% notice challenge %}}
 
