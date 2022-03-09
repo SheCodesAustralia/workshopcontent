@@ -1,7 +1,6 @@
-+++
-title = "{{ replace .Name "-" " " | title }}"
-date =  {{ .Date }}
-weight = 5
-+++
+---
+title: "Title"
+weight: "{{ replaceRE "(^\\d+)" "$0" .Name }}"
+---
 
-Lorem Ipsum.
+TODO

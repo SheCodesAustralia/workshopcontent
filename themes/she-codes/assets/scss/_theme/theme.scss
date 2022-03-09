@@ -65,6 +65,8 @@
 		display: block;
 		margin: 3rem auto;
 		text-align: center;
+		box-shadow:  0px 0px 10px #CBD2D9;
+		border-radius: 5px;
 	}
 
 	.video-container {
@@ -707,7 +709,7 @@ div.notices.warning {
 
 		&:first-child {
 			&:after {
-				content: 'Warning';
+				content: 'Heads Up!';
 			}
 		}
 	}
@@ -737,6 +739,32 @@ div.notices.tip {
 			}
 		}
 	}
+}
+
+div.notices.test {
+  p {
+    border-top: 30px solid #f0b37e;
+    background: #fff2db;
+
+    &:first-child {
+      &:after {
+        content: "🚨 TEST 🚨";
+      }
+    }
+	}
+}
+
+div.notices.challenge {
+  p {
+    border-top: 30px solid #6ab0de;
+    background: #e7f2fa;
+
+    &:first-child {
+      &:after {
+        content: "Challenge!";
+      }
+    }
+  }
 }
 
 section.attachments {
