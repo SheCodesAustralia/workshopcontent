@@ -1,6 +1,7 @@
 ---
 title: "Sizing"
 weight: 1
+chapter: true
 ---
 
 The images on our page are all enormous, so let's start by learning how to specify the size of elements.

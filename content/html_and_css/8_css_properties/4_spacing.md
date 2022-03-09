@@ -1,6 +1,7 @@
 ---
 title: "Spacing"
 weight: 4
+chapter: true
 ---
 
 Now that we've added some colour, it makes the awkward spacing around elements a bit more obvious.

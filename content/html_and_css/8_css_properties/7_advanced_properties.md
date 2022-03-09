@@ -1,6 +1,7 @@
 ---
 title: "Advanced Properties"
 weight: 7
+chapter: true
 ---
 
 WOW! We've done a lot!

@@ -1,6 +1,7 @@
 ---
 title: "Header"
 weight: 2
+chapter: true
 ---
 
 The `header` element is used for introductory content.

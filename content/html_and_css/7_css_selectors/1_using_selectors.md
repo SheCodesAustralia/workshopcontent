@@ -1,6 +1,7 @@
 ---
 title: "Using Selectors"
 weight: 2
+chapter: true
 ---
 
 Take a look at the HTML provided to you.

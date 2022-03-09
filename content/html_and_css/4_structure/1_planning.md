@@ -1,6 +1,7 @@
 ---
 title: "Planning"
 weight: 1
+chapter: true
 ---
 
 Ok, before we get too carried away, let's do some planning.

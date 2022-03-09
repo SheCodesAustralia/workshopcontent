@@ -1,6 +1,7 @@
 ---
 title: "Structuring our Page"
 weight: 4
+chapter: true
 ---
 
 So far we’ve learnt a couple of different elements, but HTML isn’t just about defining the content of the page - it is also used to define the page structure.

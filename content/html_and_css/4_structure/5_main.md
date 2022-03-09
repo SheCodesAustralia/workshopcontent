@@ -1,6 +1,7 @@
 ---
 title: "Main"
 weight: 5
+chapter: true
 ---
 
 The `main` element represents the dominant content in the `body` of the page.

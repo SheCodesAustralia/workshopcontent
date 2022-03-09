@@ -1,6 +1,7 @@
 ---
 title: "Nav"
 weight: 3
+chapter: true
 ---
 
 The `nav` (aka "navigation") is used to provide links that navigate to other webpages.

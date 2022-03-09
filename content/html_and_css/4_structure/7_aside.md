@@ -1,6 +1,7 @@
 ---
 title: "Aside"
 weight: 7
+chapter: true
 ---
 
 The `aside` element is for content that is related to the primary content of the webpage, but is not considered primary content itself.

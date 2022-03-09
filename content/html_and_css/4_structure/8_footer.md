@@ -1,6 +1,7 @@
 ---
 title: "Footer"
 weight: 8
+chapter: true
 ---
 
 The `footer` element is used to identify the footer of a page.

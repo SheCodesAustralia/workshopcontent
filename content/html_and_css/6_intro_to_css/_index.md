@@ -1,6 +1,7 @@
 ---
 title: "Intro to CSS"
 weight: 6
+chapter: true
 ---
 
 TODO

@@ -1,6 +1,7 @@
 ---
 title: "Div"
 weight: 4
+chapter: true
 ---
 
 Unlike the `header` and `nav` elements, the `div` (divider) element does not inherently represent anything.

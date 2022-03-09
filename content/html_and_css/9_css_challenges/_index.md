@@ -1,6 +1,7 @@
 ---
 title: "CSS Challenges"
 weight: 9
+chapter: true
 ---
 
 TODO

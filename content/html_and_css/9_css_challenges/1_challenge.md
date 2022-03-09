@@ -1,6 +1,7 @@
 ---
 title: "Challenge 3"
 weight: 1
+chapter: true
 ---
 
 We've created most of the following page:

@@ -1,6 +1,7 @@
 ---
 title: "Links"
 weight: 1
+chapter: true
 ---
 
 It's often useful to link webpages to each other.

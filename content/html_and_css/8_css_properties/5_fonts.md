@@ -1,6 +1,7 @@
 ---
 title: "Fonts"
 weight: 5
+chapter: true
 ---
 
 There are a lot of different things we can do with fonts, including changing their family and size.
