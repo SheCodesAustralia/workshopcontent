@@ -3,10 +3,10 @@ title: "Div"
 weight: 4
 ---
 
-Unlike the `header` and `nav` elements, the `div` element does not inherently represent anything.
+Unlike the `header` and `nav` elements, the `div` (divider) element does not inherently represent anything.
 Instead, this element is used to group other elements.
 
-Let's wrap our `h1` and `img` in a `div`:
+Let's wrap our `h1` and `img` elements in a `div` tag:
 
 ```diff
 

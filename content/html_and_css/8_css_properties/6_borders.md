@@ -32,13 +32,13 @@ Try changing the width and colour of the border.
 
 {{% notice challenge %}}
 
-There are several different border styles, [here\'s a list of them](https://developer.mozilla.org/en-US/docs/Web/CSS/border-style).
+There are several different border styles - [here\'s a list of them](https://developer.mozilla.org/en-US/docs/Web/CSS/border-style).
 Try changing the style of the border.
 
 {{% /notice %}}
 
 {{% notice challenge %}}
 
-Adding a border to each card.
+Add a border to each card.
 
 {{% /notice %}}

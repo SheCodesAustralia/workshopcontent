@@ -96,7 +96,7 @@ Here's a cool [tool for creating gradients](https://cssgradient.io/) if you need
 
 We could also add some shadows to make some elements feel as though they are lifted from the page.
 
-Try adding a shadown to the `h1` text:
+Try adding a shadow to the `h1` text:
 
 ```diff
 h1 {

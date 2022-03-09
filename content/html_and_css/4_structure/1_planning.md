@@ -5,7 +5,7 @@ weight: 1
 
 Ok, before we get too carried away, let's do some planning.
 
-There are several new elements that we are going to be looking at, they are:
+There are several new elements that we are going to be looking at. They are:
 
 - header
 - nav

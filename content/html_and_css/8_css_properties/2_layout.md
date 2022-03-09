@@ -12,7 +12,7 @@ Once again, we'll start at the top of the page and work our way down, using our 
 
 ## Step 1
 
-First, the nav.
+First, the `nav`.
 In the preview, the text is on the right of the page.
 We can achieve this effect using the `text-align` property.
 
@@ -40,7 +40,7 @@ As we go through this tutorial, you'll start to see that every CSS property has 
 
 {{% notice challenge %}}
 
-Add CSS to set the `header` and `main` elements `text-align` property to `center`.
+Add CSS to set the `header` and `main` elements' `text-align` property to `center`.
 
 {{% /notice %}}
 
@@ -64,23 +64,23 @@ The cards should now be side by side.
 
 {{% /notice %}}
 
-Let's upack that.
+Let's unpack that.
 
-There are several different values for `display`, we'll just focus on three of them:
+There are several different values for `display`, but right now we'll just focus on three of them:
 
 - `display: block`
-    - This tells the element to take up the whole line, don't let anything beside them.
+    - This tells the element to take up the whole line, stopping anything else from displaying beside it.
 - `display: inline`
-    - This tells the element to allow other elements to be on the same line.
+    - This tells the element to allow other elements to be displayed beside it.
 - `display: inline-block`
-    - This it he same as inline, but allows you to also specify the width of the element.
+    - This is the same as inline, but allows you to also specify the width of the element.
 
 ![Graphic comparing block vs inline](../../images/display.png)
 
 When we set the cards to be `inline-block`, we told them they can be side by side while still maintaining the width we set earlier of `25%`.
 
 
-# Step 3
+# Step 3 TODO remove?
 
 The cards are side by side, but they aren't quite aligned evenly.
 

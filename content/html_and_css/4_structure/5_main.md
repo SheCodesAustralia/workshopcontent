@@ -5,7 +5,7 @@ weight: 5
 
 The `main` element represents the dominant content in the `body` of the page.
 
-Let's wrap our `h2` and `h3` headings, paragraphs and images in `main`:
+As per the others, let's wrap our `h2` and `h3` headings, paragraphs and images with a `main` opening and closing tag:
 
 ```diff
 +<main>

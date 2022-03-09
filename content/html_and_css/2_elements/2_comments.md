@@ -13,12 +13,14 @@ This lets us write notes to ourselves about what some code means and what it doe
 A comment looks like this:
 
 ```html
-<h1>Myrte the Turtle</h1>
+<h1>Myrtle the Turtle</h1>
 <!-- This is a comment to myself -->
 <h2>Anatomy and Physiology</h2>
 ```
 
 The above html looks like this when rendered:
+
+TODO typo in screenshot
 
 ![The resulting webpage from the comment code snippet.](../../images/comments.png)
 

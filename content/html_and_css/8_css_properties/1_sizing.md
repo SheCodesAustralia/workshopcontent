@@ -20,7 +20,7 @@ Add the following to your CSS:
 ```
 
 The tag selector will get every `img` element.
-The `height` property changes the height of an element by whatever value you provide, in this case, we've specified 200 pixels (`px`).
+The `height` property changes the height of an element by whatever value you provide - in this case, we've specified 200 pixels (`px`).
 
 
 {{% notice test %}}
@@ -33,13 +33,13 @@ Every image now has the same height, but if we have a look at our preview of the
 
 ![Screenshot of completed webpage.](../../images/animals.png)
 
-So instead of changing the height of all images in one go, let's start at the top of the page and, working our way top to bottom, resize each group of images.
+Instead of changing the height of all images in one go, let's start at the top of the page and, working our way top to bottom, resize each group of images.
 
 ## Step 2
 
 If we take a look at the HTML, we can see that the first image is in the header.
 
-So, instead of setting the height of *every* image to `100px`, let's only set the height of the header image.
+Instead of setting the height of *every* image to `100px`, let's only set the height of the header image.
 
 To do this, we can combine the header and image selectors, like so:
 
@@ -165,10 +165,16 @@ The way we set the height of these images is a bit different to what we did prev
 Rather than specifying a value in pixels, we gave a percentage.
 This CSS is saying "set the height of this element to be `40%` of the height of its parent (where **parent** means the element it is in, in this case, that is the card).
 
+{{% notice tip %}}
+
+This only works when the parent element has a specific size set.
+Try removing `height: 250px` from the `.card` to see this for yourself!
+
+{{% /notice %}}
+
 ## Step 5
 
-So far we have just been setting the height.
-But we can actually set the width using the same format.
+So far we have just been setting the height, but we can actually set the width using the same format.
 Let's modify our CSS to also set the width of the cards and their images.
 
 ```diff
@@ -200,7 +206,7 @@ Our cards aren't side by side like they are in the preview - don't worry! We'll 
 {{% notice challenge %}}
 
 This one is a challenge for you!
-Find the image in the section with id `section-4` and set it's `width` to `400px`.
+Find the image in the section with id `section-4` and set its `width` to `400px`.
 
 {{% /notice %}}
 
@@ -232,7 +238,7 @@ Set the `width` of the divs with the `column` class to `50%`.
 
 {{% /notice %}}
 
-Then we will resize the images inside of these columns.
+We will then resize the images inside of these columns.
 
 {{% notice challenge %}}
 

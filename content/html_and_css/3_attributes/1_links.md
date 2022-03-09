@@ -25,3 +25,11 @@ The above HTML would render like so:
 Add at least one link to another website to your page.
 
 {{% /notice %}}
+
+{{% notice tip %}}
+
+When you click the link it takes us to that page in our CodePen window.
+Instead, we could open that link in a new tab by adding `target="_blank"` to the `a` tag.
+Try it!
+
+{{% /notice %}}

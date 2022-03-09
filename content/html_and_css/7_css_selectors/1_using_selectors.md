@@ -78,6 +78,12 @@ The top left box should now be pink.
 
 {{% /notice %}}
 
+{{% notice tip %}}
+
+Notice that we used a `#` before `box-1`, that tells our CSS that we are looking for an ID.
+
+{{% /notice %}}
+
 ## Class Selectors
 
 The top two boxes have the `first-row` class, and the bottom two boxes have the `bottom-row` class.
@@ -111,11 +117,15 @@ The bottom boxes should now be yellow.
 
 {{% /notice %}}
 
+{{% notice tip %}}
+
+Notice that we used a `.` before `second-row`, that tells our CSS that we are looking for a class.
+
+{{% /notice %}}
 
 This should be the final result:
 
 ![](../../images/boxes_complete.png)
-
 
 {{% notice challenge %}}
 

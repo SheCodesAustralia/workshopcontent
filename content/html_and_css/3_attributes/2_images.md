@@ -23,13 +23,20 @@ The `src` attribute means **source** and it expects a URL to an image.
 The next challenge asks you to add images to your page.
 Here are three image URLs to use for this challenge:
 
-- [Turtle 1](../../images/turtle_1.jpg)
-- [Turtle 2](../../images/turtle_2.jpg)
-- [Turtle 3](../../images/turtle_3.jpg)
-
+- <a href="../../images/turtle_1.jpg" target="_blank">Turtle 1</a>
+- <a href="../../images/turtle_2.jpg" target="_blank">Turtle 2</a>
+- <a href="../../images/turtle_3.jpg" target="_blank">Turtle 3</a>
 
 {{% notice challenge %}}
 
 Add the three images listed above to your webpage.
 
 {{% /notice %}}
+
+{{% notice tip %}}
+
+If you want to use a different image from the internet, you can right click on the image and copy it's URL (see the screenshot below).
+
+{{% /notice %}}
+
+![Screenshot of right click menu for image on Google Images.](../../images/image_link.png)

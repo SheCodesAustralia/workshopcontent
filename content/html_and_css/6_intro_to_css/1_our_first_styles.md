@@ -3,7 +3,7 @@ title: "Our First Styles"
 weight: 1
 ---
 
-Fork the [template on CodePen](https://codepen.io/shecodesaus/pen/KKyrEvB).
+Fork the [template on CodePen.](https://codepen.io/shecodesaus/pen/KKyrEvB)
 
 You should see four boxes (divs) like the below:
 

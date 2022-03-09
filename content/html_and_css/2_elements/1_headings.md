@@ -11,6 +11,10 @@ We use this tag to show the main title for the page.
 
 To break up the page into further sections, we can use the rest of the heading elements, `h2`, `h3`, `h4`, `h5` and `h6`.
 
+`h1` is used for the title of our page, for example, “About Us”.
+`h2` headings are often used for sections (e.g. Mission, Values, Vision) and so on.
+A sub-heading under ‘Values’ would use an `h3` heading element. 
+
 For example:
 
 ```html
@@ -29,6 +33,6 @@ Try adding the above `h2` and `h3` headings to your page.
 
 {{% notice challenge %}}
 
-Add another section and subsection to your page ([Wikipedia](https://en.wikipedia.org/wiki/Turtle) might be a good place to look for inspiration).
+Use an `h2` and `h3` to add another section and subsection to your page ([Wikipedia](https://en.wikipedia.org/wiki/Turtle) might be a good place to look for inspiration).
 
 {{% /notice %}}

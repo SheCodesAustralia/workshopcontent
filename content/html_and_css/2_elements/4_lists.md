@@ -3,7 +3,7 @@ title: "Lists"
 weight: 4
 ---
 
-We can also add lists in our html, there are two different kinds of lists we can use, **ordered** (numbered) and **unordered** (bulleted) lists.
+We can also add lists in our HTML, there are two different kinds of lists we can use: **ordered** (numbered) and **unordered** (bulleted) lists.
 
 A list is made up of multiple elements.
 There is the `<ul>` or `<ol>` element itself, and then **list items** (`<li>`) inside it.

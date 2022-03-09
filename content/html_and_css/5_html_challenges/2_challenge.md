@@ -8,7 +8,7 @@ This time, we've included all of the content for the below webpage, but none of 
 ![Screenshot of website.](../../images/dadjokes.png)
 
 Go ahead and fork the
-[template on CodePen](https://codepen.io/shecodesaus/pen/ExbOdEp).
+[template on CodePen.](https://codepen.io/shecodesaus/pen/ExbOdEp)
 
 The elements you'll need to add are:
 - `header`

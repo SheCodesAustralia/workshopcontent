@@ -15,6 +15,8 @@ For example:
 <p>The size of a turtle varies depending on it's species, age, diet, gender, habitat and UV light.</p>
 ```
 
+TODO add screenshot
+
 {{% notice challenge %}}
 
 Add a paragraph to each sub section on your page.

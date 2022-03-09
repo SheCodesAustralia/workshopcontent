@@ -3,8 +3,8 @@ title: "Sections"
 weight: 6
 ---
 
-The `section` element represents a generic standalone sction of the page.
-Similar to the `div`, it is used to group elements, but unlike the `div`, a `section` always has a heading element and additionl elements with related content.
+The `section` element represents a generic standalone section of the page.
+Similar to the `div`, it is used to group elements, but unlike the `div`, a `section` always has a heading element and additional elements with related content.
 
 We'll add two sections to our page, one for "Anatomy and Physiology" and one for "Behaviour":
 

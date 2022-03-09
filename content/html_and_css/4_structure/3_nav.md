@@ -3,9 +3,9 @@ title: "Nav"
 weight: 3
 ---
 
-The `nav` (aka "navigation") is used to provide links that navigate to other webapges.
+The `nav` (aka "navigation") is used to provide links that navigate to other webpages.
 
-Let's wrap our three links in a nav:
+Let's wrap our three links in opening and closing `nav` tags:
 
 ```diff
 <header>

@@ -26,16 +26,16 @@ The nav element should turn blue.
 
 Did you notice how we defined our colour.
 We used a strange code instead (`#87CEEB`).
-This is called a **Hex Code**, which is a 6 character code for representing colours in CSS.
+This is called a **Hex Code**, which is a 6 character code for representing colours which works in CSS.
 
 There are several different ways of representing colours in CSS.
 
-For exampple, there are some **name colours**.
+For example, there are some **name colours**.
 The hex code we've used also has the name `skyblue`.
 
 {{% notice challenge %}}
 
-Try changing `background-color: #87CEEB;` to use `skyblue` instead of the hex code.
+Try changing the `background-color` to use `skyblue` instead of the hex code.
 
 {{% /notice %}}
 
@@ -45,10 +45,7 @@ That might sound like a lot, but if we use hex codes instead that opens us up to
 We can also represent colours using **RGB codes** too.
 For example, `skyblue` is represented as `rgb(135, 206, 235)` in RGB.
 
-For the full list of named colours [check out this site](https://htmlcolorcodes.com/color-names/).
-
-Or you could pick from every colour [using a picker](https://htmlcolorcodes.com/color-picker/).
-
+For the full list of named colours [check out this site,](https://htmlcolorcodes.com/color-names/) or use a [colour picker.](https://htmlcolorcodes.com/color-picker/)
 
 ## Colouring our Page
 
