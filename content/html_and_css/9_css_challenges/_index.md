@@ -4,7 +4,4 @@ weight: 9
 chapter: false
 ---
 
-TODO
-
-
-challenge that requires them to add the classes and ids themselves.
+Now that you've learned the fundamentals for coding with HTML and CSS, let's get started on some challenges!

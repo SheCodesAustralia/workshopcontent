@@ -4,4 +4,4 @@ weight: 5
 chapter: false
 ---
 
-TODO
+Now that you've learned the fundamentals for coding with HTML, let's get started on some challenges!

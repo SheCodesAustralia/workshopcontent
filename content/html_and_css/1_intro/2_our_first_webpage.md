@@ -17,3 +17,5 @@ Add the following to the HTML editor:
 The result should look like the below example:
 
 ![Screenshot of CodePen with h1 code and preview.](../../images/first_page.png)
+
+**Woo! Your first line of HTML code!**
