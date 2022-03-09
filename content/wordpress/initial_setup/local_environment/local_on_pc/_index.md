@@ -4,7 +4,9 @@ weight = 2
 chapter = true
 +++
 
-#Installing XAMPP
+# Local on PC
+
+## Installing XAMPP
 
 {{% notice tip %}}
 Make sure you don't close this tab as you will want to refer back to the instructions along the way to make sure you select the right options during installation. It might be a good idea to bookmark this page in case you accidentally lose it!
@@ -15,6 +17,8 @@ Go to the [Apache Friends website](https://www.apachefriends.org/index.html) and
 ![](images/download_xampp.png)
 
 Once downloaded, launch the installer. If you get a warning about UAC permissions, don't worry too much - we'll show you how to work around this in a later step.
+
+![](images/uac_next.gif)
 
 Now the XAMPP setup wizard will guide you through the installation.
 
@@ -76,7 +80,7 @@ If you can't find XAMPP in the start menu, your installation may not have comple
 
 If you see red warnings, you might have some errors you need to sort out first. Continue with the section below about fixing port errors. If everything is black and blue, you can skip through to the section below that titled **Running XAMPP.**
 
-# Fixing Port Errors
+## Fixing Port Errors
 
 Take a deep breath - we're about to get a bit technical. Just follow the instructions and don't be afraid to reach out to a mentor if you get stuck!
 
@@ -102,7 +106,7 @@ If that doesn’t resolve the issue, you can set up a new firewall rule to forci
 
 Ports 80 and 443 should now be open locally on your computer.
 
-# Running XAMPP
+## Running XAMPP
 
 Once you are in the shiny black and blue only situation, you need to:
 
@@ -121,7 +125,7 @@ If everything is set up correctly, you should see a "Welcome to XAMPP" screen.
 
 If not, well... take a deep breath and call a mentor!
 
-# Setting Up Your Database
+## Setting Up Your Database
 
 Woohoo, you're doing great! Before we can install WordPress, we need a database.
 
@@ -145,7 +149,7 @@ You can actually call your database whatever you like, but it's a great idea to 
 
 You may see a warning that there are no tables in the database. This is normal, as we haven't added any yet! We'll do that in the next step.
 
-# Installing WordPress
+## Installing WordPress
 
 We now need to [download the latest version of WordPress](https://wordpress.org/download/#download-install) as a zip file. Click the blue Download button and make sure you know where the file downloads to. 
 

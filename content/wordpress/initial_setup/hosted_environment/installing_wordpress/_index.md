@@ -10,11 +10,15 @@ Now that we've got a domain and a hosting account, let's put something on it!
 
 If you are still on the confirmation page, go ahead and click the **Proceed to Dashboard** button. You may be prompted to confirm your details before you are logged in.
 
+## Introducing cPanel
+
 Once you are in the dashboard, scroll down until you find the **cPanel Hosting** tab. Select it, then click the orange **cPanel** button.
 
 ![](images/dasboard.jpg)
 
 The screen you now see is how we can install software on our server. Our server is like a really big, specialised computer - and cPanel is kind of like the operating system that allows us to interact with it. There are dozens of options in CPanel, but luckily we only need to deal with one or two today!
+
+## The WordPress Toolkit
 
 To get started, search for 'wordpress' in the search bar at the top of the page. Select the WordPress Toolkit under Applications.
 
@@ -42,7 +46,7 @@ It may be tempting to click `Open` straight away once the install is complete(yo
 
 Don't freak out! This is an easy fix - we just need to install something called an **SSL Certificate**.
 
-# Installing an SSL Certificate
+## Installing an SSL Certificate
 
 Have you ever been to a website and received a warning in your browser saying "this is not secure"? I'll bet the first thing you did was hit the back button, and we certainly don't want that to happen when people visit your new website!
 
