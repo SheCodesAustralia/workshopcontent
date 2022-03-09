@@ -1,7 +1,7 @@
 ---
 title: "CSS Selectors"
 weight: 7
-chapter: true
+chapter: false
 ---
 
 TODO

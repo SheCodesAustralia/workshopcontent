@@ -1,7 +1,7 @@
 ---
 title: "Our First Webpage"
 weight: 2
-chapter: true
+chapter: false
 ---
 
 ## Let's write some code!

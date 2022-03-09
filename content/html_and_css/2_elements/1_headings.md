@@ -1,7 +1,7 @@
 ---
 title: "Headings"
 weight: 1
-chapter: true
+chapter: false
 ---
 
 Let's dive a little deeper into headings.

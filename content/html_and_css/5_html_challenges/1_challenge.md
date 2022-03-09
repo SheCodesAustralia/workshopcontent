@@ -1,7 +1,7 @@
 ---
 title: "Challenge 1"
 weight: 1
-chapter: true
+chapter: false
 ---
 
 For this challenge, we will give you most of the HTML, and you'll need to fill in some missing elements and content.

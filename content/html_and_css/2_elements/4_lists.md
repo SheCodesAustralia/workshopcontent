@@ -1,7 +1,7 @@
 ---
 title: "Lists"
 weight: 4
-chapter: true
+chapter: false
 ---
 
 We can also add lists in our HTML, there are two different kinds of lists we can use: **ordered** (numbered) and **unordered** (bulleted) lists.

@@ -1,7 +1,7 @@
 ---
 title: "Images"
 weight: 2
-chapter: true
+chapter: false
 ---
 
 All of the elements we have used so far have had an opening and a closing tag.

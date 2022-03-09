@@ -1,7 +1,7 @@
 ---
 title: "Colour"
 weight: 3
-chapter: true
+chapter: false
 ---
 
 The next thing we'll do is add some colour.

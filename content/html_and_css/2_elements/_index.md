@@ -1,7 +1,7 @@
 ---
 title: "HTML Elements"
 weight: 2
-chapter: true
+chapter: false
 ---
 
 Webpages are made up of **elements**.

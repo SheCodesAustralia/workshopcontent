@@ -1,7 +1,7 @@
 ---
 title: "Putting It All Together"
 weight: 10
-chapter: true
+chapter: false
 ---
 
 Wow! We've learned A LOT!

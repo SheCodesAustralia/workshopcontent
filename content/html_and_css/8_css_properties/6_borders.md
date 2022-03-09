@@ -1,7 +1,7 @@
 ---
 title: "Borders"
 weight: 6
-chapter: true
+chapter: false
 ---
 
 We can also add borders to elements.

@@ -1,7 +1,7 @@
 ---
 title: "Comments"
 weight: 2
-chapter: true
+chapter: false
 ---
 
 Quite often we want to leave a note in our code to explain what something does (especially if we are new to this).

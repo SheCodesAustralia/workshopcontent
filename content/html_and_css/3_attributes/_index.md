@@ -1,7 +1,7 @@
 ---
 title: "HTML Attributes"
 weight: 3
-chapter: true
+chapter: false
 ---
 
 As we've learned, webpages are made up of **elements**.

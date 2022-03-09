@@ -1,7 +1,7 @@
 ---
 title: "Our First Styles"
 weight: 1
-chapter: true
+chapter: false
 ---
 
 Fork the [template on CodePen.](https://codepen.io/shecodesaus/pen/KKyrEvB)

@@ -1,7 +1,7 @@
 ---
 title: "Sections"
 weight: 6
-chapter: true
+chapter: false
 ---
 
 The `section` element represents a generic standalone section of the page.

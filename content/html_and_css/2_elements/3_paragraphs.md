@@ -1,7 +1,7 @@
 ---
 title: "Paragraphs"
 weight: 3
-chapter: true
+chapter: false
 ---
 
 One of the most common HTML elements is the **paragraph** element, which has the tag name of `p`.

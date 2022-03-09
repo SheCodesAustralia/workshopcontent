@@ -1,7 +1,7 @@
 ---
 title: "Challenge 2"
 weight: 1
-chapter: true
+chapter: false
 ---
 
 This time, we've included all of the content for the below webpage, but none of the stuctural elements.

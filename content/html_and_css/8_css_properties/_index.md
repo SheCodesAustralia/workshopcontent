@@ -1,7 +1,7 @@
 ---
 title: "CSS Properties"
 weight: 8
-chapter: true
+chapter: false
 ---
 
 TODO

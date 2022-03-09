@@ -1,7 +1,7 @@
 ---
 title: "Layout"
 weight: 2
-chapter: true
+chapter: false
 ---
 
 Ok, so our images are now at a much more manageable size.
