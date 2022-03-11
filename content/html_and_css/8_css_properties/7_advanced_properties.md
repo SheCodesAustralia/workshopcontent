@@ -8,7 +8,7 @@ WOW! We've done a lot!
 
 If you've been through every step of this tutorial, then your page should look like this:
 
-![Screenshot of website so far.](../../images/animals_borders.png)
+![Screenshot of website so far.](../../images/animals_borders.jpeg)
 
 It's looking pretty good!
 Let's add some fun styles now...
