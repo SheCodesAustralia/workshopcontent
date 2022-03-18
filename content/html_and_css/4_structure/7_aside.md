@@ -24,9 +24,9 @@ We'll move our three images into an `aside`:
     <p>Turtles generally eat their food in a straightforward way, though some species have special feeding techniques.</p>
   </section>
 +  <aside>
-    <img src="http://localhost:1313/html_and_css/images/turtle_1.jpg"/>
-    <img src="http://localhost:1313/html_and_css/images/turtle_2.jpg"/>
-    <img src="http://localhost:1313/html_and_css/images/turtle_3.jpg"/>
+    <img src="https://assets.codepen.io/5804361/turtle_1.jpg"/>
+    <img src="https://assets.codepen.io/5804361/turtle_2.jpg"/>
+    <img src="https://assets.codepen.io/5804361/turtle_3.jpg"/>
 +  </aside>
 </main>
 ```

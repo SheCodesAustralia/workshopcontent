@@ -24,9 +24,9 @@ We'll add two sections to our page, one for "Anatomy and Physiology" and one for
     <p>Most turtle species are opportunistic omnivores; land-dwelling species are more herbivorous and aquatic ones more carnivorous.</p>
     <p>Turtles generally eat their food in a straightforward way, though some species have special feeding techniques.</p>
 +  </section>
-  <img src="http://localhost:1313/html_and_css/images/turtle_1.jpg"/>
-  <img src="http://localhost:1313/html_and_css/images/turtle_2.jpg"/>
-  <img src="http://localhost:1313/html_and_css/images/turtle_3.jpg"/>
+    <img src="https://assets.codepen.io/5804361/turtle_1.jpg"/>
+    <img src="https://assets.codepen.io/5804361/turtle_2.jpg"/>
+    <img src="https://assets.codepen.io/5804361/turtle_3.jpg"/>
 </main>
 ```
 
