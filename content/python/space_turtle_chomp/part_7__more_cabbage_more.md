@@ -33,6 +33,7 @@ food.color("lightgreen")
 food.shape("circle")
 food.penup()
 food.speed(0)
+food.setposition(random.randint(-290, 290), random.randint(-290, 290))
 ```
 
 To this:
