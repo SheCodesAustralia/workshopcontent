@@ -38,16 +38,20 @@ wn.bgpic('kbgame-bg.gif')
 ```
 
 Step 4.  The space cabbages currently are the same size as your turtle lets
- makes them smaller and add a few more. You can do this by changing the
- max\_foods number and adding a the following to the for count in range section:
+ makes them smaller and add a few more. 
+ 
+You can do add more by tweaking the `maxFoods` variable that you defined earlier: 
 
 ```python
-# create food
-max_foods = 10
+# Create food
+maxFoods = 10
+```
 
+and then to change the size we loop through all the foods and set their `shapesize`:
 
+```python
 for food in foods:
-    foods.shapesize(.5)
+    food.shapesize(.5)
 ```
 
 Step 5.  Save your game as kbgame8 and run your module
