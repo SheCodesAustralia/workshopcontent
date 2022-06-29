@@ -11,9 +11,9 @@ pre = "<b>5. </b>"
 # Collisions become a function
 
 You have collision checking working but as we add more cabbages it makes the
- code easier if you convert your existing collision code to a function
+ code easier if you convert your existing collision code to a function.
 
-Step 1.  To create as a function we will use the “isCollision to return a
+Step 1.  To create as a function we will use the `isCollision` to return a
  True or False return, to do that type the following at the end of the
  `#Define functions` section:
 
