@@ -17,6 +17,6 @@ Original Game Created by Christian Thompson aka @TokyoEdTech
 Transcribed and adapted by Kieran McCluskey
 with some help from Adrian Smith
 
-Reformatted and re-adapted for SheCodes Australia by Ben Fitzhardinge
+Reformatted and re-adapted for She Codes Australia by Ben Fitzhardinge
 
 For more Python tutorials visits [www.christianthompson.com](http://www.christianthompson.com)
