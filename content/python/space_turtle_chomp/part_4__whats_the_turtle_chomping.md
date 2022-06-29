@@ -1,5 +1,5 @@
 +++
-title = "Whats the turtle chomping?"
+title = "What's the turtle chomping?"
 date = 2021-01-25T14:55:24+08:00
 weight = 40
 chapter = true
@@ -8,15 +8,15 @@ pre = "<b>4. </b>"
 
 ### Part 4
 
-# Whats the turtle chomping?
+# What's the turtle chomping?
 
 OK so now you have your turtle that we can move around the screen and if we
  bump into any of the borders your turtle will bounce off at 180&deg;.
  Now we need an objective for the game, something for your turtle to do and to
  score points for doing. For this game you are going to have your turtle chase
- and chomps space cabbages because we are making a green circle object for
- your turtle to chase. You could choose a different colour and shape such as
- space cheese (e.g. yellow triangle)
+ and chomp space cabbages (because we are making a green circle object for
+ your turtle to chase). You could choose a different colour and shape such as
+ space cheese (e.g. yellow triangle).
 
 Step 1.  Create the goal / objective, type the following under the
  `# Create food` section after `player.speed(0)`
@@ -31,7 +31,7 @@ food.penup()
 food.speed(0)
 ```
 
-Step 2.  Save the game as kbgame4 and then run the module.
+Step 2.  Save the game as kbgame4.py and then run the module.
 
 {{% notice note %}}
 you should see the light green circle on the screen and can move around it
@@ -50,7 +50,7 @@ Step 5.  Next we need to add collision detection as this will allow us to
  calculate when your turtle collides with (chomps) the space cabbage.
  We do this by using a bit of math to work out where the turtle and cabbage is
  and if they are touching or the distance between them is small. For the math
- nerds here we will use one of Pythagoras’s theories. To do that we need to
+ nerds here we will use one of Pythagoras theories. To do that we need to
  import the math libraries at the top of our application after import turtle:
 
 ```python
@@ -99,7 +99,7 @@ import random
 ```
 
 Step 8.  Now you set the random position within the x and y coordinates by
- replacing the line `food.hideturtle` to::
+ replacing the line `food.hideturtle` to:
 
 ```python
    
