@@ -14,9 +14,7 @@ We need Python before we can start.
  Let's start by installing it! We want you to install Python 3.5 or later,
  so if you have any earlier version, you will need to upgrade it.
 
-{{% notice info %}}
-For readers at home: this chapter is covered in the
-[Installing Python and Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) video.  
+{{% notice info %}}  
 This section is based on [a tutorial by Geek Girls Carrots](https://github.com/ggcarrots/django-carrots).
 {{% /notice %}}
 
@@ -122,4 +120,4 @@ If you're on Windows and you get an error message that `python3` wasn't found, t
 
 ----
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+If you have any doubts, or if something went wrong and you have no idea what to do next, please ask a mentor!

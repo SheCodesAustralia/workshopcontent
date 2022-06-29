@@ -11,8 +11,8 @@ pre = "<b>1. </b>"
 
 # Space Turtle Chomp
 
-We will start of today creating a simple Python game using Python Turtle
- Graphics. Turtle Graphics a prebuilt set of python instructions that allow you
+We will start off today creating a simple Python game using Python Turtle
+ Graphics. Turtle Graphics is a prebuilt set of python instructions that allow you
  to create and move characters around the screen allowing you to draw pictures,
  logos and create simple animations or games.
 
