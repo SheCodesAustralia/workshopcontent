@@ -20,7 +20,7 @@ Let's write some code!
 For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
 {{% /notice %}}
 
-We want to open up a Python console, so open your `python` IDE application, or type in `python` on Windows or `python3` on Mac/Linux and hit `enter`.
+We want to open up a Python console, so open Terminal (on Mac) or PowerShell (on Windows) and type in `python` on Windows or `python3` on Mac/Linux and hit `enter`.
 
 <!-- {% filename %}command-line{% filename %} -->
 ```bash
@@ -107,7 +107,7 @@ or escaping the apostrophe with a backslash (`\`):
 "Runnin' down the hill"
 ```
 
-Nice, huh? To see your name in uppercase letters, simply type:
+Nice, huh? To see your name in uppercase letters, try typing:
 
 <!-- {% filename %}command-line{% filename %} -->
 ```python
@@ -136,7 +136,7 @@ OK, enough of strings. So far you've learned about:
 - __operators__ – like `+` and `*`, combine values to produce a new one
 - __functions__ – like `upper()` and `len()`, perform actions on objects.
 
-These are the basics of every programming language you learn. Ready for something harder? We bet you are!
+These are the basics of every programming language you learn. Ready for something harder?
 
 ## Errors
 
@@ -175,8 +175,6 @@ Let's say we want to create a new variable called `name`:
 ```python
 >>> name = "Ola"
 ```
-
-You see? It's easy! It's simply: name equals Ola.
 
 As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Simply enter `name` and hit `enter`:
 
@@ -266,7 +264,7 @@ Yes, this list is empty. Not very useful, right? Let's create a list of lottery 
 >>> lottery = [3, 42, 12, 19, 30, 59]
 ```
 
-All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
+All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that?
 
 <!-- {% filename %}command-line{% filename %} -->
 ```python
@@ -300,7 +298,7 @@ Maybe we want to reverse that order? Let's do that!
 [59, 42, 30, 19, 12, 3]
 ```
 
-Easy, right? If you want to add something to your list, you can do this by typing this command:
+If you want to add something to your list, you can do this by typing this command:
 
 <!-- {% filename %}command-line{% filename %} -->
 ```python
@@ -359,14 +357,14 @@ Now, try writing the following command (try substituting your own information, t
 
 <!-- {% filename %}command-line{% filename %} -->
 ```python
->>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
+>>> participant = {'name': 'Ola', 'country': 'Australia', 'favourite_numbers': [7, 12, 91]}
 ```
 
 With this command, you just created a variable named `participant` with three key–value pairs:
 
 - The key `name` points to the value `'Ola'` (a `string` object),
-- `country` points to `'Poland'` (another `string`),
-- and `favorite_numbers` points to `[7, 42, 92]` (a `list` with three numbers in it).
+- `country` points to `'Australia'` (another `string`),
+- and `favourite_numbers` points to `[7, 12, 91]` (a `list` with three numbers in it).
 
 You can check the content of individual keys with this syntax:
 
@@ -399,7 +397,7 @@ Dictionaries, like lists, are *mutable*, meaning that they can be changed after 
 
 <!-- {% filename %}command-line{% filename %} -->
 ```python
->>> participant['favorite_language'] = 'Python'
+>>> participant['favourite_language'] = 'Python'
 ```
 
 Like lists, using the `len()` method on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
@@ -412,17 +410,17 @@ Like lists, using the `len()` method on the dictionaries returns the number of k
 
 I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
 
-You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, just type in the following command:
+You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favourite_numbers'`, type in the following command:
 
 <!-- {% filename %}command-line{% filename %} -->
 ```python
->>> participant.pop('favorite_numbers')
-[7, 42, 92]
+>>> participant.pop('favourite_numbers')
+[7, 12, 91]
 >>> participant
-{'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
+{'country': 'Australia', 'favourite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see from the output, the key–value pair corresponding to the 'favorite_numbers' key has been deleted.
+As you can see from the output, the key–value pair corresponding to the 'favourite_numbers' key has been deleted.
 
 As well as this, you can also change a value associated with an already-created key in the dictionary. Type this:
 
@@ -430,7 +428,7 @@ As well as this, you can also change a value associated with an already-created 
 ```python
 >>> participant['country'] = 'Germany'
 >>> participant
-{'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
+{'country': 'Germany', 'favourite_language': 'Python', 'name': 'Ola'}
 ```
 
 As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
@@ -525,7 +523,7 @@ There are only two Boolean objects:
 - True
 - False
 
-But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). __true, TRUE, and tRUE won't work – only True is correct.__ (The same applies to 'False' as well, of course.)
+But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). __true, TRUE, and tRUE won't work – only True is correct.__ (The same applies to 'False' as well.)
 
 Booleans can be variables, too! See here:
 
@@ -562,7 +560,7 @@ Congrats! Booleans are one of the coolest features in programming, and you just 
 So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language __interpreter__ or __compiler__. So far we've been running our programs one line at a time in the Python __interpreter__. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
 
 - Exit the Python interpreter
-- Open up our code editor of choice
+- Open up our code editor of choice (in this case, VS Code we downloaded earlier)
 - Save some code into a new python file
 - Run it!
 
@@ -580,7 +578,7 @@ Earlier, we picked out a code editor from the [code editor](../code_editor/READM
 
 <!-- {% filename %}editor{% filename %} -->
 ```python
-print('Hello, Django girls!')
+print('Hello, She Codes!')
 ```
 
 Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
@@ -632,7 +630,7 @@ Now use Python to execute the code in the file like this:
 <!-- {% filename %}command-line{% filename %} -->
 ```
 $ python3 python_intro.py
-Hello, Django girls!
+Hello, She Codes!
 ```
 
 Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
