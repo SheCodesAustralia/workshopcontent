@@ -106,7 +106,7 @@ Note the indent of the line starting with player.forward. This indent needs to b
 
 Step 9: Now all we need to do is save our code, we can do this by selecting File
  --&gt; Save \(Ctrl S on Windows or Cmd S on Mac\). Then run the module by
- selecting Run --&gt; Run Module \(or pressing F5\)
+ selecting Run --&gt; Run Without Debugging \(or pressing Ctrl F5 on Windows or ^F5 on Mac \)
 
 You should see two windows open up a Python Shell window that will have
  “Python 3.6.1 \(v3.6.1:69c0db5, Mar 21 2017, 17:54:52\) \[MSC v.1900 32 bit \(Intel\)\]…”
