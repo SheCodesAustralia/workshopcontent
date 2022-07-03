@@ -11,8 +11,7 @@ pre = "<b>9. </b>"
 # Keeping score
 
 To make this more like a game you can add a score for each time your turtle
- chomps on a cabbage. To do this you create a new score variable by typing
- the following
+ chomps on a cabbage. To do this you create a new score variable.
 
 Step 1.  Move to after the \#Create player turtle section of your code and
  type the following:
