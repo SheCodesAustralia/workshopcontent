@@ -50,7 +50,7 @@ you set a variable called gametime and set it to 0, the if statement then runs
 Step 4.  Save your game as kbgame11 and run your Module
 
 You should now have 60 seconds to chomp more space cabbages than your computer
- opponent before the game ends, fantastic well done. The last thing you can do
+ opponent before the game ends - well done. The last thing you can do
  for your game as part of this tutorial is have the game display who wins at
  the end of 60 seconds.
 
@@ -66,17 +66,23 @@ if (int(score) > int(comp_score)):
 else:
     mypen.setposition(0, 0)
     mypen.color("yellow")
-    mypen.write("Game Over: You LOOSE", False, align="center", font=("Arial", 28, "normal"))
+    mypen.write("Game Over: You LOSE", False, align="center", font=("Arial", 28, "normal"))
 ```
 
 The If statement compares your score \(player\) against the opponent score
  \(comp\) and if your score is higher it prints the You Win message and if it
- is lower it prints the You Loose message.
+ is lower it prints the You Lose message.
+
+If you run your code now, the game will quit before you can actually read the messge so lets add a delay so we can see the message.
+
+```python
+delay = input("Press Enter to finish.")
+```
 
 That is the end of today’s tutorial, if you got through all of it in 1 day well
  done that is an awesome effort but it doesn’t matter if you didn’t as the
  tutorial is online and you can still access it from home. Don't forget to join
- our She Codes online community to keep in touch with your mentors and ask for help.
+ our [She Codes online community] (https://join.slack.com/t/shecodesaus/shared_invite/zt-9jktxnlx-Rur3NGFSBFJ7LRwq7AV~ig) to keep in touch with your mentors and ask for help.
 
 If you enjoyed this and wanted to continue practising,
  other things you might want to try is
