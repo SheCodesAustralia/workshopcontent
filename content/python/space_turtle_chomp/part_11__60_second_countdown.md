@@ -15,7 +15,7 @@ You have most of your Space Turtle Chomp game developed now, however at the
  limit for the game duration, again this is simple to do.
 
 Step 1.  Move to the top of your code and import the time function with the
- other import's:
+ other imports:
 
 ```python
 import time
@@ -50,12 +50,12 @@ you set a variable called gametime and set it to 0, the if statement then runs
 Step 4.  Save your game as kbgame11 and run your Module
 
 You should now have 60 seconds to chomp more space cabbages than your computer
- opponent before the game ends - well done. The last thing you can do
+ opponent before the game ends. The last thing you can do
  for your game as part of this tutorial is have the game display who wins at
  the end of 60 seconds.
 
-Step 5.  Move to the very end of your code and add the following simple if
- statement and argument this time the text is not indented until after the if
+Step 5.  Move to the very end of your code and add the following if
+ statement and argument. This time the text is not indented until after the if
  statement:
 
 ```python
@@ -69,7 +69,7 @@ else:
     mypen.write("Game Over: You LOSE", False, align="center", font=("Arial", 28, "normal"))
 ```
 
-The If statement compares your score \(player\) against the opponent score
+The if statement compares your score \(player\) against the opponent score
  \(comp\) and if your score is higher it prints the You Win message and if it
  is lower it prints the You Lose message.
 
@@ -92,7 +92,7 @@ If you enjoyed this and wanted to continue practising,
 * Setting a play again option at the end
 * Setting up a easy, medium and hard option for the game
 
-There are lots of tutorials and help out on the internet if you look.
+There are lots of tutorials and help out on the internet.
  It is also a great idea to try the other game options from Christian Thompson
  at his site [http://christianthompson.com](http://christianthompson.com)
 
