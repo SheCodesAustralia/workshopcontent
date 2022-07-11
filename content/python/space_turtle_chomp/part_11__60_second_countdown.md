@@ -94,7 +94,7 @@ If you enjoyed this and wanted to continue practising,
 
 There are lots of tutorials and help out on the internet.
  It is also a great idea to try the other game options from Christian Thompson
- at his site [http://christianthompson.com](http://christianthompson.com)
+ at his [site](http://christianthompson.com).
 
 Your code should look like this: Mac/Linux [kbgame11.py](/python_game/src/kbgame11.py), Windows [kbgame11.py](/python_game/src/kbgame11_win.py)
 
