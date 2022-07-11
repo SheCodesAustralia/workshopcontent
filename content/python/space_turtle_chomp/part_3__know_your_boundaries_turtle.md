@@ -58,7 +58,7 @@ Now we have to do something called boundary checking, what this will do is
  for this game we are going to bounce off the border wall at 180 degrees.
 
 Step 4. As we need this to happen every time during the game we need the
- code to be written within the while True loop under the line player.forward\(speed\):
+ code to be written within the while True loop under the line `player.forward\(speed\)`:
 
 ```python
 while True:
