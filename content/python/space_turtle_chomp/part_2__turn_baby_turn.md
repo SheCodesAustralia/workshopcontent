@@ -87,7 +87,7 @@ Step 6.  Close the Turtle and Python Shell windows.
 
 Step 7.  You might see that the turtle icon jumps a bit when you press the
  arrow keys, this can be fixed very easily by adding the player speed variable
- at the end of your #Create player turtle section just after player.penup().
+ at the end of your #Create player turtle section just after `player.penup()`.
 
 ```python
 
