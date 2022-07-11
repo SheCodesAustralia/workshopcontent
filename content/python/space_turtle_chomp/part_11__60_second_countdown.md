@@ -15,7 +15,7 @@ You have most of your Space Turtle Chomp game developed now, however at the
  limit for the game duration, again this is simple to do.
 
 Step 1.  Move to the top of your code and import the time function with the
- other import's:
+ other imports:
 
 ```python
 import time
@@ -50,12 +50,12 @@ you set a variable called gametime and set it to 0, the if statement then runs
 Step 4.  Save your game as kbgame11 and run your Module
 
 You should now have 60 seconds to chomp more space cabbages than your computer
- opponent before the game ends, fantastic well done. The last thing you can do
+ opponent before the game ends. The last thing you can do
  for your game as part of this tutorial is have the game display who wins at
  the end of 60 seconds.
 
-Step 5.  Move to the very end of your code and add the following simple if
- statement and argument this time the text is not indented until after the if
+Step 5.  Move to the very end of your code and add the following if
+ statement and argument. This time the text is not indented until after the if
  statement:
 
 ```python
@@ -66,17 +66,23 @@ if (int(score) > int(comp_score)):
 else:
     mypen.setposition(0, 0)
     mypen.color("yellow")
-    mypen.write("Game Over: You LOOSE", False, align="center", font=("Arial", 28, "normal"))
+    mypen.write("Game Over: You LOSE", False, align="center", font=("Arial", 28, "normal"))
 ```
 
-The If statement compares your score \(player\) against the opponent score
+The if statement compares your score \(player\) against the opponent score
  \(comp\) and if your score is higher it prints the You Win message and if it
- is lower it prints the You Loose message.
+ is lower it prints the You Lose message.
+
+If you run your code now, the game will quit before you can actually read the message. Let’s add a delay so we can see the message.
+
+```python
+delay = input("Press Enter to finish.")
+```
 
 That is the end of today’s tutorial, if you got through all of it in 1 day well
  done that is an awesome effort but it doesn’t matter if you didn’t as the
  tutorial is online and you can still access it from home. Don't forget to join
- our She Codes online community to keep in touch with your mentors and ask for help.
+ our [She Codes online community](https://join.slack.com/t/shecodesaus/shared_invite/zt-9jktxnlx-Rur3NGFSBFJ7LRwq7AV~ig) to keep in touch with your mentors and ask for help.
 
 If you enjoyed this and wanted to continue practising,
  other things you might want to try is
@@ -86,9 +92,9 @@ If you enjoyed this and wanted to continue practising,
 * Setting a play again option at the end
 * Setting up a easy, medium and hard option for the game
 
-There are lots of tutorials and help out on the internet if you look.
+There are lots of tutorials and help out on the internet.
  It is also a great idea to try the other game options from Christian Thompson
- at his site [http://christianthompson.com](http://christianthompson.com)
+ at his [site](http://christianthompson.com).
 
 Your code should look like this: Mac/Linux [kbgame11.py](/python_game/src/kbgame11.py), Windows [kbgame11.py](/python_game/src/kbgame11_win.py)
 

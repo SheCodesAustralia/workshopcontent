@@ -30,7 +30,7 @@ mypen.penup()
 mypen.setposition(-300,-300)
 mypen.pendown()
 mypen.pensize(3)
-mypen.color(“white”)
+mypen.color('white')
 for side in range(4):
     mypen.forward(600)
     mypen.left(90)
@@ -46,7 +46,7 @@ mypen.hideturtle()
 
 Step 3. Save and Run your module.  
 {{% notice note %}}
-while there is now a border your player turtle can still go off screen, this is because we have not set boundaries yet.
+While there is now a border your player turtle can still go off screen, this is because we have not set boundaries yet.
 {{% /notice %}}
 
 Now we have to do something called boundary checking, what this will do is
@@ -54,11 +54,11 @@ Now we have to do something called boundary checking, what this will do is
  on the right it is greater than +290 we have hit either the left or
  right borders \(x Axis\) and if the top is greater than +290 and
  bottom lower than -290 we have hit either the top or bottom borders
- \(y Axis\). We then simply choose what we want to happen when this occurs,
- for this game we are going to bounce of the boarder wall at 180 degrees.
+ \(y Axis\). We then simply choose what we want to happen when this occurs -
+ for this game we are going to bounce off the border wall at 180 degrees.
 
 Step 4. As we need this to happen every time during the game we need the
- code to be written within the while True loop under the line player.forward\(speed\):
+ code to be written within the while True loop under the line `player.forward\(speed\)`:
 
 ```python
 while True:
@@ -74,7 +74,7 @@ while True:
 ```
 
 {{% notice note %}}
-note we have set the boundary at 290 and -290 so that the turtle bounces when the front of the turtle hits the boundary and not the middle, also check your indenting and make sure it looks like above, for the while loop to work all the code needs to be indented.
+note we have set the boundary at 290 and -290 so that the turtle bounces when the front of the turtle hits the boundary and not the middle. Before moving on, check your indenting and make sure it looks like above, for the while loop to work all the code needs to be indented.
 {{% /notice %}}
 
 Step 5. Save and then Run your module

@@ -16,17 +16,18 @@ We will start off today creating a simple Python game using Python Turtle
  to create and move characters around the screen allowing you to draw pictures,
  logos and create simple animations or games.
 
-Step 1.  If not already open please open VS Code.  
-You should see your Terminal / Command Prompt window.
+Step 1.  If not already open please open VS Code.
 
 Step 2.  Select File --&gt; New File you should see your program window
 
 Step 3.  As it is a great idea to save your project at the beginning of any new
- development, select File --&gt; Save and name the file, I called mine kbgame1.
+ development, select File --&gt; Save and name the file (I called mine kbgame1.py)
+ 
+ VS Code may ask if you want to install a Python extension, feel free to follow the prompts and do so.
 
-Step 4. When coding one of the first things we should always do as a developer is leave a comment explaining what the program does at the top of the screen.
+Step 4. When coding one of the first things we should always do as a developer is leave a comment explaining what the program does at the top of the screen. We can make a comment using #
 
-Write the below on the top line:
+An example of a comment is below, try writing the below on the top line. This code won't run, so feel free to write whatever helpful notes you like here:
 
 ```python
 # Turtle Graphics Game – Space Turtle Chomp
@@ -77,10 +78,10 @@ player.penup()
 
 So we create a new turtle variable called player then use the inbuilt turtle
  attributes to help set it up, `player.color` \(again we can select a different
- colour from the color chart). `player.shape` selects the shape \(you can also
- use circle, arrow, square and classic\). `Penup` means that the turtle shape
+ colour from the colour chart). `player.shape` selects the shape \(you can also
+ use circle, arrow, square and classic\). `penup` means that the turtle shape
  won’t leave a line went it moves \(think of a pen in your hand, penup\(\)
- you don’t draw, pendown\(\) you do draw.
+ you don’t draw, pendown\(\) you do draw).
 
 Step 7. Now we set the speed we want our turtle to move across the screen at:
 
@@ -89,7 +90,7 @@ Step 7. Now we set the speed we want our turtle to move across the screen at:
 speed = 1
 ```
 
-Step 8: Finally we need the Turtle to move and the easiest way to do this is by
+Step 8: Finally we need the turtle to move and the easiest way to do this is by
  setting a while loop:
 
 ```python
@@ -100,12 +101,12 @@ while True:
 This will now continue to move your turtle forward across the screen at a speed of 1.
 
 {{% notice note %}}
-note the indent of the player.forward… this needs to be there for the code to work.
+Note the indent of the line starting with player.forward. This indent needs to be there for the code to work.
 {{% /notice %}}
 
 Step 9: Now all we need to do is save our code, we can do this by selecting File
- --&gt; Save \(Ctrl S on Windows or Cmd S on Mac\).Then run the module by
- selecting Run --&gt; Run Module \(or pressing F5\)
+ --&gt; Save \(Ctrl S on Windows or Cmd S on Mac\). Then run the module by
+ selecting Run --&gt; Run Without Debugging \(or pressing Ctrl F5 on Windows or ^F5 on Mac \)
 
 You should see two windows open up a Python Shell window that will have
  “Python 3.6.1 \(v3.6.1:69c0db5, Mar 21 2017, 17:54:52\) \[MSC v.1900 32 bit \(Intel\)\]…”

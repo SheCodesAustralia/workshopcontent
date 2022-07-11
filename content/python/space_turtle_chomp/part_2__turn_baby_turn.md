@@ -50,7 +50,7 @@ We use the `turtle.onkey` method to set the computer to listen for a certain
  the left arrow key is pressed it will call the function called turn_left.
 
 {{% notice note %}}
-that this new piece of code sits between setting the speed (line 12) and the start of the while loop (line 20). In python where the code sits is very important
+that this new piece of code sits between setting the speed (line 12) and the start of the while loop (line 20). In Python where the code sits is very important
 {{% /notice %}}
 
 Step 3.  The next step is to write the `turn_left`, `turn_right` and
@@ -81,13 +81,13 @@ def increase_speed():
 Step 5.  Save the file by selecting File --&gt; Save and run your updated
  program by pressing F5 and then click on your turtle screen with the mouse
  and use the left and right arrow keys to move your turtle and the up arrow to
- increase its speed
+ increase its speed.
 
-Step 6.  Close the Turtle and Python Shell windows
+Step 6.  Close the Turtle and Python Shell windows.
 
 Step 7.  You might see that the turtle icon jumps a bit when you press the
  arrow keys, this can be fixed very easily by adding the player speed variable
- at the end of your #Create player turtle section just after player.penup()
+ at the end of your #Create player turtle section just after `player.penup()`.
 
 ```python
 

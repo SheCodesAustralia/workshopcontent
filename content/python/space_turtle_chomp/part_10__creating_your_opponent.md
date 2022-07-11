@@ -29,17 +29,17 @@ comp.setposition(random.randint(-290, 290), random.randint(-290, 290))
 
 Step 2.  Save your game as kbgame10 and run your module
 
-You now have a Red opponent space Turtle now lets make it move around the
+You now have a red opponent space turtle now, but you'll notice it doesn't move. Let’s make it move around the
  screen and add the boundary checking so it doesn’t run away.
 
-Step 3. To move your component turtle add the following code to the while True
+Step 3. To move your opponent turtle add the following code to the while True
  loop under player.forward\(speed\)
 
 ```
     comp.forward(12)
 ```
 
-Step 4. Next cut the following text and paste it directly underneath:
+Step 4. Next copy the following text and paste it directly underneath. Note, the below example is in the format for Mac, if you are on Windows yours will look slightly different:
 
 ```python
     # Boundary Player Checking x coordinate
@@ -93,7 +93,7 @@ mypen2.color('red')
 mypen2.hideturtle()
 ```
 
-Step 9.  Now copy the player collision checking section and paste direct below:
+Step 9.  Now copy the player collision checking section and paste direct below. Note: this example code is the version for Windows, if you are on a mac yours will look slightly different:
 
 ```python
     # Collision checking
@@ -109,7 +109,7 @@ Step 9.  Now copy the player collision checking section and paste direct below:
         mypen.write(scorestring, False, align='left', font=('Arial', 14, 'normal'))
 ```
 
-Step 10.  Edit the pasted code to:
+Step 10.  Edit the pasted code, changing player to comp, score to comp_score, mypen to mypen2 and setting the position of the comp score. It should look something like the below:
 
 ```python
     # Comp Collision checking
