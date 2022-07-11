@@ -73,7 +73,7 @@ The if statement compares your score \(player\) against the opponent score
  \(comp\) and if your score is higher it prints the You Win message and if it
  is lower it prints the You Lose message.
 
-If you run your code now, the game will quit before you can actually read the messge so lets add a delay so we can see the message.
+If you run your code now, the game will quit before you can actually read the message. Let’s add a delay so we can see the message.
 
 ```python
 delay = input("Press Enter to finish.")
