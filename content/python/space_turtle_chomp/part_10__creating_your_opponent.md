@@ -29,7 +29,7 @@ comp.setposition(random.randint(-290, 290), random.randint(-290, 290))
 
 Step 2.  Save your game as kbgame10 and run your module
 
-You now have a red opponent space turtle now, but you'll notice it doesn't move. Let's make it move around the
+You now have a red opponent space turtle now, but you'll notice it doesn't move. Let’s make it move around the
  screen and add the boundary checking so it doesn’t run away.
 
 Step 3. To move your opponent turtle add the following code to the while True
