@@ -21,7 +21,7 @@ Step 1.  If not already open please open VS Code.
 Step 2.  Select File --&gt; New File you should see your program window
 
 Step 3.  As it is a great idea to save your project at the beginning of any new
- development, select File --&gt; Save and name the file, I called mine kbgame1.py.
+ development, select File --&gt; Save and name the file (I called mine kbgame1.py)
  
  VS Code may ask if you want to install a Python extension, feel free to follow the prompts and do so.
 
