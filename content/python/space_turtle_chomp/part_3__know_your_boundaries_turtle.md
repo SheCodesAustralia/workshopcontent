@@ -55,7 +55,7 @@ Now we have to do something called boundary checking, what this will do is
  right borders \(x Axis\) and if the top is greater than +290 and
  bottom lower than -290 we have hit either the top or bottom borders
  \(y Axis\). We then simply choose what we want to happen when this occurs -
- for this game we are going to bounce of the border wall at 180 degrees.
+ for this game we are going to bounce off the border wall at 180 degrees.
 
 Step 4. As we need this to happen every time during the game we need the
  code to be written within the while True loop under the line player.forward\(speed\):
