@@ -20,7 +20,7 @@ Our suggestion is below, but feel free to ask your mentor about other code edito
 
 ## VS Code
 
-VS Code is a very popular and free to use editor. It's available for Windows, OS X and Linux.
+VS Code is a very popular and free to use editor. It's available for Windows, OS X and Linux. Note, if you are using a Chromebook then it will present you with a few options to download from, choose the option that has the `.deb` or `debian` and that should work for you.
 
 [Download it here](https://code.visualstudio.com/)
 
