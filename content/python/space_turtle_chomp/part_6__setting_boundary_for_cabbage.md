@@ -45,8 +45,8 @@ Step 4.  The food is moving rather slow so let’s speed it up by changing the
 ```
 
 Step 5.  Save and run your module, have a play with different speeds.
- Your food is now moving around the screen in a random direction the only
- problem we have is that it can move of the screen. This is an easy fix as you
+ Your food is now moving around the screen in a random direction. The only
+ problem we have is that it can move off the screen. This is an easy fix as you
  can cut and paste the same code you wrote for your turtle for border checking
  and modify it for the food.
 
