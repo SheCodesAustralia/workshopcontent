@@ -47,11 +47,12 @@ You can do add more by tweaking the `maxFoods` variable that you defined earlier
 maxFoods = 10
 ```
 
-and then to change the size we loop through all the foods and set their `shapesize`:
+and then to change the size we set their `shapesize` in the for loop that creates them:
 
 ```python
-for food in foods:
-    food.shapesize(.5)
+for count in range(maxFoods):
+    new_food = turtle.Turtle()
+    new_food.shapesize(.5)
 ```
 
 Step 5.  Save your game as kbgame8 and run your module
