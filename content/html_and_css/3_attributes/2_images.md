@@ -6,7 +6,7 @@ chapter: false
 
 All of the elements we have used so far have had an opening and a closing tag.
 
-There are a a few elements that are **self closing**.
+There are a few elements that are **self closing**.
 For these tags, instead of having content between an open and close tag, they have content provided as an **attribute**.
 
 ![Annotated self closing HTML Element.](../../images/self_closing_element.png)
