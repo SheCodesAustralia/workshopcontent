@@ -138,12 +138,12 @@ Step 7.  Now in the \#boundary checking section we type the following
     # Boundary Player Checking x coordinate
     if player.xcor() > 290 or player.xcor() < -290:
         player.right(180)
-         winsound.PlaySound('bounce.wav', winsound.SND_ASYNC)
+        winsound.PlaySound('bounce.wav', winsound.SND_ASYNC)
 
     # Boundary Player Checking y coordinate
     if player.ycor() > 290 or player.ycor() < -290:
         player.right(180)
-         winsound.PlaySound('bounce.wav', winsound.SND_ASYNC)
+        winsound.PlaySound('bounce.wav', winsound.SND_ASYNC)
 
     # Move Food around
     for count in range(maxFoods):
@@ -152,18 +152,18 @@ Step 7.  Now in the \#boundary checking section we type the following
         #  Boundary Food Checking x coordinate
         if food.xcor() > 290 or food.xcor() < -290:
            food.right(180)
-            winsound.PlaySound('bounce.wav', winsound.SND_ASYNC)
+           winsound.PlaySound('bounce.wav', winsound.SND_ASYNC)
 
         # Boundary Food Checking y coordinate
         if food.ycor() > 290 or food.ycor() < -290:
            food.right(180)
-            winsound.PlaySound('bounce.wav', winsound.SND_ASYNC)
+           winsound.PlaySound('bounce.wav', winsound.SND_ASYNC)
 
         # Collision checking
         if isCollision(player, food):
            food.setposition(random.randint(-290, 290), random.randint(-290, 290))
            food.right(random.randint(0,360))
-            winsound.PlaySound('chomp.wav', winsound.SND_ASYNC)
+           winsound.PlaySound('chomp.wav', winsound.SND_ASYNC)
 ```
 
 {{% notice note %}}
