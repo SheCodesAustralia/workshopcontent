@@ -45,7 +45,7 @@ First we'll make sure that the default fields are set correctly. Choose the 'Adv
 - Featured Image
 - Excerpt
 
-Save Pod, then in the 'Manage Fields' tab, click the **Add Field** button. 
+Save Pod, then in the 'Fields' tab, click the **Add Field** button.
 
 Let's add fields for some other pieces of information that we might want to collect about the thing in our directory! We're going to add a field for flavour, and a rating out of five. Depending on what you chose for your post type you might want to add a gallery, colour, difficulty... the sky is the limit!
 
@@ -67,10 +67,10 @@ Let's head back to Pods and hit Add New again at the top of the Pods Admin scree
 
 We're going to create one for the type of baked good that it falls into. Here are some suggestions for taxonomies based on different post types:
 
-Genre - great for books, movies and music
-Breed - for animals
-Continent - for places you've visited
-Team/Department - for people in a business
+- Genre - great for books, movies and music
+- Breed - for animals
+- Continent - for places you've visited
+- Team/Department - for people in a business
 
 The next step is to decide whether we want our taxonomy to be hierarchical or non-hierarchical. For baked goods we'll use hierarchical, because we might want to use sub-categories and because a tick box interface will suit this better given our small number of choices.
 
@@ -80,4 +80,4 @@ You will now see a new option under your custom post type for your new taxonomy 
 
 ![](images/baked_goods_example.jpg)
 
-Now that you know the basics, experiment with what you can create! 
+Now that you know the basics, experiment with what you can create!
