@@ -19,7 +19,7 @@ OK so now you have your turtle that we can move around the screen and if we
  space cheese (e.g. yellow triangle).
 
 Step 1.  Create the goal / objective, type the following under a
- `# Create food` comment after `player.speed(0)`
+ `# Create food` section after `player.speed(0)`
 
 ```python
 
