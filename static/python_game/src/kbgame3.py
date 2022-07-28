@@ -30,21 +30,21 @@ speed = 1
 
 #Define  functions
 
-def turnleft():
+def turn_left():
     player.left(30)
 
-def turnright():
+def turn_right():
     player.right(30)
 
-def inscreasespeed():
+def increase_speed():
     global speed
     speed += 1
 
 #Set keyboard bindings
 turtle.listen()
-turtle.onkey(turnleft, "Left")
-turtle.onkey(turnright, "Right")
-turtle.onkey(inscreasespeed, "Up") 
+turtle.onkey(turn_left, "Left")
+turtle.onkey(turn_right, "Right")
+turtle.onkey(increase_speed, "Up") 
 
 
 
