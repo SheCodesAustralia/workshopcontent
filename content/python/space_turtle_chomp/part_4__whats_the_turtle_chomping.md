@@ -18,8 +18,8 @@ OK so now you have your turtle that we can move around the screen and if we
  your turtle to chase). You could choose a different colour and shape such as
  space cheese (e.g. yellow triangle).
 
-Step 1.  Create the goal / objective, type the following under the
- `# Create food` section after `player.speed(0)`
+Step 1.  Create the goal / objective, type the following under a
+ `# Create food` comment after `player.speed(0)`
 
 ```python
 
