@@ -47,11 +47,12 @@ You can do add more by tweaking the `maxFoods` variable that you defined earlier
 maxFoods = 10
 ```
 
-and then to change the size we loop through all the foods and set their `shapesize`:
+and then to change the size we set their `shapesize` in the for loop that creates them:
 
 ```python
-for food in foods:
-    food.shapesize(.5)
+for count in range(maxFoods):
+    new_food = turtle.Turtle()
+    new_food.shapesize(.5)
 ```
 
 Step 5.  Save your game as kbgame8 and run your module
@@ -137,12 +138,12 @@ Step 7.  Now in the \#boundary checking section we type the following
     # Boundary Player Checking x coordinate
     if player.xcor() > 290 or player.xcor() < -290:
         player.right(180)
-         winsound.PlaySound('bounce.wav', winsound.SND_ASYNC)
+        winsound.PlaySound('bounce.wav', winsound.SND_ASYNC)
 
     # Boundary Player Checking y coordinate
     if player.ycor() > 290 or player.ycor() < -290:
         player.right(180)
-         winsound.PlaySound('bounce.wav', winsound.SND_ASYNC)
+        winsound.PlaySound('bounce.wav', winsound.SND_ASYNC)
 
     # Move Food around
     for count in range(maxFoods):
@@ -151,18 +152,18 @@ Step 7.  Now in the \#boundary checking section we type the following
         #  Boundary Food Checking x coordinate
         if food.xcor() > 290 or food.xcor() < -290:
            food.right(180)
-            winsound.PlaySound('bounce.wav', winsound.SND_ASYNC)
+           winsound.PlaySound('bounce.wav', winsound.SND_ASYNC)
 
         # Boundary Food Checking y coordinate
         if food.ycor() > 290 or food.ycor() < -290:
            food.right(180)
-            winsound.PlaySound('bounce.wav', winsound.SND_ASYNC)
+           winsound.PlaySound('bounce.wav', winsound.SND_ASYNC)
 
         # Collision checking
         if isCollision(player, food):
            food.setposition(random.randint(-290, 290), random.randint(-290, 290))
            food.right(random.randint(0,360))
-            winsound.PlaySound('chomp.wav', winsound.SND_ASYNC)
+           winsound.PlaySound('chomp.wav', winsound.SND_ASYNC)
 ```
 
 {{% notice note %}}

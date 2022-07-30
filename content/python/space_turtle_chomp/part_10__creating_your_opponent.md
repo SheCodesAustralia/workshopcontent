@@ -100,7 +100,7 @@ Step 9.  Now copy the player collision checking section and paste direct below. 
     if isCollision(player, food):
         food.setposition(random.randint(-290, 290), random.randint(-290, 290))
         food.right(random.randint(0,360))
-        winsound.playSound('chomp.wav', winsound.SND_ASYNC)
+        winsound.PlaySound('chomp.wav', winsound.SND_ASYNC)
         score +=1
         mypen.penup()
         mypen.hideturtle()

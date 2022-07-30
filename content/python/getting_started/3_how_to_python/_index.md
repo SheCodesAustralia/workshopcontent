@@ -420,7 +420,7 @@ You can use the `pop()` method to delete an item in the dictionary. Say, if you 
 {'country': 'Australia', 'favourite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see from the output, the key–value pair corresponding to the 'favourite_numbers' key has been deleted.
+As you can see from the output, the key–value pair corresponding to the `'favourite_numbers'` key has been deleted.
 
 As well as this, you can also change a value associated with an already-created key in the dictionary. Type this:
 
@@ -431,7 +431,7 @@ As well as this, you can also change a value associated with an already-created 
 {'country': 'Germany', 'favourite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
+As you can see, the value of the key `'country'` has been altered from `'Australia'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
 
 ### Summary
 

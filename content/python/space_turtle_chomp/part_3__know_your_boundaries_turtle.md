@@ -45,6 +45,10 @@ mypen.hideturtle()
   then turn left and repeat four times.
 
 Step 3. Save and Run your module.  
+
+Notice how a turtle 'draws' the borders when the module loads? If you would like to get straight to the turtle-ly action
+try setting `mypen.speed(0)` after setting `mypen.color('...')`
+
 {{% notice note %}}
 While there is now a border your player turtle can still go off screen, this is because we have not set boundaries yet.
 {{% /notice %}}
