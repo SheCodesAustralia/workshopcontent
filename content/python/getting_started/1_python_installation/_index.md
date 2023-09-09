@@ -11,8 +11,13 @@ pre = "<b>1. </b>"
 We're finally here!
 
 We need Python before we can start.
- Let's start by installing it! We want you to install Python 3.5 or later,
- so if you have any earlier version, you will need to upgrade it.
+ Let's start by installing Python! We want you to install Python 3.11, however if you already have an earlier version installed that should work too!
+ 
+
+{{% notice tip %}}
+It is generally best to use the latest version of Python - this includes the latest features, bug fixes, security updates and performance improvements.
+{{% /notice %}}
+
 
 {{% notice info %}}  
 This section is based on [a tutorial by Geek Girls Carrots](https://github.com/ggcarrots/django-carrots).
