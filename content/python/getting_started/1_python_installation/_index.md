@@ -25,7 +25,7 @@ We're going to perform a simple experiment to check whether Python is already in
 Open the *Terminal* application of your choice (if you don't know what the terminal is feel free to ask a mentor) and enter the following command:
 
 ```shell
-python --version
+python3 --version
 ```
 
 or
