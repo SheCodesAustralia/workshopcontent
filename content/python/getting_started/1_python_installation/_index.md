@@ -12,11 +12,6 @@ We're finally here!
 
 We need Python before we can start.
  Let's start by installing Python! We want you to install the latest version of Python, however if you already have an earlier version installed that should work too!
- 
-
-{{% notice tip %}}
-It is generally best to use the latest version of Python - this includes the latest features, bug fixes, security updates and performance improvements.
-{{% /notice %}}
 
 
 {{% notice info %}}  
