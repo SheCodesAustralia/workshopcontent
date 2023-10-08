@@ -98,11 +98,24 @@ while True:
     player.forward(speed)
 ```
 
-This will now continue to move your turtle forward across the screen at a speed of 1.
-
 {{% notice note %}}
 Note the indent of the line starting with player.forward. This indent needs to be there for the code to work.
 {{% /notice %}}
+
+This piece of code is slightly different to the code you have written
+before. Instead of telling the computer to perform an instruction *once* you
+are telling the computer to perform that construction while some condition
+is true. You are doing this using what's called a ``while`` loop. The syntax of
+a while loop is:
+
+```python
+while <condition>
+   # do stuff here
+```
+
+In our example ``<condition>`` is simply the value True, that always evaluates 
+to ``True``. Meaning that our turtle will move forward until the program is
+closed.
 
 Step 9: Now all we need to do is save our code, we can do this by selecting File
  --&gt; Save \(Ctrl S on Windows or Cmd S on Mac\). Then run the module by
