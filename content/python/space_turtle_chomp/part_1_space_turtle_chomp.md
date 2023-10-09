@@ -104,9 +104,9 @@ Note the indent of the line starting with player.forward. This indent needs to b
 
 This piece of code is slightly different to the code you have written
 before. Instead of telling the computer to perform an instruction *once* you
-are telling the computer to perform that construction while some condition
-is true. You are doing this using what's called a ``while`` loop. The syntax of
-a while loop is:
+are telling the computer to **repeatedly** perform that instruction *for as long as some condition
+is true*. You are doing this using what's called a `while` loop. The syntax of
+a `while` loop is:
 
 ```python
 while <condition>
