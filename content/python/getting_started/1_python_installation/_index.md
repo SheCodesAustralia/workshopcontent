@@ -10,7 +10,7 @@ pre = "<b>1. </b>"
 
 We're finally here!
 
-We need Python before we can start. If you don't have Python installed yet, start by installing Python. We want you to install the latest version of Python, however if you already have an earlier version installed that should work too! At a minimum, this tutorial requires Python 3.5.
+We need Python before we can start. If you don't have Python installed yet, start by installing Python. Ideally we would like you to install the latest version of Python, however if you already have an earlier version installed that should work too! At a minimum, this tutorial requires Python 3.5.
 
 
 {{% notice info %}}  
@@ -22,21 +22,19 @@ This section is based on [a tutorial by Geek Girls Carrots](https://github.com/g
 
 We're going to perform a simple experiment to check whether Python is already installed, and if it is, what version is installed.
 
-Open the *Terminal* application of your choice (if you don't know what the terminal is feel free to ask a mentor) and enter the following command:
+Open the *Terminal* application of your choice (if you don't know what the terminal is feel free to ask a mentor) and enter the following command, depending on your operating system:
 
+### Mac/Linux Users:
 ```shell
 python3 --version
 ```
 
-or
-
+### Windows Users
 ```shell
 py --version
 ```
 
-if you are on Windows.
-
-If the command returns `Python X.Y.Z` congratulations you have Python installed! Otherwise you will have to install Python on your machine. How to do this will vary depending on your system, see below for instructions on how to do this for some common systems.
+If the command returns `Python 3.Y.Z` congratulations you have Python installed! Otherwise you will have to install Python on your machine. How to do this will vary depending on your system, see below for instructions on how to do this for some common systems.
 
 ## Install on Windows
 
