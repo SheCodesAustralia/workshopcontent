@@ -577,7 +577,7 @@ window._load_script = function(url, callback, isSubmit) {
         submitButton.disabled = true;
         submitButton.classList.add('processing');
         var serialized = _form_serialize(
-        document.getElementById('_form_16_')
+            document.getElementById('_form_16_')
         ).replace(/%0A/g, '\\n');
         var err = form_to_submit.querySelector('._form_error');
         err ? err.parentNode.removeChild(err) : false;
@@ -606,11 +606,11 @@ window._load_script = function(url, callback, isSubmit) {
         } else {
             _load_script('https://shecodes.activehosted.com/proc.php?' + serialized + '&jsonp=true', null, true);
         }
-
-        generate_certificate();
     }
     return false;
     };
+
     addEvent(form_to_submit, 'submit', form_submit);
+    addEvent(form_to_submit, 'submit', generate_certificate);
     }) ();
 </script>
