@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@babel/runtime": "^7.24.7",
+    "jspdf": "^2.5.1",
+    "prettier": "^3.3.1"
+  }
+}
