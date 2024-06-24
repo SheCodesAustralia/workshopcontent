@@ -74,6 +74,27 @@ Get your Certificate!
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
 
 <script>
+document.getElementById("_form_16_submit").addEventListener('click', function(){
+
+const firstName=document.getElementById('firstname').value;
+const lastName=document.getElementById('lastname').value;
+const doc = new jsPDF({
+  orientation: "landscape",
+  unit: "mm",
+  format: "a4"
+});
+const image=new Image();
+image.src = "./HTMLCSS Certificate (1).png";
+
+doc.addImage(image, "png", 0,0,297,210);
+doc.setFontSize(22);
+doc.text(`${firstName} ${lastName}`, 150, 80, 'center');
+doc.save("She Codes Australia Certificate");
+});
+</script>
+
+
+<script>
 window.cfields = [];
 window._show_thank_you = function(id, message, trackcmp_url, email) {
     var form = document.getElementById('_form_' + id + '_'), thank_you = form.querySelector('._form-thank-you');
@@ -551,66 +572,46 @@ window._load_script = function(url, callback, isSubmit) {
 
     var _form_serialize = function(form){if(!form||form.nodeName!=="FORM"){return }var i,j,q=[];for(i=0;i<form.elements.length;i++){if(form.elements[i].name===""){continue}switch(form.elements[i].nodeName){case"INPUT":switch(form.elements[i].type){case"tel":q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].previousSibling.querySelector('div.iti__selected-dial-code').innerText)+encodeURIComponent(" ")+encodeURIComponent(form.elements[i].value));break;case"text":case"number":case"date":case"time":case"hidden":case"password":case"button":case"reset":case"submit":q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value));break;case"checkbox":case"radio":if(form.elements[i].checked){q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value))}break;case"file":break}break;case"TEXTAREA":q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value));break;case"SELECT":switch(form.elements[i].type){case"select-one":q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value));break;case"select-multiple":for(j=0;j<form.elements[i].options.length;j++){if(form.elements[i].options[j].selected){q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].options[j].value))}}break}break;case"BUTTON":switch(form.elements[i].type){case"reset":case"submit":case"button":q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value));break}break}}return q.join("&")};
 
-    var generate_certificate = function (e) {
-        const firstName=document.getElementById('firstname').value;
-        const lastName=document.getElementById('lastname').value;
-        const doc = new jsPDF({
-            orientation: "landscape",
-            unit: "mm",
-            format: "a4"
-        });
-        const image=new Image();
-        image.src = "./HTMLCSS Certificate (1).png";
-
-        doc.addImage(image, "png", 0,0,297,210);
-        doc.setFontSize(22);
-        doc.text(`${firstName} ${lastName}`, 150, 80, 'center');
-        doc.save("She Codes Australia Certificate");
-    }
-
     const formSupportsPost = false;
-    var form_submit = function (e) {
-    e.preventDefault();
-    if (validate_form()) {
-        // use this trick to get the submit button & disable it using plain javascript
-        var submitButton = e.target.querySelector('#_form_16_submit');
-        submitButton.disabled = true;
-        submitButton.classList.add('processing');
-        var serialized = _form_serialize(
-            document.getElementById('_form_16_')
-        ).replace(/%0A/g, '\\n');
-        var err = form_to_submit.querySelector('._form_error');
-        err ? err.parentNode.removeChild(err) : false;
-
-        async function submitForm() {
-            var formData = new FormData();
-            const searchParams = new URLSearchParams(serialized);
-            searchParams.forEach((value, key) => {
+          var form_submit = function(e) {
+        e.preventDefault();
+        if (validate_form()) {
+            // use this trick to get the submit button & disable it using plain javascript
+            var submitButton = e.target.querySelector('#_form_16_submit');
+            submitButton.disabled = true;
+            submitButton.classList.add('processing');
+                        var serialized = _form_serialize(
+                document.getElementById('_form_16_')
+            ).replace(/%0A/g, '\\n');
+            var err = form_to_submit.querySelector('._form_error');
+            err ? err.parentNode.removeChild(err) : false;
+            async function submitForm() {
+              var formData = new FormData();
+              const searchParams = new URLSearchParams(serialized);
+              searchParams.forEach((value, key) => {
                 formData.append(key, value);
-            });
+              });
 
-            const response = await fetch('https://shecodes.activehosted.com/proc.php?jsonp=true', {
+              const response = await fetch('https://shecodes.activehosted.com/proc.php?jsonp=true', {
                 headers: {
-                "Accept": "application/json"
+                  "Accept": "application/json"
                 },
                 body: formData,
                 method: "POST"
-            });
-            return response.json();
+              });
+              return response.json();
+            }
+                if (formSupportsPost) {
+                  submitForm().then((data) => {
+                    eval(data.js);
+                  });
+                } else {
+                  _load_script('https://shecodes.activehosted.com/proc.php?' + serialized + '&jsonp=true', null, true);
+                }
         }
-
-        if (formSupportsPost) {
-            submitForm().then((data) => {
-                eval(data.js);
-            });
-        } else {
-            _load_script('https://shecodes.activehosted.com/proc.php?' + serialized + '&jsonp=true', null, true);
-        }
-    }
-    return false;
+        return false;
     };
-
     addEvent(form_to_submit, 'submit', form_submit);
-    addEvent(form_to_submit, 'submit', generate_certificate);
-    }) ();
+})();
+
 </script>
