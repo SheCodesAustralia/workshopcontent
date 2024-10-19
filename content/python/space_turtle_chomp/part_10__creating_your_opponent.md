@@ -55,7 +55,7 @@ Step 4. Next copy the following text and paste it directly underneath. Note, the
 
 Step 5. Edit the pasted text to:
 
-```py
+```python
     # Boundary Comp Checking x coordinate
     if comp.xcor() > 290 or comp.xcor() < -290:
         comp.right(180)
@@ -86,7 +86,7 @@ comp_score = 0
 Step 8. Now you create your competition score just under your \# Create
  opponent turtle section by adding:
 
-```py
+```python
 # Create competition score
 mypen2 = turtle.Turtle()
 mypen2.color('red')
