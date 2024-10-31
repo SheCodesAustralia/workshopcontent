@@ -21,6 +21,7 @@ Add the following to your css:
 /* Your CSS here */
 
 nav {
+	text-align: right;
 	background-color: #87CEEB;
 +	padding: 10px;
 }
@@ -40,6 +41,7 @@ Let's also modify the `padding` of the header div to add space around the image:
 /* Your CSS here */
 
 nav {
+	text-align: right;
 	background-color: #87CEEB;
 	padding: 10px;
 }
@@ -63,6 +65,7 @@ Next let's add some space around `section-2`:
 /* Your CSS here */
 
 nav {
+	text-align: right;
 	background-color: #87CEEB;
 	padding: 10px;
 }
@@ -149,7 +152,7 @@ Try adding the following to your CSS:
 	display: inline-block;
 	vertical-align: middle;
 	background-color: #fff;
-	padding: 10px;
+	padding: 20px;
 +	margin: 0 10px;
 }
 ```
