@@ -20,7 +20,7 @@ Select the `@import` option:
 
 Copy the code **between the `<style>` tags**.
 
-Past this code at the **top of your css file**.
+Paste this code at the **top of your css file**.
 
 ```diff
 /* Your fonts here */
