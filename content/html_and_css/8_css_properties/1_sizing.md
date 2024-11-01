@@ -21,7 +21,7 @@ Add the following to your CSS:
 ```
 
 The tag selector will get every `img` element.
-The `height` property changes the height of an element by whatever value you provide - in this case, we've specified 200 pixels (`px`).
+The `height` property changes the height of an element by whatever value you provide - in this case, we've specified 100 pixels (`px`).
 
 
 {{% notice test %}}
