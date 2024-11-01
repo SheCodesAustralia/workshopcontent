@@ -12,9 +12,10 @@ Add the following
 ```diff
 /* Your CSS here */
 
-+nav {
+nav {
+	text-align: right;
 +	background-color: #87CEEB;
-+}
+}
 ```
 
 {{% notice test %}}
@@ -56,6 +57,7 @@ Let's get back to our CSS!
 /* Your CSS here */
 
 nav {
+	text-align: right;
 	background-color: #87CEEB;
 }
 
