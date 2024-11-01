@@ -40,7 +40,10 @@ If the command returns `Python 3.Y.Z` congratulations you have Python installed!
 
 First check whether your computer is running a 32-bit version or a 64-bit version of Windows, by pressing the Windows key + Pause/Break key which will open your System info, and look at the "System type" line. You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
 
-One thing to watch out for: During the installation you will notice a window marked "Setup". Make sure you tick the "Add Python 3.x to PATH" checkbox and click on "Install Now", as shown here:
+One thing to watch out for: During the installation you will notice a window marked "Setup". Make sure you tick the "Add Python 3.x to PATH" checkbox and click on "Install Now", as shown below.
+
+- If you forget to tick above checkbox, the easiest way is to uninstall and re-install with the option ticked.
+- If `Microsoft Store` opens up when you run 'python' command in terminal, you can install python from the store directly. It will configure python environment for you.
 
 ![Don't forget to add Python to the Path](images/python-installation-options.png)
 

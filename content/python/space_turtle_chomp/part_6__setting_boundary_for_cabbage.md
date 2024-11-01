@@ -65,7 +65,7 @@ Step 6.  Cut the following code and paste it directly underneath making sure
 
 Step 7. Edit the pasted code to change player to food:
 
-```
+```python
     # Boundary Food Checking x coordinate
     if food.xcor() > 290 or food.xcor() < -290:
         food.right(180)
