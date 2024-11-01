@@ -50,7 +50,7 @@ We use the `turtle.onkey` method to set the computer to listen for a certain
  the left arrow key is pressed it will call the function called turn_left.
 
 {{% notice note %}}
-This new piece of code sits between setting the speed (line 12) and the start of the while loop (line 20). In Python where the code sits is very important
+This new piece of code sits between setting the speed (line 16) and the start of the while loop (line 24). In Python where the code sits is very important
 {{% /notice %}}
 
 Step 3.  The next step is to write the `turn_left`, `turn_right` and
