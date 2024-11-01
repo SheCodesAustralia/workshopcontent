@@ -56,7 +56,7 @@ while True:
     #Boundary Checking x cordinate
     if player.xcor() > 290 or player.xcor() <-290:
         player.right(180)
-    #Boundary Checking x cordinate
+    #Boundary Checking y cordinate
     if player.ycor() > 290 or player.ycor() <-290:
         player.right(180)
 
