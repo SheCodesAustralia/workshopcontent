@@ -18,11 +18,25 @@ There are a lot of different editors and it largely boils down to personal prefe
 
 Our suggestion is below, but feel free to ask your mentor about other code editors.
 
-## VS Code
+## VS Code (Local)
 
 VS Code is a very popular and free to use editor. It's available for Windows, OS X and Linux. Note, if you are using a Chromebook then it will present you with a few options to download from, choose the option that has the `.deb` or `debian` and that should work for you.
 
 [Download it here](https://code.visualstudio.com/)
+
+
+## VS Code (Remote with GitHub Codespaces)
+
+You can also use VS Code in the browser directly without any installation locally.
+
+Go https://github.com/SheCodesAustralia/workshopcontent, and hover `Code` button, in the dropdown, select `Codespaces` tab, then click the green `Create Codespaces` button. 
+
+![alt text](image.png)
+
+After a while, the online VS Code will open in your browser and you can write code in the browser directly!.
+
+
+
 
 ## Why are we installing a code editor?
 
