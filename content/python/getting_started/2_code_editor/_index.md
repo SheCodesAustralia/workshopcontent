@@ -31,11 +31,11 @@ You can also use VS Code in the browser directly without any installation locall
 
 Go https://github.com/SheCodesAustralia/workshopcontent, and hover `Code` button, in the dropdown, select `Codespaces` tab, then click the green `Create Codespaces` button. 
 
-![alt text](image.png)
+![Codespaces](images/codespaces-open.png)
 
-After a while, the online VS Code will open in your browser and you can write code in the browser directly!.
+After a while, the browser version of VS Code will open and you can write code in the browser directly! See below steps to launch the terminal windows.
 
-
+![Codespaces Terminal](images/codespaces-terminal.png)
 
 
 ## Why are we installing a code editor?
