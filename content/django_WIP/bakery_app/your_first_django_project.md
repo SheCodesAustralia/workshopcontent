@@ -4,7 +4,7 @@
 ### How to Use This Template
 
 - **Updating the App Name:**  
-  Change **{{app_name}}** to your final app name. All instances of **{{app_name}}** in the text will then reflect this new name.
+  Change **{{website_name}}** to your final app name. All instances of **{{website_name}}** in the text will then reflect this new name.
 
 - **Changing the Project Directory:**  
   Similarly, update `{{PROJECT_DIRECTORY}}` if you decide on a different directory name. This variable is used in command-line examples to help maintain consistency.
@@ -30,7 +30,7 @@ Steps of instruction for this chapter is based on tutorials by Django Girls (htt
 
 ## What will you learn during the tutorial?
 
-By the end of this tutorial, you'll have built a fully functional Django application that showcases a **{{app_name}}** app for discovering the best local bakeries and their delicious offerings—all at your fingertips.
+By the end of this tutorial, you'll have built a fully functional Django application that showcases a **{{website_name}}** app for discovering the best local bakeries and their delicious offerings—all at your fingertips.
 
 You’ll learn how to structure your project with Django’s models, views, and templates, and you'll add the finishing touches with custom styling to make your site visually appealing. We’ll even guide you through deploying your app online so that everyone can explore your bakeries and their offerings!
 
@@ -42,7 +42,7 @@ It will (more or less) look like this:
 
 # Your first Django project!
 
-The first step is to create our **{{app_name}}** app is to start a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us. This is just a bunch of directories and files that we will use later.
+The first step is to create our **{{website_name}}** app is to start a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us. This is just a bunch of directories and files that we will use later.
 
 The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure to be able to find important things.
 
@@ -269,9 +269,6 @@ Also add `.amazonaws.com` to the `ALLOWED_HOSTS` if you are using cloud9
 
 
 
-
-
-
 ## Set up a database
 
 There's a lot of different database software that can store data for your site. We'll use the default one, `sqlite3`.
@@ -380,6 +377,8 @@ Note that a command window can only run one thing at a time, and the command win
 > We reviewed how web servers work in the <b>How the Internet works</b> chapter.
 
 To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line]({{link_to_commandline_intro}}). To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
+
+
 
 Ready for the next step? It's time to create some content!
 
