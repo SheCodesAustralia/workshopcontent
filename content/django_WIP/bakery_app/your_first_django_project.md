@@ -3,8 +3,8 @@
 
 ### How to Use This Template
 
-- **Updating the App Name:**  
-  Change **{{website_name}}** to your final app name. All instances of **{{website_name}}** in the text will then reflect this new name.
+- **Updating the website Name:**  
+  Change **{{website_name}}** to your final website name. All instances of **{{website_name}}** in the text will then reflect this new name.
 
 - **Changing the Project Directory:**  
   Similarly, update `{{PROJECT_DIRECTORY}}` if you decide on a different directory name. This variable is used in command-line examples to help maintain consistency.

@@ -1,14 +1,17 @@
 <!--
 
-- **Updating the App Name:**  
-  Change **{{app_name}}** to your final app name. All instances of **{{app_name}}** in the text will then reflect this new name.
+- **Updating the Names:**  
+  
+Change **{{APP_NAME}}** to your final app name. All instances of **{{APP_NAME}}** in the text will then reflect this new name.( on 25/2/25 based on code repo
+{{APP_NAME}} : bakeries )
+
+same with:
 
 {{PROJECT_DIRECTORY}}
 
 {{PROJECT_NAME}} : bakery_project
 
 
-{{APP_NAME}} : bakeries 
 
 -->
 Ready for the content of our personalised letter? Let's make it happen! 
