@@ -24,10 +24,6 @@ function smash(cupcake) {
 }
 ```
 
-<p align="start">
-<img src=../step_2/shecodes_cupcake.svg width="20">
-</p>
-
 > Can you see the `smash` function? In this function, every time a cupcake is hit, we add 1 to the score.
 
 We're also going to tell our `scoreBoard` variable to show `score` whenever it is increased. To update `scoreBoard` we will use the [`textContent`](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent) property.
@@ -41,10 +37,6 @@ function smash(cupcake) {
 +	scoreBoard.textContent = score;
 }
 ```
-<p align="start">
-<img src=../step_2/plain_cupcake.svg width="20">
-<img src=../step_2/plain_cupcake.svg width="20">
-</p>
 
 **Start** the game and watch your score increase everytime you smash a cupcake!
 
@@ -63,12 +55,6 @@ function startGame() {
 ```
 
 Now each time you click **Start** you should see the score reset to zero.
-
-<p align="start">
-<img src=../step_2/shecodes_cupcake.svg width="20">
-<img src=../step_2/shecodes_cupcake.svg width="20">
-<img src=../step_2/shecodes_cupcake.svg width="20">
-</p>
 
 ## Check your code!
 

@@ -16,10 +16,6 @@ Our tags are:
 
 -   LinkedIn [@shecodesaustralia](https://www.linkedin.com/company/shecodesaustralia/)
 -   Instagram [@shecodesaus](https://www.instagram.com/shecodesaus/)
-  
-<p align="start">
-<img src=../step_2/test_plain_cupcake.svg width="20">
-</p>
 
 ### Don't stop!
 
@@ -43,14 +39,15 @@ You might have noticed that there are different cupcakes that display - you coul
 
 The possibilities are endless. Whether you add new features or simply polish the look and feel of your game, every tweak is a chance to learn something new.
 
+Check out some of our alumni and their versions!
+Play Jess's game [Kitty Pat](https://codepen.io/Jet760/pen/dyxwdZj)
+
+Play Christin's version and [avoid getting smashed](https://lnkd.in/gy8427x3)
+
+Or try [Gina's from DDD](https://lnkd.in/gZxBFWZ5)
+
 If you've enjoyed learning with She Codes and you're hungry for more tutorials, check out [our growing list of free tutorials here](https://shecodes.com.au/tutorials).
 
 **Good luck, coder!**
-
-<p align="start">
-<img src=../step_2/shecodes_cupcake.svg width="20">
-<img src=../step_2/shecodes_cupcake.svg width="20">
-<img src=../step_2/shecodes_cupcake.svg width="20">
-</p>
 
 Keep exploring, keep coding, and most importantly, have fun smashing those cupcakes!

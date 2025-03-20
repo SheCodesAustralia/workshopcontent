@@ -46,17 +46,10 @@ In that step we're telling JavaScript "Hey, find me all the cupcake holes on the
 
 Yes you are seeing this correctly, in JavaScript, **arrays start counting at 0**. So, the`[0]`in`holes[0]` is what tells JavaScript to just get the first cupcake hole on the page.
 
-<p align="start">
-<img src=../step_2/plain_cupcake2.svg width="20">
-</p>
 
 > It might seem a little strange at first, I know usually we start counting at 1. But think of it like this: if the cupcake holes were secret hideouts, the code '0' is the secret agent name for the first one!
 
 > To recap, our `holes` variable type is called an '[array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)' and looks something like this: `holes = [hole 0, hole 1, hole 2, ... hole 8]`. We can reference any item in our array using the index position (what position it is in in the list). And remember, in arrays the first position is always '0' (not 1). So if we reference `holes[1]` it will actually access the second cupcake hole, not the first!
-
-<p align="start">
-<img src=../step_2/test_plain_cupcake.svg width="20">
-</p>
 
 Now remember our goal: to randomly generate a number between 0 and 8 (because we have 9 holes) that we can use to reference one of the holes in our array, rather than always getting the first one. To do this we are going to create our own function called `randomHole` which will use JavaScript's built in [`math.floor`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor) and
 the [`math.random`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) functions.
@@ -93,12 +86,6 @@ function popUp() {
 ```
 
 Now when you hit **Start**, you should see your cupcakes popping up everywhere!
-
-<p align="start">
-<img src=../step_2/shecodes_cupcake.svg width="20">
-<img src=../step_2/shecodes_cupcake.svg width="20">
-<img src=../step_2/shecodes_cupcake.svg width="20">
-</p>
 
 ## Check your code!
 
@@ -151,17 +138,8 @@ function smash(cupcake) {
     scoreBoard.textContent = score;
 }
 ```
-<p align="start">
-<img src=../step_2/plain_cupcake.svg width="20">
-</p>
 
 > **Learning in Action:** You're using arrays and random number generation - key concepts in JavaScript!
-
-<p align="start">
-<img src=../step_2/shecodes_cupcake.svg width="20">
-<img src=../step_2/shecodes_cupcake.svg width="20">
-<img src=../step_2/shecodes_cupcake.svg width="20">
-</p>
 
 ### Extra challenge
 
