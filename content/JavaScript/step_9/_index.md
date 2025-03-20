@@ -51,8 +51,8 @@ Yes you are seeing this correctly, in JavaScript, **arrays start counting at 0**
 
 > To recap, our `holes` variable type is called an '[array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)' and looks something like this: `holes = [hole 0, hole 1, hole 2, ... hole 8]`. We can reference any item in our array using the index position (what position it is in in the list). And remember, in arrays the first position is always '0' (not 1). So if we reference `holes[1]` it will actually access the second cupcake hole, not the first!
 
-Now remember our goal: to randomly generate a number between 0 and 8 (because we have 9 holes) that we can use to reference one of the holes in our array, rather than always getting the first one. To do this we are going to create our own function called `randomHole` which will use JavaScript's built in [`math.floor`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor) and
-the [`math.random`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) functions.
+Now remember our goal: to randomly generate a number between 0 and 8 (because we have 9 holes) that we can use to reference one of the holes in our array, rather than always getting the first one. To do this we are going to create our own function called `randomHole` which will use JavaScript's built in [math.floor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor) and
+the [math.random](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) functions.
 
 At the bottom of your existing code, add this:
 

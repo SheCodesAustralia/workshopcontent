@@ -14,7 +14,7 @@ In case you haven't done our HTML and CSS workshop, HTML defines the content (li
 
 You will need a CodePen account to build your own game, head over there now to [create your free account](https://codepen.io).
 
-We've put together a template that already has a lot of the game elements and styles set up - we just need to write the JavaScript to get it working! [Click here to get the template](https://codepen.io/shecodesaus/pen/YzmJoZq/right?editors=0010).
+We've put together a template that already has a lot of the game elements and styles set up - we just need to write the JavaScript to get it working! [Click here to get the template](https://codepen.io/shecodesaus/pen/OPJvGZy).
 
 To create your own copy of the game to work with, click the **Fork** button in the bottom right corner in CodePen (see the screenshot below). This will let you save your own copy of Cupcake Smash so you can come back to it and share it.
 

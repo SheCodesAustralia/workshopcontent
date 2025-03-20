@@ -98,7 +98,7 @@ function endGame() {
 }
 ```
 
-To start the game we press the **Start** button. To then end the game, we will trigger our new `endGame` function from the `startGame` function. We'll use [`setTimeout`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout) to do this. This will trigger `endGame` after a delay of 10000ms.
+To start the game we press the **Start** button. To then end the game, we will trigger our new `endGame` function from the `startGame` function. We'll use [setTimeout](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout) to do this. This will trigger `endGame` after a delay of 10000ms.
 
 ```diff
 function startGame() {

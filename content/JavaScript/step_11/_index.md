@@ -44,7 +44,7 @@ Play Jess's game [Kitty Pat](https://codepen.io/Jet760/pen/dyxwdZj)
 
 Play Christin's version and [avoid getting smashed](https://lnkd.in/gy8427x3)
 
-Or try [Gina's from DDD](https://lnkd.in/gZxBFWZ5)
+Or try Gina's [from DDD](https://lnkd.in/gZxBFWZ5)
 
 If you've enjoyed learning with She Codes and you're hungry for more tutorials, check out [our growing list of free tutorials here](https://shecodes.com.au/tutorials).
 

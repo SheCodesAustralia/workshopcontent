@@ -1,5 +1,5 @@
 ---
-title: "Cupcake Smash"
+title: "JavaScript"
 weight: 2
 pre: "<i class='fab fa-js'></i>&nbsp; "
 ---
