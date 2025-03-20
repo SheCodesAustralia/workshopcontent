@@ -18,23 +18,13 @@ function randomTime(min, max) {
 }
 ```
 
-<p align="start">
-<img src=../step_2/plain_cupcake2.svg width="20">
-</p>
-
 > **What is Math.random()?**
 > Good question, `Math.random()` produces a number between 0 (inclusive) and 1 (exclusive). So multiplying the random number by (max - min) and then adding min shifts the random value to lie between your desired minimum and maximum values.
 
-<p align="start">
-<img src=../step_2/shecodes_cupcake.svg width="20">
-</p>
 
 > **What is Math.round()?**
 > To convert the decimal into an integer, we use `Math.round()`. This rounds to the nearest whole number, which is acceptable for this scenario. There are alternative methods if you need more [rounding](https://javascript.info/number#rounding) precision.
 
-<p align="start">
-<img src=../step_2/test_plain_cupcake.svg width="20">
-</p>
 
 We can then use our `randomTime` function to randomly pick a time interval. In the example below we've set the minimum as 200ms and the maximum as 1000ms (1s).
 
@@ -57,12 +47,6 @@ function popUp() {
 ```
 
 Now run your game again, and you should see the cupcakes are a lot less predictable!
-
-<p align="start">
-<img src=../step_2/shecodes_cupcake.svg width="20">
-<img src=../step_2/shecodes_cupcake.svg width="20">
-<img src=../step_2/shecodes_cupcake.svg width="20">
-</p>
 
 ## Check your code!
 

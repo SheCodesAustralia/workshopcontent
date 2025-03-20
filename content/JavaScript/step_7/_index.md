@@ -22,19 +22,12 @@ function smash(cupcake) {
 
 When we created the HTML code in the template, we actually already instructed the button to run this function when it is clicked (feel free to peek at the HTML code and see this for yourself). Press **Start** and start smashing cupcakes! Whenever you click a cupcake it will disappear again, and a message will appear in the console.
 
-<p align="start">
-<img src=../step_2/shecodes_cupcake.svg width="20">
-</p>
 
 > You may have noticed that we're using this thing called a `parentNode`. Up until now, we have been referencing the hole elements in the HTML, but now we want to reference the cupcake itself (which is inside the 'hole' element). 
 > 
 > In our HTML, the cupcake that we click on is a 'child' of the hole it is popping up from, so the `.parentNode` part tells JavaScript to look for the hole that the cupcake is appearing from, rather than the cupcake itself.
 You can read more about nodes and parent nodes [here](https://developer.mozilla.org/en-US/docs/Web/API/Node/parentNode).
 
-<p align="start">
-<img src=../step_2/plain_cupcake.svg width="20">
-<img src=../step_2/plain_cupcake.svg width="20">
-</p>
 
 ## Check your code!
 

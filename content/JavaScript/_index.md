@@ -13,10 +13,10 @@ At She Codes we firmly believe that coding is **ALWAYS** better with cupcakes!
 A preview of the end result is below:
 
 <!-- We need an updated gif once the Template has been changed -->
-![](images/full_game.gif)
+![](fullgame.gif)
 
 Ready to get started? Awesome! Proceed to Step 1.
 
 New to coding? No problem! Let's begin with a short video about HTML, CSS and JavaScript, the three programming languages that we use to build websites and will be referencing throughout this tutorial.
 
-<!-- {{< youtube gT0Lh1eYk78 >}} Not sure what the link to this video is? -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gT0Lh1eYk78?si=PQL5jqUN5_1NFhWh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

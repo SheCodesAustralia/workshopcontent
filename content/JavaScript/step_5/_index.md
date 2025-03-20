@@ -32,10 +32,6 @@ function popUp() {
 + }, time)
 }
 ```
-<p align="start">
-<img src=../step_2/shecodes_cupcake.svg width="20">
-</p>
-
 > **Introducing a Delay:** 
 > 
 > By using the `setTimeout` function we can tell JavaScript, "Hey, wait a little while - say, 500 milliseconds (that's half a second!) - and then hide the cupcake. This delay is stored in a variable called `time`.
@@ -45,18 +41,8 @@ You should now be able to see the cupcake appearing and disappearing when you st
 
 Try changing the value of `time` and see what happens (remember, this value is in milliseconds, so 500 milliseconds is 0.5 seconds).
 
-<p align="start">
-<img src=../step_2/plain_cupcake.svg width="20">
-<img src=../step_2/plain_cupcake.svg width="20">
-</p>
 
 > **Tip:** If your code doesn't work as expected, check your brackets! In JavaScript brackets should always have partners. This goes for parentheses(), square brackets[] and braces{} - just count the left ones and make sure they all have a buddy.
-
-<p align="start">
-<img src=../step_2/shecodes_cupcake.svg width="20">
-<img src=../step_2/shecodes_cupcake.svg width="20">
-<img src=../step_2/shecodes_cupcake.svg width="20">
-</p>
 
 ## Check your code!
 
