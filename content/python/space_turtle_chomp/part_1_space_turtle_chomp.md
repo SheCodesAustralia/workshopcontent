@@ -16,14 +16,18 @@ We will start off today creating a simple Python game using Python Turtle
  to create and move characters around the screen allowing you to draw pictures,
  logos and create simple animations or games.
 
-Step 1.  If not already open please open VS Code.
+Step 1.  If not already open, please open VS Code (locally or via GitHub Codespace).
 
 Step 2.  Select File --&gt; New File you should see your program window
 
-Step 3.  As it is a great idea to save your project at the beginning of any new
- development, select File --&gt; Save and name the file (I called mine kbgame1.py)
+Step 3.  As it is a great idea to save your project at the beginning of any new development, select File --&gt; Save and name the file (I called mine kbgame1.py)
  
- VS Code may ask if you want to install a Python extension, feel free to follow the prompts and do so.
+{{% notice note %}}
+When you save kbgame1.py, make a note of the path of the file so that you can go back to it. Best to save it to the root of the project or driver, e.g. c:\turtle\kbgame1.py or /workspaces/workshopcontent/turtle/kbgame1.py
+
+VS Code may ask if you want to install a Python extension, feel free to follow the prompts and do so.
+{{% /notice %}}
+ 
 
 Step 4. When coding one of the first things we should always do as a developer is leave a comment explaining what the program does at the top of the screen. We can make a comment using #
 

@@ -20,7 +20,7 @@ Let's write some code!
 For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
 {{% /notice %}}
 
-We want to open up a Python console, so open Terminal (on Mac) or PowerShell (on Windows) and type in `python` on Windows or `python3` on Mac/Linux and hit `enter`.
+We want to open up a Python console, so open Terminal (on Mac or on GitHub Codespaces) or PowerShell (on Windows) and type in `python` on Windows or `python3` on Mac/Linux and hit `enter`.
 
 <!-- {% filename %}command-line{% filename %} -->
 ```bash
