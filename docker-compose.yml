@@ -1,0 +1,10 @@
+name: mysite
+
+services:
+  server:
+    image: klakegg/hugo:0.80.0-ext-ubuntu
+    command: server
+    volumes:
+      - ".:/src"
+    ports:
+      - "1313:1313"
