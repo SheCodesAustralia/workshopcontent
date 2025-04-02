@@ -189,14 +189,86 @@ If you want a different language, change the language code by changing the follo
 
 <!-- SHOULD WE KEEP LANGUAGE CODE THE DEFAULT: en-us ? -->
 
-### Static Root
+### Templates Directory
+
+By default, Django already knows how to find templates stored inside each app folder. But as your project grows, it’s helpful to have a shared location where you keep your main templates.
+
+Let’s tell Django to look inside a `templates` folder located at `bakery_project/templates/`.
+
+Open `settings.py`, and find the `TEMPLATES` section. Update the `'DIRS'` entry like this:
+
+```
+
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+-        'DIRS': [],
++        'DIRS': [BASE_DIR / "bakery_project" / "templates"],
+
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
+
+```
+
+
+This tells Django to also search in this folder when rendering HTML pages.
+
+You don’t need to create the folder just yet — we’ll walk you through that later when we build your first template.
+
+{{% notice tip %}} Using a shared templates directory keeps things tidy, especially when building base layouts used across multiple apps. {{% /notice %}}
+
+### Static and Media Files
 
 We'll also need to add a path for static files. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
 
-```python
-STATIC_URL = 'static/'
-+STATIC_ROOT = BASE_DIR / 'static'
 ```
++STATICFILES_DIRS = [
++    BASE_DIR / "bakery_project" / "static",
++]
+
+STATIC_URL = "static/"
++STATIC_ROOT = BASE_DIR / "bakery_project" / "staticfiles"
+
++MEDIA_URL = "media/"
++MEDIA_ROOT = BASE_DIR / "bakery_project" / "media"
+
+```
+
+#### Let’s break this down:
+
+- **`STATICFILES_DIRS`**: Tells Django where to find your custom static files during development.  
+  In this case, we’re keeping them inside `bakery_project/static/`.
+
+- **`STATIC_URL`**: This is the URL prefix for accessing static files in your browser  
+  (e.g., `http://localhost:8000/static/`).
+
+- **`STATIC_ROOT`**: When you deploy your project, Django will collect all static files into this folder.  
+  Think of this like a "ready-to-serve" folder for production.
+
+- **`MEDIA_URL`**: This is the URL prefix for accessing media files  
+  (e.g., `http://localhost:8000/media/`).
+
+- **`MEDIA_ROOT`**: This tells Django where uploaded media files should be stored on your computer or server.
+
+You don’t need to create these folders just yet — Django will take care of it when we use the `collectstatic` command or when users upload media.
+
+{{% notice tip %}}  
+**Tip**: You might not use media files right away, but it’s good practice to include the setup early.  
+That way you’re ready when you add profile images or product photos later!  
+{{% /notice %}}
+
+
+
+
 
 
 ### Allowed Hosts 

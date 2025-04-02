@@ -83,6 +83,41 @@ Before we run the server again, we need to install the django-browser-reload pac
 pip install django-browser-reload 
 ```
 
+We also need to tell Django that it should use this package. We do that in the file `bakery_project/settings.py`, open it in your code editor. 
+
+Then update:
+
+In the INSTALLED_APPS list:
+
+``` 
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'bakeries.apps.BakeriesConfig',
++    'django_browser_reload',
+]
+
+In the MIDDLEWARE list:
+
+```
+MIDDLEWARE = [
+    'django.middleware.security.SecurityMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
++    'django_browser_reload.middleware.BrowserReloadMiddleware',
+]
+
+```
+
+
 Now in your `bakery_project/urls.py` file add this new line to the `urlpatterns` list:
 
 ```
