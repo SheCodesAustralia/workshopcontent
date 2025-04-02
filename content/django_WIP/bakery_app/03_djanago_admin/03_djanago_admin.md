@@ -2,7 +2,7 @@
 <!-- comment baraye behnaz : tutorial bakery app ro baz kon, oon ke khodam sakhtam ham baz kon taa code ro bezani az roosh, va ax begiri ax vaa coode ro inja update kon -->
 To add, edit and delete the posts we've just modeled, we will use Django admin.
 
-Let's open the `{{APP_NAME}}/admin.py` file in the code editor and replace its contents with this:
+Let's open the `bakery_project/admin.py` file in the code editor and replace its contents with this:
 
 
 ```python
@@ -32,12 +32,12 @@ Remember, to write new commands while the web server is running, open a new term
 
 macOS or Linux:
 ```
-(myvenv) {{PROJECT_DIRECTORY}}% python manage.py createsuperuser
+(myvenv) bakery_site% python manage.py createsuperuser
 ```
 
 Windows:
 ```
-(myvenv) ~/{{PROJECT_DIRECTORY}}$ python manage.py createsuperuser
+(myvenv) ~/bakery_site$ python manage.py createsuperuser
 ```
 
 When prompted, type your username (lowercase, no spaces), email address, and password. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):

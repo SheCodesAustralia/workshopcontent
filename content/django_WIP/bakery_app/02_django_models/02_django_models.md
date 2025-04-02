@@ -2,14 +2,12 @@
 
 - **Updating the Names:**  
   
-Change **{{APP_NAME}}** to your final app name. All instances of **{{APP_NAME}}** in the text will then reflect this new name.( on 25/2/25 based on code repo
-{{APP_NAME}} : bakeries )
 
 same with:
 
-{{PROJECT_DIRECTORY}}
+bakery_site
 
-{{PROJECT_NAME}} : bakery_project
+
 
 
 
@@ -18,7 +16,7 @@ Ready for the content of our personalised letter? Let's make it happen!
 
 # Django models
 
-What we want to create is something that will store all the details about local bakeries and their scrumptious offerings in our {{app_name}} app. But to be able to do that, we need to talk a little bit about a concept in programming called `objects`.
+What we want to create is something that will store all the details about local bakeries and their scrumptious offerings in our bakery_project app. But to be able to do that, we need to talk a little bit about a concept in programming called `objects`.
 
 
 ## Objects
@@ -87,21 +85,22 @@ You can think of a model in the database as a spreadsheet with columns (fields) 
 
 ### Creating an application
 
-To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run the following command in the console (from `{{PROJECT_DIRECTORY}}` directory where `manage.py` file is):
+To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run the following command in the console (from `bakery_site` directory where `manage.py` file is):
+
+macOS or Linux:
+```
+(myvenv) bakery_site% python manage.py startapp bakeries
+```
+Windows:
+```
+(myvenv) C:\Users\Name\bakery_site> python manage.py startapp bakeries
+```
+
+You will notice that a new `bakeries` directory is created and it contains a number of files now. The directories and files in our project should look like this:
 
 ```
-(myvenv) {{PROJECT_DIRECTORY}}% python manage.py startapp {{APP_NAME}}
-```
-
-```
-(myvenv) C:\Users\Name\{{PROJECT_DIRECTORY}}> python manage.py startapp {{APP_NAME}}
-```
-
-You will notice that a new `{{APP_NAME}}` directory is created and it contains a number of files now. The directories and files in our project should look like this:
-
-```
-{{PROJECT_DIRECTORY}}
-├── {{APP_NAME}}
+bakery_site
+├── bakeries
 │   ├── admin.py
 │   ├── apps.py
 │   ├── __init__.py
@@ -112,7 +111,7 @@ You will notice that a new `{{APP_NAME}}` directory is created and it contains a
 │   └── views.py
 ├── db.sqlite3
 ├── manage.py
-├── {{PROJECT_NAME}}
+├── bakery_project
 │   ├── asgi.py
 │   ├── __init__.py
 │   ├── settings.py
@@ -124,7 +123,7 @@ You will notice that a new `{{APP_NAME}}` directory is created and it contains a
 
 ```
 
-After creating an application, we also need to tell Django that it should use it. We do that in the file `{{PROJECT_NAME}}/settings.py`, open it in your code editor. We need to find `INSTALLED_APPS` and add a line containing `'{{APP_NAAME}}',` just above `]`. So the final product should look like this:
+After creating an application, we also need to tell Django that it should use it. We do that in the file `bakery_project/settings.py`, open it in your code editor. We need to find `INSTALLED_APPS` and add a line containing `'{{APP_NAAME}}',` just above `]`. So the final product should look like this:
 
 ```python
 INSTALLED_APPS = [
@@ -134,15 +133,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-+   '{{APP_NAME}}',
++   'bakeries',
 ]
 ```
 
 ### Creating a Bakery model
 
-In the `{{APP_NAME}}/models.py` file we define all objects called `Models` – this is a place in which we will define our bakery data models.
+In the `bakeries/models.py` file we define all objects called `Models` – this is a place in which we will define our bakery data models.
 
-Let's open `{{APP_NAME}}/models.py` in the code editor, remove everything from it, and write code like this:
+Let's open `bakeries/models.py` in the code editor, remove everything from it, and write code like this:
 
 ```python
 
@@ -195,7 +194,7 @@ Also notice `def __str__(self):` is indented inside our class. Because Python is
 
 ### Creating an Item model
 
-Now let's define our `Item` model, which represents the baked goods offered by each bakery. Just below your Bakery modelin `{{APP_NAME}}/models.py` file, add the following code:
+Now let's define our `Item` model, which represents the baked goods offered by each bakery. Just below your Bakery modelin `bakeries/models.py` file, add the following code:
 
 
 ```python
@@ -241,12 +240,12 @@ If something is still not clear about models, feel free to ask one of the mentor
 
 ### Create tables for models in your database
 
-The last step here is to add our new models to our database. First we have to make Django know that we have some changes in our models. (We have just created it!) Go to your console window and type `python manage.py makemigrations {{APP_NAME}}`. It will look like this:
+The last step here is to add our new models to our database. First we have to make Django know that we have some changes in our models. (We have just created it!) Go to your console window and type `python manage.py makemigrations bakeries`. It will look like this:
 
 ```
-(myvenv) {{PROJECT_DIRECTORY}}% python manage.py makemigrations {{APP_NAME}}
-Migrations for '{{APP_NAME}}':
-  {{APP_NAME}}/migrations/0001_initial.py
+(myvenv) bakery_site% python manage.py makemigrations bakeries
+Migrations for 'bakeries':
+  bakeries/migrations/0001_initial.py
     + Create model Bakery
     + Create model Item
 ```
@@ -256,14 +255,14 @@ Migrations for '{{APP_NAME}}':
 
 {{% /notice %}}
 
-Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate {{APP_NAME}}` and the output should be as follows:
+Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate bakeries` and the output should be as follows:
 
 ```
-(myvenv) ~/{{PROJECT_DIRECTORY}}$ python manage.py migrate {{APP_NAME}}
+(myvenv) ~/bakery_site$ python manage.py migrate bakeries
 Operations to perform:
-  Apply all migrations: {{APP_NAME}}
+  Apply all migrations: bakeries
 Running migrations:
-  Applying {{APP_NAME}}.0001_initial... OK
+  Applying bakeries.0001_initial... OK
 ```
 
 Hurray! Our models are now in our database! It would be nice to see it, right? Jump to the next chapter to see what your models looks like!

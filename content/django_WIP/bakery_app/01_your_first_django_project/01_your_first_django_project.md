@@ -3,19 +3,17 @@
 
 ### How to Use This Template
 
-- **Updating the website Name:**  
-  Change **{{website_name}}** to your final website name. All instances of **{{website_name}}** in the text will then reflect this new name.
 
 - **Changing the Project Directory:**  
-  Similarly, update `{{PROJECT_DIRECTORY}}` if you decide on a different directory name. This variable is used in command-line examples to help maintain consistency.
+  Similarly, update `bakery_site` if you decide on a different directory name. This variable is used in command-line examples to help maintain consistency.
 
 - **Updating Placeholder Links:**  
   The placeholders `<<DJANGO_INSTALLATION_LINK>>` and `<<VIRTUALENV_LINK>>` are used in the document where hyperlinks are required.  
   Once you have the actual URLs, **replace them with the correct links**.
 
 - **Updating project name:**  
-{{PROJECT_NAME}} : bakery_project
-once final directories and names confirmed, update {{PROJECT_NAME}} accordingly.
+bakery_project : bakery_project
+once final directories and names confirmed, update bakery_project accordingly.
 
 - **update {{link_to_commandline_intro}}**
 
@@ -30,7 +28,7 @@ Steps of instruction for this chapter is based on tutorials by Django Girls (htt
 
 ## What will you learn during the tutorial?
 
-By the end of this tutorial, you'll have built a fully functional Django application that showcases a **{{website_name}}** app for discovering the best local bakeries and their delicious offerings—all at your fingertips.
+By the end of this tutorial, you'll have built a fully functional Django application that showcases a Bakery Finder app for discovering the best local bakeries and their delicious offerings—all at your fingertips.
 
 You’ll learn how to structure your project with Django’s models, views, and templates, and you'll add the finishing touches with custom styling to make your site visually appealing. We’ll even guide you through deploying your app online so that everyone can explore your bakeries and their offerings!
 
@@ -42,7 +40,7 @@ It will (more or less) look like this:
 
 # Your first Django project!
 
-The first step is to create our **{{website_name}}** app is to start a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us. This is just a bunch of directories and files that we will use later.
+The first step is to create our Bakery Finder app is to start a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us. This is just a bunch of directories and files that we will use later.
 
 The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure to be able to find important things.
 
@@ -62,7 +60,7 @@ Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv
 In your macOS or Linux console, you should run the following command. **Don't forget to add the period (or dot) `.` at the end!**
 
 ```
-(myvenv) {{PROJECT_DIRECTORY}}% django-admin startproject {{PROJECT_NAME}} .
+(myvenv) bakery_site% django-admin startproject bakery_project .
 ```
 
 
@@ -77,7 +75,7 @@ The period `.` is crucial because it tells the script to install Django in your 
 {{% notice note %}}
 
 **Note** When typing the command above, remember that you only type the part which starts by `django-admin`.
-The `(myvenv) ~/{{PROJECT_DIRECTORY}}$` part shown here is just example of the prompt that will be inviting your input on your command line.
+The `(myvenv) ~/bakery_site$` part shown here is just example of the prompt that will be inviting your input on your command line.
 
 {{% /notice %}}
 
@@ -88,7 +86,7 @@ The `(myvenv) ~/{{PROJECT_DIRECTORY}}$` part shown here is just example of the p
 On Windows you should run the following command. **(Don't forget to add the period (or dot) `.` at the end)**:
 
 ```
-(myvenv) ~/{{PROJECT_DIRECTORY}}$ django-admin.exe startproject {{PROJECT_NAME}} .
+(myvenv) ~/bakery_site$ django-admin.exe startproject bakery_project .
 ```
 
 {{% notice note %}}
@@ -102,7 +100,7 @@ The period `.` is crucial because it tells the script to install Django in your 
 {{% notice note %}}
 
 **Note** When typing the command above, remember that you only type the part which starts by `django-admin.exe`.
-The `(myvenv) C:\Users\Name\{{PROJECT_DIRECTORY}}>` part shown here is just example of the prompt that will be inviting your input on your command line.
+The `(myvenv) C:\Users\Name\bakery_site>` part shown here is just example of the prompt that will be inviting your input on your command line.
 
 {{% /notice %}}
 
@@ -115,9 +113,9 @@ The `(myvenv) C:\Users\Name\{{PROJECT_DIRECTORY}}>` part shown here is just exam
 `django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
 
 ```
-{{PROJECT_DIRECTORY}}
+bakery_site
 ├── manage.py
-├── {{PROJECT_NAME}}
+├── bakery_project
 │   ├── asgi.py
 │   ├── __init__.py
 │   ├── settings.py
@@ -158,13 +156,13 @@ If we need a shorter version of tutorial some parts of this section are unnecess
 
 ## Changing settings
 
-Let's make some changes in `{{PROJECT_NAME}}/settings.py`. Open the file using the code editor you installed earlier.
+Let's make some changes in `bakery_project/settings.py`. Open the file using the code editor you installed earlier.
 
 <!-- my personal opinion: this note on how to open the file is unnecessary as we expect the user be already on vscode, PLEASE FEEL FREE TO SKIP THIS **Note** if required-->
 
 {{% notice note %}}
 
-**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "File -> Open" menu action. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the `{{PROJECT_DIRECTORY}}/{{PROJECT_NAME}}` folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
+**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "File -> Open" menu action. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the `bakery_site/bakery_project` folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
 
 {{% /notice %}}
 
@@ -284,11 +282,11 @@ DATABASES = {
 }
 ```
 
-To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in the `{{PROJECT_DIRECTORY}}` directory that contains the `manage.py` file). If that goes well, you should see something like this:
+To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in the `bakery_site` directory that contains the `manage.py` file). If that goes well, you should see something like this:
 
 ```
 
-(myvenv)  {{PROJECT_DIRECTORY}}% python manage.py migrate
+(myvenv)  bakery_site% python manage.py migrate
 Operations to perform:
   Apply all migrations: admin, auth, contenttypes, sessions
 Running migrations:
@@ -316,16 +314,16 @@ And we're done! Time to start the web server and see if our website is working!
 
 ## Starting the web server
 
-You need to be in the directory that contains the `manage.py` file (the `{{PROJECT_DIRECTORY}}` directory). In the console, we can start the web server by running `python manage.py runserver`:
+You need to be in the directory that contains the `manage.py` file (the `bakery_site` directory). In the console, we can start the web server by running `python manage.py runserver`:
 
 ```
-(myvenv) {{PROJECT_DIRECTORY}}% python manage.py runserver
+(myvenv) bakery_site% python manage.py runserver
 ```
 
 If you are on a Chromebook, use this command instead:
 
 ```
-(myvenv) {{PROJECT_DIRECTORY}}% python manage.py runserver 0.0.0.0:8080
+(myvenv) bakery_site% python manage.py runserver 0.0.0.0:8080
 ```
 
 <!-- should i keep glitch parts? 
@@ -342,7 +340,7 @@ $ refresh
 If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
 
 ```
-(myvenv) {{PROJECT_DIRECTORY}}% python manage.py runserver 0:8000
+(myvenv) bakery_site% python manage.py runserver 0:8000
 ```
 
 
