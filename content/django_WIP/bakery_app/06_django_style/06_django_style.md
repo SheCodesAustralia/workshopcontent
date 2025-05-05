@@ -333,44 +333,8 @@ Now let's go to admin http://127.0.0.1:8000/admin . Login with your superuser cr
 
 
 
-## One more thing
-
-It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps. In your **VS Code terminal**, stop the server from running by pressing:`Ctrl + C`.
-
-* Now, push your code to GitHub
-
-{% filename %}command-line{% endfilename %}
-```
-$ git status
-[...]
-$ git add .
-$ git status
-[...]
-$ git commit -m "Modified templates to display posts from database."
-[...]
-$ git push
-```
-
-If you need a recap of what we are doing, check [First Git commands](../04_deploy/04_deploy.md#first-git-commands). Remember mentors are just a hand raise away. Don’t hesitate to ask for help if you get stuck!
-
-* Then, log back in to [PythonAnywhere](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one), and run:
-
-{% filename %}PythonAnywhere command-line{% endfilename %}
-```
-$ cd <your-pythonanywhere-domain>.pythonanywhere.com
-$ git pull
-[...]
-```
-
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
-
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://subdomain.pythonanywhere.com -- check it out in the browser! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
-
-
-Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://subdomain.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
-
 Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
 
-![Figure 13.4](images/cupcake.png)
+![Figure 13.4](images/shecodes_cupcake.svg)
 
 

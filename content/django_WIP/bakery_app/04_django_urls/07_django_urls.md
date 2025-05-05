@@ -100,7 +100,7 @@ INSTALLED_APPS = [
     'bakeries.apps.BakeriesConfig',
 +    'django_browser_reload',
 ]
-
+```
 In the MIDDLEWARE list:
 
 ```

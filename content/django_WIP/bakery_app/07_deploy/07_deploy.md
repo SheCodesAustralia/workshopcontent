@@ -1,6 +1,6 @@
 # Deploy!
 
-> **Note** The following chapter can be sometimes a bit hard to get through. Persist and finish it; deployment is an important part of the website development process. This chapter is placed in the middle of the tutorial so that your mentor can help with the slightly trickier process of getting your website online. This means you can still finish the tutorial on your own if you run out of time.
+> **Note** The following chapter can be sometimes a bit hard to get through. Persist and finish it; deployment is an important part of the website development process. This section is optional, as this tutorial is focusing on Django — but feel free to take one step forward and make your website live on the internet!
 
 Until now, your website was only available on your computer.  Now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app. :)
 
@@ -188,7 +188,7 @@ In this case, follow the instructions from GitHub to [create a personal access t
 3. On left-hand menu, press "Personal access tokens" to expand the dropdown menu. Click "Tokens (classic)"
 4. In the top-right, click "Generate new token", and then click "Generate new token (classic)". You will need to authenticate your account at this point.
 5. Fill in the form:
-  - Note: BAKE it with Django 
+  - Note: Bake it with Django 
   - Expiration: No expiration (or if you want more security, choose 90 days)
   - Select scopes: Check every box 
 6. Press "Generate token"
@@ -313,13 +313,13 @@ On PythonAnywhere all those steps are automated, but they're the same steps you 
 
 ```
 
-Reloading bbbakery.pythonanywhere.com via API >
+Reloading bsbakery.pythonanywhere.com via API >
    \
     ~<:>>>>>>>>>
   ___________________________________
 /                                     \
 | All done!  Your site is now live at |
-| https://bbbakery.pythonanywhere.com |
+| https://bsbakery.pythonanywhere.com |
 \                                     /
   -----------------------------------
    \
@@ -377,12 +377,55 @@ There are also some [general debugging tips on the PythonAnywhere help site](htt
 And remember, your mentors are here to help!
 
 
-
 # Check out your site!
 
 The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server -- remember, the posts from your local test database were not sent to your live blog.
 
 Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
+
+
+
+
+## One more thing
+
+It'd be good to see if your website will still be working on the public Internet, right? Remember every time you make any changes to your code, make sure your website gets updated too! Let's try deploying to PythonAnywhere again. Here's a recap of the steps. In your **VS Code terminal**, stop the server from running by pressing:`Ctrl + C`.
+
+* Now, push your code to GitHub
+
+{% filename %}command-line{% endfilename %}
+```
+$ git status
+[...]
+$ git add .
+$ git status
+[...]
+$ git commit -m "Modified templates to display posts from database."
+[...]
+$ git push
+```
+
+If you need a recap of what we are doing, check [First Git commands](../04_deploy/04_deploy.md#first-git-commands). Remember mentors are just a hand raise away. Don’t hesitate to ask for help if you get stuck!
+
+* Then, log back in to [PythonAnywhere](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one), and run:
+
+{% filename %}PythonAnywhere command-line{% endfilename %}
+```
+$ cd <your-pythonanywhere-domain>.pythonanywhere.com
+$ git pull
+[...]
+```
+
+(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+
+* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. 
+
+![reload](images/reload.png)
+
+(To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://subdomain.pythonanywhere.com -- check it out in the browser! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
+
+
+Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://subdomain.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
+
 
 
 Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet!
