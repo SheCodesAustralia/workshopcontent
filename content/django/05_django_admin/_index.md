@@ -1,6 +1,6 @@
 ---
-title: "3. Django Admin"
-weight: 3
+title: "5. Django Admin"
+weight: 5
 chapter: true
 ---
 
