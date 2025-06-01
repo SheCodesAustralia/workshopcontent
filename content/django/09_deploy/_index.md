@@ -1,6 +1,6 @@
 ---
-title: "7. Deploy"
-weight: 7
+title: "9. Deploy"
+weight: 9
 chapter: true
 ---
 
