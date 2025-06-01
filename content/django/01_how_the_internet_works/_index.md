@@ -1,3 +1,9 @@
+---
+title: "1. How the Internet Works"
+weight: 1
+chapter: true
+---
+
 # How the Internet works
 
 We bet you use the Internet every day. But do you actually know what happens when you type an address like https://shecodes.com.au/ into your browser and press `enter`?
