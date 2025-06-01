@@ -26,6 +26,25 @@ The deployment process on **Chromebook** and Cloud environment can be illustrate
 
 ![](images/deployment_cloud.png)
 
+# Include PythonAnywhere in your settings.py file
+
+Remember earlier when we were editing our settings.py file? We have one more change to make over there. When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`. This means that it was working for our local version just fine, but won't
+match our hostname on PythonAnywhere once we deploy! Let's update the `Allowed Hosts` section to include `pythonanywhere.com`:
+
+```python
+-ALLOWED_HOSTS = []
++ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.pythonanywhere.com']
+
+```
+
+{{% notice note %}}
+
+**Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file:
+`MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
+
+{{% /notice %}}
+
+
 # Git
 
 > **Note** If you already did the [installation steps](../installation/README.md), there's no need to do this again – you can skip to the next section and start creating your Git repository.
