@@ -1,27 +1,23 @@
-+++
-title = "Django"
-date = 2021-01-25T14:55:24+08:00
-weight = 15
-chapter = true
-pre = "<i class='fab fa-python'></i>&nbsp; "
-+++
+---
+title: "Django"
+weight: 11
+chapter: true
+pre: "<i class='fab fa-python'></i>&nbsp; "
+---
 
-# Django (girls)
+# Django
 
-Django is a popular and powerful web-development framework. It started life as a news paper content management system in the early 2000s, now it runs sites as big as Instagram, Pintrest, NASA and Spotify.
+Django is a powerful web framework built with Python that helps you create dynamic websites quickly and efficiently. Instead of manually coding every page, Django lets you use templates to automatically generate pages with fresh data—such as blog posts or user profiles.
 
-In this tutorial you will be making your own blog.
+Django also simplifies connecting your site to a database, making it easy to store and manage information like user comments or product listings. Plus, Django comes with built-in features like user authentication and security, so you can focus on building your site without reinventing the wheel.
 
-### Often we get asked why would we waste our time building a blog, when you could just use something like wordpress?
+### What will you learn during the tutorial?
 
-Well, there's a good reason!  
-When you learn something new, it's good to start learning with something familiar and simple, after all you are going to be learning more than enough new concepts in the hours ahead. So let's do something simple and familiar to start with, and then if you want to come up with a more complex solution to a personal problem you would like to solve, reach out to your mentors, I'm sure you'll find one who's willing to help guide you in the right direction.
+By the end of this tutorial, you'll have built a fully functional Django application that showcases a Bakery Finder app for discovering the best local bakeries and their delicious offerings all at your fingertips.
 
-### Ready to get started?!
+You’ll learn how to structure your project with Django’s models, views, and templates, and you'll add the finishing touches with custom styling to make your site visually appealing. We’ll even guide you through deploying your app online so that everyone can explore your bakeries and their offerings!
 
-Today we will be using the Django Girls Tutorial!  
-Click below to get started!!
+### What is the difference between building a website in Django vs HTML/CSS?
 
-<a href="https://tutorial.djangogirls.org/" target="_blank">
-	<img src="images/djangogirls.png" />
-</a>
+- **HTML/CSS websites are static:** You need to code each page by hand, which is fine for simple, unchanging content but not for interactive sites.
+- **Django:** If you want a website that updates itself and interacts with users, Django is an excellent, beginner-friendly choice.
