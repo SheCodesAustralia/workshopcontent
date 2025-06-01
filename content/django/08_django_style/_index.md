@@ -1,6 +1,6 @@
 ---
-title: "6. Django Style"
-weight: 6
+title: "8. Django Style"
+weight: 8
 chapter: true
 ---
 
