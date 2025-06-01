@@ -1,4 +1,10 @@
-# Django Template
+---
+title: "6. Django Style"
+weight: 6
+chapter: true
+---
+
+# Django Style
 
 What's a template, you may ask?
 

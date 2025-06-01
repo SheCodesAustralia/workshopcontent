@@ -1,23 +1,11 @@
+---
+title: "1. Your First Django Project"
+weight: 1
+chapter: true
+---
 
-<!--
+# Your first Django project!
 
-### How to Use This Template
-
-
-- **Changing the Project Directory:**  
-  Similarly, update `bakery_site` if you decide on a different directory name. This variable is used in command-line examples to help maintain consistency.
-
-- **Updating Placeholder Links:**  
-  The placeholders `<<DJANGO_INSTALLATION_LINK>>` and `<<VIRTUALENV_LINK>>` are used in the document where hyperlinks are required.  
-  Once you have the actual URLs, **replace them with the correct links**.
-
-- **Updating project name:**  
-bakery_project : bakery_project
-once final directories and names confirmed, update bakery_project accordingly.
-
-- **update {{link_to_commandline_intro}}**
-
--->
 
 {{% notice info %}}  
 

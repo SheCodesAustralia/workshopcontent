@@ -1,3 +1,9 @@
+---
+title: "4. Django URLs"
+weight: 4
+chapter: true
+---
+
 # Django URLs
 
 We're about to build our first webpage: a homepage for your blog! But first, let's learn a little bit about Django URLs.

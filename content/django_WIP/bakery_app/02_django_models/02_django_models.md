@@ -1,20 +1,13 @@
-<!--
+---
+title: "2. Django Models"
+weight: 2
+chapter: true
+---
 
-- **Updating the Names:**  
-  
+# Django Models
 
-same with:
-
-bakery_site
-
-
-
-
-
--->
 Ready for the content of our personalised letter? Let's make it happen! 
 
-# Django models
 
 What we want to create is something that will store all the details about local bakeries and their scrumptious offerings in our bakery_project app. But to be able to do that, we need to talk a little bit about a concept in programming called `objects`.
 

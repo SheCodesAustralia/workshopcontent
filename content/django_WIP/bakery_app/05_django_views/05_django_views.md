@@ -1,4 +1,10 @@
-# Django views – time to create!
+---
+title: "5. Django Views"
+weight: 5
+chapter: true
+---
+
+# Django Views
 
 In the last step, we set up our *URL* so that when someone visits the homepage (http://127.0.0.1:8000/), Django knows to run a specific function called a *view*. Now it's time to create that *view*!
 

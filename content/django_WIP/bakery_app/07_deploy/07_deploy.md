@@ -1,4 +1,10 @@
-# Deploy!
+---
+title: "7. Deploy"
+weight: 7
+chapter: true
+---
+
+# Deploy
 
 > **Note** The following chapter can be sometimes a bit hard to get through. Persist and finish it; deployment is an important part of the website development process. This section is optional, as this tutorial is focusing on Django — but feel free to take one step forward and make your website live on the internet!
 

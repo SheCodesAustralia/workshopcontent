@@ -1,5 +1,11 @@
-# Django admin
-<!-- comment baraye behnaz : tutorial bakery app ro baz kon, oon ke khodam sakhtam ham baz kon taa code ro bezani az roosh, va ax begiri ax vaa coode ro inja update kon -->
+---
+title: "3. Django Admin"
+weight: 3
+chapter: true
+---
+
+# Django Admin
+
 To add, edit and delete the posts we've just modeled, we will use Django admin.
 
 Let's open the `bakery_project/admin.py` file in the code editor and replace its contents with this:
