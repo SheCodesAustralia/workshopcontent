@@ -19,5 +19,6 @@ You’ll learn how to structure your project with Django’s models, views, and 
 
 ### What is the difference between building a website in Django vs HTML/CSS?
 
-- **HTML/CSS websites are static:** You need to code each page by hand, which is fine for simple, unchanging content but not for interactive sites.
-- **Django:** If you want a website that updates itself and interacts with users, Django is an excellent, beginner-friendly choice.
+**HTML/CSS websites are static:** You need to code each page by hand, which is fine for simple, unchanging content but not for interactive sites.
+
+**Django:** If you want a website that updates itself and interacts with users, Django is an excellent, beginner-friendly choice.
