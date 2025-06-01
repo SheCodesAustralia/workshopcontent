@@ -1,5 +1,6 @@
 ---
 title: "Previous"
+chapter: true
 weight: 100
 ---
 
