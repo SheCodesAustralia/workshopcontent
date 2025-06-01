@@ -14,12 +14,6 @@ Steps of instruction for this chapter is based on tutorials by Django Girls (htt
 {{% /notice %}}
 
 
-## What will you learn during the tutorial?
-
-By the end of this tutorial, you'll have built a fully functional Django application that showcases a Bakery Finder app for discovering the best local bakeries and their delicious offerings all at your fingertips.
-
-You’ll learn how to structure your project with Django’s models, views, and templates, and you'll add the finishing touches with custom styling to make your site visually appealing. We’ll even guide you through deploying your app online so that everyone can explore your bakeries and their offerings!
-
 It will (more or less) look like this:
 
 ![Figure 1.1](images/placeholder.png ) 
