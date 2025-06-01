@@ -1,5 +1,5 @@
 +++
-title = "Django"
+title = "Django (2021)"
 date = 2021-01-25T14:55:24+08:00
 weight = 15
 chapter = true
