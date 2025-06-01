@@ -1,6 +1,6 @@
 ---
-title: "4. Django URLs"
-weight: 4
+title: "6. Django URLs"
+weight: 6
 chapter: true
 ---
 
