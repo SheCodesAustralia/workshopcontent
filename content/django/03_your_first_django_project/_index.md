@@ -16,9 +16,11 @@ Steps of instruction for this chapter is based on tutorials by Django Girls (htt
 
 # Your first Django project!
 
-The first step is to create our Bakery Finder app is to start a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us. This is just a bunch of directories and files that we will use later.
+The first step is to create our Bakery Finder app is to start a new Django project. Django has some ~magic~ meaning that went we run some scripts, Django will create the skeleton of a Django project for us! The skeleton is a bunch of files that we will explain as we go.
 
-The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure to be able to find important things.
+Naming of these files and directories are very important. Django needs to maintain a certain structure to be able to find important bits of information. If they are renamed or moved, it might get confused or throw some unexpected errors. As such, you shouldn't rename the files that we are about to create, or move them around.
+
+Ready to get going?
 
 
 {{% notice note %}}
@@ -33,25 +35,15 @@ Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv
 
 ### Mac/Linux Users:
 
-In your macOS or Linux console, you should run the following command. **Don't forget to add the period (or dot) `.` at the end!**
+In your macOS or Linux console, run the following command. Don’t forget to add the period (or dot) `.` at the end! The period `.` is essential because it tells the script to install Django in your current directory (fun fact: the period `.` is a short-hand reference).
 
 ```
 (myvenv) bakery_site% django-admin startproject bakery_project .
 ```
 
-
 {{% notice note %}}
 
-The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
-
-{{% /notice %}}
-
-
-
-{{% notice note %}}
-
-**Note** When typing the command above, remember that you only type the part which starts by `django-admin`.
-The `(myvenv) ~/bakery_site$` part shown here is just example of the prompt that will be inviting your input on your command line.
+When typing the command above, remember that you only type the part which starts with django-admin. The `(myvenv) ~/bakery_site$` part shown here is just example of what your command line will be showing, waiting for your instructions. Yours may look different if your file is called something different or based on the settings on your device. If you're unsure - check in with a mentor!
 
 {{% /notice %}}
 
@@ -59,24 +51,16 @@ The `(myvenv) ~/bakery_site$` part shown here is just example of the prompt that
 
 ### Windows Users:
 
-On Windows you should run the following command. **(Don't forget to add the period (or dot) `.` at the end)**:
+On your Windows terminal, run the following command. Don’t forget to add the period (or dot) `.` at the end! The period `.` is essential because it tells the script to install Django in your current directory (fun fact: the period `.` is a short-hand reference).
 
 ```
-(myvenv) ~/bakery_site$ django-admin.exe startproject bakery_project .
+(myvenv) C:\Users\Name\bakery_site django-admin.exe startproject bakery_project .
 ```
-
-{{% notice note %}}
-
-
-The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
-
-{{% /notice %}}
-
 
 {{% notice note %}}
 
 **Note** When typing the command above, remember that you only type the part which starts by `django-admin.exe`.
-The `(myvenv) C:\Users\Name\bakery_site` part shown here is just example of the prompt that will be inviting your input on your command line.
+The `(myvenv) C:\Users\Name\bakery_site` part shown here is just example of what your command line will be showing, waiting for your instructions. Yours may look different if your file is called something different or based on the settings on your device. If you're unsure - check in with a mentor!
 
 {{% /notice %}}
 
@@ -105,17 +89,19 @@ bakery_site
 
 {{% notice note %}}
 
- **Note**: in your directory structure, you will also see your `myvenv` directory that we created before.
+In your directory structure, you will also see your `myvenv` directory that we created before.
 
 {{% /notice %}}
 
-The `manage.py` is a script that helps with management of the site. With it we will be able (among other things) to start a web server on our computer without installing anything else.
+Lets walk through what some of these files are.
 
-The `settings.py` file contains the configuration of your website.
+The `manage.py` is a script that helps with management of the site. One of the things this file lets us do is to start a web server on our computer without installing anything else.
 
-Remember when we talked about a mail carrier checking where to deliver a letter? The `urls.py` file is like an address book, it lists patterns the `urlresolver` uses to figure out which view should handle each request.
+The `settings.py` file contains the configuration of your website, much like your settings app on your phone or laptop.
 
-Let's ignore the other files for now as we won't change them. The only thing to remember is not to delete them by accident!
+Remember when we talked about letters earlier? The `urls.py` file is like an address book, so we can write different letters to different people, with personalised content. There's a little thing called the 'urlresolver' that's going to help us with that down the track.
+
+We can ignore the other files for now as we won't change them - the only thing to remember is not to delete them by accident!
 
 
 
@@ -138,32 +124,29 @@ Let's make some changes in `bakery_project/settings.py`. Open the file using the
 
 {{% notice note %}}
 
-**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "File -> Open" menu action. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the `bakery_site/bakery_project` folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
+**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "File -> Open" menu action. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the `bakery_site/bakery_project` folder on your desktop and right-clicking on it. Then, select your code editor from the list.
 
 {{% /notice %}}
 
 
 ### Time Zone and Location
 
-It would be nice to have the correct time on our website. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Australia/Perth`).
+Having the correct time on our website will be important to make sure the bakeries are open! We've included the timezone for Perth below, but feelf free to check out [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone.
 
-In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choose your own timezone.  For example:
+In `settings.py`, find the line that contains `TIME_ZONE` and change it to your timezone.  For example:
 
 ```python
 -TIME_ZONE = "UTC"
 +TIME_ZONE = 'Australia/Perth'
 ```
+We also probably want to make sure our website is in the correct language so our pastry-loving customers can find us! Lets have a look at the `language code`. A `language code` has two parts - one is the language e.g. `en` for English or `de` for German - and the second part is the country code e.g. `de` for Germany or `AU` for Australia. This could be important for say British English vs American English. 
 
-A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `AU` for Australia. If English is not your native language, you can add this to change the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/5.1/ref/settings/#language-code).
-
-If you want a different language, change the language code by changing the following line:
+Let's update the default US English to Australian English by changing this line:
 
 ```python
 -LANGUAGE_CODE = "en-us"
 +LANGUAGE_CODE = 'en-AU'
 ```
-
-<!-- SHOULD WE KEEP LANGUAGE CODE THE DEFAULT: en-us ? -->
 
 
 
@@ -204,7 +187,7 @@ You don’t need to create these folders just yet — Django will take care of i
 
 {{% notice tip %}}  
 **Tip**: You might not use media files right away, but it’s good practice to include the setup early.  
-That way you’re ready when you add profile images or product photos later!  
+That way you’re ready when you add delicious cupcake photos later!  
 {{% /notice %}}
 
 
