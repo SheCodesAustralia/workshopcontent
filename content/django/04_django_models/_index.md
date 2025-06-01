@@ -1,13 +1,12 @@
 ---
-title: "2. Django Models"
-weight: 2
+title: "4. Django Models"
+weight: 4
 chapter: true
 ---
 
 # Django Models
 
 Ready for the content of our personalised letter? Let's make it happen! 
-
 
 What we want to create is something that will store all the details about local bakeries and their scrumptious offerings in our bakery_project app. But to be able to do that, we need to talk a little bit about a concept in programming called `objects`.
 

@@ -1,6 +1,6 @@
 ---
-title: "1. Your First Django Project"
-weight: 1
+title: "3. Your First Django Project"
+weight: 3
 chapter: true
 ---
 
@@ -12,12 +12,6 @@ chapter: true
 Steps of instruction for this chapter is based on tutorials by Django Girls (https://github.com/DjangoGirls/tutorial).
 
 {{% /notice %}}
-
-
-It will (more or less) look like this:
-
-![Figure 1.1](images/placeholder.png ) 
-
 
 
 # Your first Django project!
