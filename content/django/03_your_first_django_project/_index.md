@@ -9,12 +9,9 @@ chapter: true
 
 {{% notice info %}}  
 
-Steps of instruction for this chapter is based on tutorials by Django Girls (https://github.com/DjangoGirls/tutorial).
+Steps of instruction for this chapter is based on tutorials by [Django Girls](https://github.com/DjangoGirls/tutorial).
 
 {{% /notice %}}
-
-
-# Your first Django project!
 
 The first step is to create our Bakery Finder app is to start a new Django project. Django has some ~magic~ meaning that went we run some scripts, Django will create the skeleton of a Django project for us! The skeleton is a bunch of files that we will explain as we go.
 
