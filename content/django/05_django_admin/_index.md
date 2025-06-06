@@ -46,11 +46,11 @@ Windows:
 (myvenv) ~/bakery_site$ python manage.py createsuperuser
 ```
 
-When prompted, type your username (lowercase, no spaces), email address, and password. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
+When prompted, type your username (lowercase, no spaces), email address, and password. **Don't worry that you can't see the password you're typing in – that's how its supposed to be, for security.** Type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
 
 ```
-Username: ola
-Email address: ola@example.com
+Username: flourpower
+Email address: hello@flourpower.com
 Password:
 Password (again):
 Superuser created successfully.
@@ -60,12 +60,43 @@ Return to your browser. Log in with the superuser's credentials you chose; you s
 
 ![Django admin](images/django-admin_page.png)
 
-Go to Bakery and experiment a little bit with it. Add two or three bakery. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. Now head to Item and add some items for each bakery! :)
+Go to Bakery and experiment a little bit with it. Add two or three bakeries. Don't worry too much about the content – it's only visible to you on your local computer. You can copy some text from the list below if you're looking for inspiration. 
 
+| Bakery Name            | Address                             |
+| ---------------------- | ----------------------------------- |
+| Flour Power            | 12 Gardenia St, Subiaco WA 6008     |
+| Dough Re Mi            | 98 Symphony Rd, Southbank VIC 3006  |
+| Rolling in Dough       | 34 Cashmere Ave, New Farm QLD 4005  |
+| Batter Late Than Never | 51 Tardy Ln, Glenelg SA 5045        |
+| Whisk Takers           | 7 Adventure Ct, Kingston ACT 2604   |
+| The Daily Knead        | 101 Baker St, Hobart TAS 7000       |
+| Sugar High             | 22 Sherbet Cres, Fremantle WA 6160  |
+| Bready or Not          | 9 Puzzle Pde, Brunswick VIC 3056    |
+| Muffin But Love        | 66 Crumb Crt, Paddington QLD 4064   |
+| Piece of Cake          | 80 Easy St, Northbridge WA 6003     |
+| Bake It Happen         | 11 Rise Rd, Newtown NSW 2042        |
+| You Batter Believe It  | 42 Sprinkle Way, Norwood SA 5067    |
+| Oh, Crumbs!            | 5 Biscuit Blvd, Launceston TAS 7250 |
+| Pain in the Bun        | 13 Croissant Pl, Manly NSW 2095     |
+| Bon AppéTreat          | 77 Parisian Ln, Carlton VIC 3053    |
+| The Baguette About It  | 28 Forget It St, Darwin NT 0800     |
 
 ![Django admin](images/add-bakery.png)
 
+Now head to Item and add some items for each bakery!
 
-If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/5.1/ref/contrib/admin/
+| Item Name           | Description                                              |
+| ------------------- | -------------------------------------------------------- |
+| Sourdough Loaf      | Crusty, tangy artisan bread                              |
+| Croissant           | Buttery, flaky French pastry                             |
+| Chocolate Éclair    | Choux pastry filled with cream and topped with chocolate |
+| Lamington           | Sponge cake coated in chocolate and coconut              |
+| Vanilla Slice       | Layers of custard and puff pastry, topped with icing     |
+| Apple Turnover      | Pastry filled with stewed apples                         |
+| Sausage Roll        | Puff pastry wrapped around seasoned meat                 |
+| Cinnamon Scroll     | Swirled bun with cinnamon and icing                      |
+| Cupcake             | Individual sponge cake with frosting                     |
 
-This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!
+If you want to know more about Django admin, check out Django's [documentation](https://docs.djangoproject.com/en/5.1/ref/contrib/admin/)
+
+This is probably a good moment to grab a tea or coffee to re-energize yourself. You created your first Django model – you deserve a little break!
