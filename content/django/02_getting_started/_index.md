@@ -10,8 +10,6 @@ In this tutorial you will be building a Bakery app. In order to do that, as you 
 
 ---
 
-## MacOS, Windows, Linux Installation
-
 ### Brief intro to the command line
 
 Many of the steps below reference the `console`, `terminal`, `command window`, or `command line` -- these all mean the same thing: a window on your computer where you can enter commands. For now, the main thing you need to know is how to open a command window and what it looks like:
@@ -96,7 +94,7 @@ We will make a virtualenv called `myvenv`. The general command will be in the fo
 python -m venv myvenv
 ```
 
-**Linux/macOS:**
+**MacOS/Linux:**
 
 ```sh
 python3 -m venv myvenv
@@ -117,7 +115,7 @@ Start your virtual environment by running:
 myvenv\Scripts\activate
 ```
 
-**Linux/macOS:**
+**MacOS/Linux:**
 
 ```sh
 source myvenv/bin/activate
@@ -146,59 +144,3 @@ Django~=5.1.2
 ```sh
 pip install -r requirements.txt
 ```
-
----
-
-## Chromebook Installation
-To set up your Chromebook, follow the instructions below:
-
-## Using a Cloud IDE Environment (Recommended for Chromebook or Low-Memory Devices)
-
-For users on Chromebooks or laptops with limited memory, we recommend using a **cloud IDE environment**. This allows you to interact with the command line, Python, and Django directly through your browser, with a code editor already installed.
-
-Your installation experience may differ slightly depending on the environment.
-
----
-
-## Step 1: Create a GitHub Account (if you already don't have one)
-
-1. Go to [GitHub.com](https://github.com) and sign up for a **free** user account.
-2. Remember your password — consider saving it in a password manager if you use one.
-
----
-
-## Step 2: Create a GitHub Project
-
-1. Visit [this link](https://github.com/new) to create a new repository.
-2. Use **`bakery_app`** as the project name.
-3. Set the repository to **Public** (this is required for deployment; you can make it private later).
-4. In Initialize this repository with, make sure to:
-   - Add a **README.md** file.
-   - Add a **.gitignore** file and select Python.
-
-## Step 3:  Start a Codespace
-
-If you don't want to install any app in your laptop, you can install Codespaces. To install Codespaces
-
-1. Go to GitHub [Codespaces](https://github.com/codespaces/new) and select the repository you just created. Click 'Create Codespace'
-
-![Screenshot of codespace.](images/codespace.png)
-
-wait a little bit and you will see something like that
-
-The [VSCode] (https://code.visualstudio.com/docs/?dv=win64user) editor will open for you automatically.
-If you see a notification that says "Install Python", please click on it. If not prompted, click the "Extensions" icon on the left sidebar in the Codespace editor. Search for "Python" and click "Install."
-
-![Screenshot of codespace python.](images/codespace_python.png)
-
-The bash terminal(similar to Linus) is at the bottom page.
-
-![Screenshot of codespace terminal.]( images/codespace_terminal.png)
-
-By default, the GitHub Codespace environment will be deleted after 1 month (this applies only to the environment, not your code). To prevent auto-deletion, you can adjust the settings on the page: https://github.com/codespaces
-
-![Screenshot of codespace-auto-delete-off.](images/codespace-auto-delete-off.png)
-
-## Step 4: Continue with the Tutorial.
-Follow the next steps from the section Set up a virtual environment and install Django.
-Follow than sections for Ubuntu/Linux. Use the Codespaces command line (terminal), accessible through your browser.

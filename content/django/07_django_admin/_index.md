@@ -1,6 +1,6 @@
 ---
-title: "5. Django Admin"
-weight: 5
+title: "7. Django Admin"
+weight: 7
 chapter: true
 ---
 
@@ -8,7 +8,7 @@ chapter: true
 
 To add, edit and delete the posts we've just modeled, we will use Django admin.
 
-Let's open the `bakery_project/admin.py` file in the code editor and replace its contents with this:
+Let's open the `bakeries/admin.py` file in the code editor and replace its contents with this:
 
 
 ```python

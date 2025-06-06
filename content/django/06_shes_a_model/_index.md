@@ -1,8 +1,57 @@
 ---
-title: "4. Django Models"
-weight: 4
+title: "6. She's a Model"
+weight: 6
 chapter: true
 ---
+So we've got a page but its all hardcoded and manual. That's no fun, we want dynamic data. Let's start by getting ourselves a database to store that data in.
+
+## Set up a database
+
+There's a lot of different database software that can store data for your site. We'll use the default one, `sqlite3`.
+
+This is already set up in this part of your `mysite/settings.py` file:
+
+```python
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
+    }
+}
+```
+
+To create a database for our app, let's run the following in the console: `python manage.py migrate` (we need to be in the `bakery_site` directory that contains the `manage.py` file). If your server is still running, press Control + C to stop it to run the next command.
+
+If that goes well, you should see something like this:
+
+```
+
+(myvenv)  bakery_site% python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying sessions.0001_initial... OK
+```
+
+And we're done! Time to start the web server and see if our website is working! See if you remember it from earlier...
+
 
 # Django Models
 
@@ -13,45 +62,7 @@ What we want to create is something that will store all the details about local 
 
 In programming, there’s a powerful concept called object-oriented programming. Instead of writing a long list of instructions, we can structure our code to model real-world things and how they interact — just like objects in real life.
 
-So, what is an object? Think of it as a bundle of properties (descriptions) and actions (things it can do). Sounds a bit strange, but it makes more sense with an example.
-
-Let’s say we want to model a cat. We could create an object called Cat with properties like:
-
-colour (black, orange, tortoiseshell, tabby)
-age
-breed (ragdoll, Maine Coon, Siamese)
-mood (happy, relaxed, playful, sleepy)
-owner (which might be a Person object — or nothing, if it's a stray)
-
-And our cat can do things, like:
-purr
-scratch
-feed
-
-Here’s what that might look like:
-```
-Cat
---------
-color
-age
-mood
-owner
-purr()
-scratch()
-feed(cat_food)
-```
-
-We might also have a CatFood object, with its own property:
-
-```
-CatFood
---------
-taste
-```
-
-This is the core idea of object-oriented programming: we describe things using properties (also called attributes) and actions (called methods).
-
-So how does this help us with our bakery app?
+So, what is an object? Think of it as a bundle of properties (descriptions) and actions (things it can do). 
 
 We want to build something that helps people discover amazing local bakeries and their delicious treats.
 
@@ -67,20 +78,26 @@ What actions might they have?
 
 For example, a Bakery should have:
 
+```
+Bakery
+-------
 name: The bakery's name.
 address: Where the bakery is located.
 cuisine: The type of baked goods or specialties it offers.
 rating: A rating to help users gauge quality.
 image: An optional image URL representing the bakery.
-
+```
 
 And an Item produced by the bakery should include:
 
+```
+Item
+-------
 bakery: A reference to the bakery it belongs to.
 name: The name of the baked good (like "Chocolate Croissant" or "Sourdough Bread").
 price: How much the item costs.
 image: An optional image URL of the item.
-
+```
 
 What kind of things could be done with these models? It would be very useful to have a method that returns a human-readable description of each instance. In Django, this is typically done using the `__str__` method. By defining this method, you ensure that when a Bakery or Item object is converted to a string, it provides a clear and concise representation (usually the name).
 
@@ -103,60 +120,7 @@ And each row is a single record — one bakery, one item, etc.
 
 Each model in Django becomes a table in the database, and the cool part is: models can be connected to each other! So a bakery can have many bakery items, and each item can belong to a specific bakery.
 
-### Creating an application
 
-To keep everything tidy, we will create a separate application inside our project, this will help us to have some nice solid foundations as the project expands. To create an application we need to run the following command in the console (from `bakery_site` directory where `manage.py` file is):
-
-macOS or Linux:
-```
-(myvenv) bakery_site% python manage.py startapp bakeries
-```
-Windows:
-```
-(myvenv) C:\Users\Name\bakery_site> python manage.py startapp bakeries
-```
-
-You will notice that a new `bakeries` directory is created and it contains a number of files now. The directories and files in our project should look like this:
-
-```
-bakery_site
-├── bakeries
-│   ├── admin.py
-│   ├── apps.py
-│   ├── __init__.py
-│   ├── migrations
-│   │   └── __init__.py
-│   ├── models.py
-│   ├── tests.py
-│   └── views.py
-├── db.sqlite3
-├── manage.py
-├── bakery_project
-│   ├── asgi.py
-│   ├── __init__.py
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
-├── myvenv
-│   └── ...
-└── requirements.txt
-
-```
-
-After creating an application, we also need to tell Django that it should use it. We do that in the file `bakery_project/settings.py`, open it in your code editor. We need to find `INSTALLED_APPS` and add a line containing `'{{APP_NAAME}}',` just above `]`. So the final product should look like this:
-
-```python
-INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-+   'bakeries.apps.BakeriesConfig',
-
-]
-```
 
 ### Creating a Bakery model
 
@@ -212,7 +176,7 @@ If you are curious about the rest of built-in Django from what we've done so far
 
 ### Creating an Item model
 
-Now let's define our `Item` model, which represents the baked goods offered by each bakery. Just below your Bakery model (underneath the def __str__(self): return self.name lines) in `bakeries/models.py` file, add the following code:
+Now let's define our `Item` model, which represents the baked goods offered by each bakery. Just below your Bakery model (at the very bottom of your code) in `bakeries/models.py` file, add the following code:
 
 
 ```python
