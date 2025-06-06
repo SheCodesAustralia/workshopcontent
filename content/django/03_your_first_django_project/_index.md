@@ -25,7 +25,7 @@ Ready to get going?
 
 {{% notice note %}}
 
-Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. We explained how to do that in the [Django installation](<<DJANGO_INSTALLATION_LINK>>) chapter in the [Working with virtualenv](<<VIRTUALENV_LINK>>) part. Typing `myvenv\Scripts\activate` on Windows or
+Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. Feel free to flick back to the installation section for a refresher on what it is. Typing `myvenv\Scripts\activate` on Windows or
 `source myvenv/bin/activate` on macOS or Linux will do this for you.
 
 {{% /notice %}}
@@ -59,7 +59,7 @@ On your Windows terminal, run the following command. Don’t forget to add the p
 
 {{% notice note %}}
 
-**Note** When typing the command above, remember that you only type the part which starts by `django-admin.exe`.
+When typing the command above, remember that you only type the part which starts by `django-admin.exe`.
 The `(myvenv) C:\Users\Name\bakery_site` part shown here is just example of what your command line will be showing, waiting for your instructions. Yours may look different if your file is called something different or based on the settings on your device. If you're unsure - check in with a mentor!
 
 {{% /notice %}}
@@ -124,28 +124,34 @@ Let's make some changes in `bakery_project/settings.py`. Open the file using the
 
 {{% notice note %}}
 
-**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "File -> Open" menu action. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the `bakery_site/bakery_project` folder on your desktop and right-clicking on it. Then, select your code editor from the list.
+Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "File -> Open" menu action. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the `bakery_site/bakery_project` folder on your desktop and right-clicking on it. Then, select your code editor from the list.
 
 {{% /notice %}}
 
 
 ### Time Zone and Location
 
-Having the correct time on our website will be important to make sure the bakeries are open! We've included the timezone for Perth below, but feelf free to check out [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone.
+Having the correct time on our website will be important to make sure the bakeries are open! We've included the timezone for Perth below, but feelf free to check out Wikipedia's [list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone.
 
 In `settings.py`, find the line that contains `TIME_ZONE` and change it to your timezone.  For example:
 
 ```python
--TIME_ZONE = "UTC"
-+TIME_ZONE = 'Australia/Perth'
+- TIME_ZONE = "UTC"
++ TIME_ZONE = 'Australia/Perth'
 ```
+{{% notice tip %}}
+
+Note the + and - indicator in the code example above. This is instructing you to delete the line with the - symbol and add the line with the + symbol, ie just replace the UTC with 'Australia/Perth'. We will be using this plus/minus notation throughout the tutorial so keep an eye out for rogue + symbols that might trip you up.
+
+{{% /notice %}}
+
 We also probably want to make sure our website is in the correct language so our pastry-loving customers can find us! Lets have a look at the `language code`. A `language code` has two parts - one is the language e.g. `en` for English or `de` for German - and the second part is the country code e.g. `de` for Germany or `AU` for Australia. This could be important for say British English vs American English. 
 
 Let's update the default US English to Australian English by changing this line:
 
 ```python
--LANGUAGE_CODE = "en-us"
-+LANGUAGE_CODE = 'en-AU'
+- LANGUAGE_CODE = "en-us"
++ LANGUAGE_CODE = 'en-AU'
 ```
 
 
@@ -271,7 +277,7 @@ Congratulations! You've just created your first website and run it using a web s
 
 Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
 
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv. To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
+To type additional commands while the web server is running, open a new terminal window and activate your virtualenv. To stop the web server, switch back to the window in which it's running and press CTRL+C (Control and C keys together). Psst, if that doesn't work on Windows, you might have to press Ctrl+Break.
 
 
 
