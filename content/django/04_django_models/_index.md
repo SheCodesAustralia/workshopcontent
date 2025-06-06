@@ -6,21 +6,29 @@ chapter: true
 
 # Django Models
 
-Ready for the content of our personalised letter? Let's make it happen! 
-
 What we want to create is something that will store all the details about local bakeries and their scrumptious offerings in our bakery_project app. But to be able to do that, we need to talk a little bit about a concept in programming called `objects`.
 
 
 ## Objects
 
-There is a concept in programming called `object-oriented programming`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
+In programming, there’s a powerful concept called object-oriented programming. Instead of writing a long list of instructions, we can structure our code to model real-world things and how they interact — just like objects in real life.
 
-So what is an object? It is a collection of properties and actions. It sounds weird, but we will give you an example.
+So, what is an object? Think of it as a bundle of properties (descriptions) and actions (things it can do). Sounds a bit strange, but it makes more sense with an example.
 
-If we want to model a cat, we will create an object `Cat` that has some properties such as `color`, `age`, `mood` (like good, bad, or sleepy ;)), and `owner` (which could be assigned a `Person` object – or maybe, in case of a stray cat, this property could be empty).
+Let’s say we want to model a cat. We could create an object called Cat with properties like:
 
-Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we will give the cat some `CatFood`, which could be a separate object with properties, like `taste`).
+colour (black, orange, tortoiseshell, tabby)
+age
+breed (ragdoll, Maine Coon, Siamese)
+mood (happy, relaxed, playful, sleepy)
+owner (which might be a Person object — or nothing, if it's a stray)
 
+And our cat can do things, like:
+purr
+scratch
+feed
+
+Here’s what that might look like:
 ```
 Cat
 --------
@@ -33,17 +41,29 @@ scratch()
 feed(cat_food)
 ```
 
+We might also have a CatFood object, with its own property:
+
 ```
 CatFood
 --------
 taste
 ```
 
-So basically the idea is to describe real things in code with properties (called `object properties`) and actions (called `methods`).
+This is the core idea of object-oriented programming: we describe things using properties (also called attributes) and actions (called methods).
 
-How will we model our bakery items and bakeries then? We want to build a bakery app that helps users discover the best local bakeries and their delectable offerings, right?
+So how does this help us with our bakery app?
 
-We need to answer the question: what `object properties` do we need for a bakery? What is a bakery item? What properties should it have? 
+We want to build something that helps people discover amazing local bakeries and their delicious treats.
+
+To do that, we need to model our world using objects:
+
+What are the key properties of a Bakery?
+
+What is a BakeryItem, and what should it include?
+
+Let’s start thinking like object-oriented programmers:
+What data do we need to describe a bakery or a baked good?
+What actions might they have?
 
 For example, a Bakery should have:
 
@@ -64,20 +84,28 @@ image: An optional image URL of the item.
 
 What kind of things could be done with these models? It would be very useful to have a method that returns a human-readable description of each instance. In Django, this is typically done using the `__str__` method. By defining this method, you ensure that when a Bakery or Item object is converted to a string, it provides a clear and concise representation (usually the name).
 
-Since we already know what we want to achieve, let's start modeling it in Django!
+Let's start modeling it in Django!
 
 
 ## Django model
 
-Knowing what an object is, we can create a Django model for our bakery and a model for its items.
+Now that we understand what an object is, we can use that knowledge to create a Django model for our bakery and another for its items.
 
-A model in Django is a special kind of object – it is saved in the `database`. A database is a collection of data. This is a place in which you will store information about users, your bakeries, their items, etc. We will be using a SQLite database to store our data. This is the default Django database adapter – it'll be enough for us right now.
+In Django, a model is a special type of object that gets saved to a 'database'. A database is simply a structured collection of data — it’s where you’ll store information about users, bakeries, their baked goods, and more.
 
-You can think of a model in the database as a spreadsheet with columns (fields) and rows (data). Each model will represent a table on our database and it can interact with other tables! 
+For this project, we’ll be using a SQLite database, which is Django’s default option. It’s lightweight and perfect for what we need right now.
+
+You can imagine a model like a spreadsheet:
+
+The columns represent the fields or attributes (like name, price, or location),
+
+And each row is a single record — one bakery, one item, etc.
+
+Each model in Django becomes a table in the database, and the cool part is: models can be connected to each other! So a bakery can have many bakery items, and each item can belong to a specific bakery.
 
 ### Creating an application
 
-To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run the following command in the console (from `bakery_site` directory where `manage.py` file is):
+To keep everything tidy, we will create a separate application inside our project, this will help us to have some nice solid foundations as the project expands. To create an application we need to run the following command in the console (from `bakery_site` directory where `manage.py` file is):
 
 macOS or Linux:
 ```
@@ -138,29 +166,29 @@ Let's open `bakeries/models.py` in the code editor, remove everything from it, a
 
 ```python
 
-+from django.db import models
+from django.db import models
 
 
-+class Bakery(models.Model):
-+    name = models.CharField(max_length=255)
-+    address = models.TextField()
-+    cuisine = models.CharField(max_length=255)
-+    rating = models.IntegerField()
-+    image = models.URLField(null=True, blank=True)
-+
-+    def __str__(self):
-+        return self.name
+class Bakery(models.Model):
+    name = models.CharField(max_length=255)
+    address = models.TextField()
+    cuisine = models.CharField(max_length=255)
+    rating = models.IntegerField()
+    image = models.URLField(null=True, blank=True)
+
+    def __str__(self):
+        return self.name
 
 
 ```
 {{% notice info %}}  
 
-Double-check that you use two underscore characters (`_`) on each side of `str`. This convention is used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
+Double-check that you use two underscore characters (`_`) on each side of `str`. This convention is used frequently in Python and they have a fun name "dunder" (short for "double-underscore").
 
 {{% /notice %}}
 
 
-It looks scary, right? But don't worry – we will explain what these lines mean!
+Let's break that down a bit.
 
 The line starting with `from` or `import` is a line that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
 
@@ -176,64 +204,60 @@ Now we define the properties we were talking about: `name`, `address`, `cuisine`
 - `models.IntegerField` – this is for storing whole numbers.
 - `models.URLField` – this is for storing image URLs.
 
-
-We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/5.1/ref/models/fields/#field-types).
-
-
 Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Bakery name.
 
-Also notice `def __str__(self):` is indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
+Also notice `def __str__(self):` is indented. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
 
+If you are curious about the rest of built-in Django from what we've done so far, have a look at Django's [documentation](https://docs.djangoproject.com/en/5.1/ref/models/fields/#field-types).
 
 ### Creating an Item model
 
-Now let's define our `Item` model, which represents the baked goods offered by each bakery. Just below your Bakery modelin `bakeries/models.py` file, add the following code:
+Now let's define our `Item` model, which represents the baked goods offered by each bakery. Just below your Bakery model (underneath the def __str__(self): return self.name lines) in `bakeries/models.py` file, add the following code:
 
 
 ```python
 
-from django.db import models
-
-
-class Bakery(models.Model):
+class Item(models.Model):
+    bakery = models.ForeignKey(Bakery, on_delete=models.CASCADE)
     name = models.CharField(max_length=255)
-    address = models.TextField()
-    cuisine = models.CharField(max_length=255)
-    rating = models.IntegerField()
+    price = models.FloatField()
     image = models.URLField(null=True, blank=True)
 
     def __str__(self):
-        return self.name
-
-+class Item(models.Model):
-+    bakery = models.ForeignKey(Bakery, on_delete=models.CASCADE)
-+    name = models.CharField(max_length=255)
-+    price = models.FloatField()
-+    image = models.URLField(null=True, blank=True)
-
-+    def __str__(self):
-+       return self.name
+       return self.name
 
 ```
 
+When we write: class Item(models.Model) we’re defining a model called Item. This is how we tell Django: "Hey, I want to create something called an Item and store it in the database."
 
-`class Item(models.Model)` defines our Item model, which inherits from Django’s base Model class. This tells Django to save instances of Item in the database as a table. So far we have two tables! `Bakery` and `Item`.
+The bit in brackets - models.Model – means that Item is inheriting from Django’s built-in Model class. That’s just a fancy way of saying:
+“Make this a Django model with all the features needed to connect to the database.”
 
-We just defined the properties of an `Item` such as: `bakery`, `name`, `price` and `image`. To do that we need to define the type of each field! (Is it A text? A number? A relation to another object?) Exactly the same we took care of our `Bakery` model.
+Thanks to this, Django knows to create a database table for Item. Each time we create a new item (like a croissant or cupcake), Django will save it as a row in the Item table.
 
-I bet it looks less scary, right? Let's find out what is new here? 
+So if you’ve already created a model for your Bakery as well, you now have two tables in your database:
 
-- `models.ForeignKey(Bakery, on_delete=models.CASCADE)` – This field creates a relationship between each Item and a Bakery. The on_delete=models.CASCADE argument means that if a bakery is deleted, all associated items will also be removed from the database.
-- `models.FloatField` – This field stores the price of the item as a floating-point number, allowing for decimals.
+One for `Bakery`
 
-We have the same method `__str__`. In this scenario, when we call `__str__()` we will get a text (**string**) with an Item name.
+One for `Item`
 
-If something is still not clear about models, feel free to ask one of the mentors! Spot the purple shirt? hands up now! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
+Each model = one table. Each instance (object) = one row.
+
+We just defined the properties of an `Item` such as: `bakery`, `name`, `price` and `image`. To do that we defined the type of each field (Is it text? A number? A relation to another object?). This is exactly the same way we made our `Bakery` model.
+
+Let's find out what's new here.
+
+- `models.ForeignKey(Bakery, on_delete=models.CASCADE)` – This field creates a relationship between each Item and a Bakery. The on_delete=models.CASCADE argument means that if a bakery is deleted, all associated items will also be removed from the database. That makes sense, we wouldn't want to find the croissant of our dreams only to find out that bakery closed down in 2003!
+- `models.FloatField` – This field stores the price of the item as a floating-point number, allowing for decimals. This way our data will show up in dollars and cents, like we might be used to seeing at shops.
+
+We are using a `__str__` method again. In this scenario, when we call `__str__()` we will get a text (**string**) with an Item name.
+
+If something is still not clear about models, feel free to ask one of the mentors! Spot the purple shirt? Hands up now! We know its a lot to take in but you should be super proud of yourself. Hopefully it looks slightly less magic for you now.
 
 
 ### Create tables for models in your database
 
-The last step here is to add our new models to our database. First we have to make Django know that we have some changes in our models. (We have just created it!) Go to your console window and type `python manage.py makemigrations bakeries`. It will look like this:
+The last step here is to add our new models to our database. First we have to make Django know that we have some changes in our models (we have just created it!). Go to your console window and type `python manage.py makemigrations bakeries`. It will look like this:
 
 ```
 (myvenv) bakery_site% python manage.py makemigrations bakeries
