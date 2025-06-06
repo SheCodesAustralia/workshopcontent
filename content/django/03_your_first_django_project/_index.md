@@ -157,18 +157,19 @@ Let's update the default US English to Australian English by changing this line:
 
 We'll also need to add a path for static files. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
 
-```
-+STATICFILES_DIRS = [
+```python
++ STATICFILES_DIRS = [
 +    BASE_DIR / "bakery_project" / "static",
-+]
++ ]
 
 STATIC_URL = "static/"
-+STATIC_ROOT = BASE_DIR / "bakery_project" / "staticfiles"
++ STATIC_ROOT = BASE_DIR / "bakery_project" / "staticfiles"
 
-+MEDIA_URL = "media/"
-+MEDIA_ROOT = BASE_DIR / "bakery_project" / "media"
++ MEDIA_URL = "media/"
++ MEDIA_ROOT = BASE_DIR / "bakery_project" / "media"
 
 ```
+Don't forget to remove the + notations in your code, this is just telling you which lines are new.
 
 #### Let’s break this down:
 
@@ -192,6 +193,8 @@ You don’t need to create these folders just yet — Django will take care of i
 **Tip**: You might not use media files right away, but it’s good practice to include the setup early.  
 That way you’re ready when you add delicious cupcake photos later!  
 {{% /notice %}}
+
+Alright, save that file. VS Code is super helpful and will have a dot next to your file name if you've got unsaved changes. Its really easy to forget to save, so if you're running code and its not working as expected, double check you've saved the files.
 
 ## Set up a database
 
