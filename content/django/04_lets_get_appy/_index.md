@@ -4,7 +4,7 @@ weight: 4
 chapter: true
 ---
 
-# Let's Build our first Django App
+## Let's Build our first Django App
 
 ### Creating an application
 
@@ -49,7 +49,7 @@ bakery_site
 Congratulations - you have an app now! 
 
 
-# Django Views
+## Django Views
 
 Next, we want to set it up so that when someone visits the homepage (http://127.0.0.1:8000/), Django knows to run a specific function called a *view*. 
 
@@ -57,7 +57,7 @@ The *view* is the brain behind what your user sees on the screen. It recieves th
 
 We will add our *views* to the `bakeries/views.py` file.
 
-## bakeries/views.py
+### bakeries/views.py
 
 OK, let's open up this file in our code editor and see what's in there:
 

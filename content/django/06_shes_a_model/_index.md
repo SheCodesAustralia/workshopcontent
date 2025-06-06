@@ -53,12 +53,12 @@ Running migrations:
 And we're done! Time to start the web server and see if our website is working! See if you remember it from earlier...
 
 
-# Django Models
+## Django Models
 
 What we want to create is something that will store all the details about local bakeries and their scrumptious offerings in our bakery_project app. But to be able to do that, we need to talk a little bit about a concept in programming called `objects`.
 
 
-## Objects
+### Objects
 
 In programming, there’s a powerful concept called object-oriented programming. Instead of writing a long list of instructions, we can structure our code to model real-world things and how they interact — just like objects in real life.
 
@@ -104,7 +104,7 @@ What kind of things could be done with these models? It would be very useful to 
 Let's start modeling it in Django!
 
 
-## Django model
+## Building out our models
 
 Now that we understand what an object is, we can use that knowledge to create a Django model for our bakery and another for its items.
 
@@ -219,7 +219,7 @@ We are using a `__str__` method again. In this scenario, when we call `__str__()
 If something is still not clear about models, feel free to ask one of the mentors! Spot the purple shirt? Hands up now! We know its a lot to take in but you should be super proud of yourself. Hopefully it looks slightly less magic for you now.
 
 
-### Create tables for models in your database
+## Create tables for models in your database
 
 The last step here is to add our new models to our database. First we have to make Django know that we have some changes in our models (we have just created it!). Go to your console window and type `python manage.py makemigrations bakeries`. It will look like this:
 

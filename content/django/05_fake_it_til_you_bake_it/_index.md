@@ -4,7 +4,7 @@ weight: 5
 chapter: true
 ---
 
-# Setting Up
+## Setting Up
 
 We've got a website up and working - woohoo! We've got a few settings to play with, and then we can get some content loaded in.
 
@@ -58,7 +58,7 @@ Don't forget to remove the + notations in your code, this is just telling you wh
 
 - **`MEDIA_ROOT`**: This tells Django where uploaded media files should be stored on your computer or server.
 
-# Django Style
+## Django Style
 
 What's a template, you may ask?
 

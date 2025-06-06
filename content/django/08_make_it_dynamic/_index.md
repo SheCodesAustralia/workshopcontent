@@ -128,7 +128,7 @@ Let's break down the Django template tags and expressions used in your dynamic p
   → This wraps up the loop.
 
 ---
-let's go ahead and check your server http://127.0.0.1:8000/
+Let's go ahead and check your server http://127.0.0.1:8000/
 
 
 ![dynamicdata](images/dynamic_data.png)
@@ -154,7 +154,7 @@ Let's go ahead and check your server http://127.0.0.1:8000/
 ![bootstrapstyle](images/bootstrap_style.png)
 
 
-Now let's go to admin http://127.0.0.1:8000/admin . Login with your superuser credentials. Remember in admin section [Go to the Admin Section Tutorial](../03_djanago_admin/03_djanago_admin.md) where we played around and added some bakery details? It's time to add more and watch it come to life! 
+Now let's go to admin http://127.0.0.1:8000/admin. Login with your superuser credentials. Remember in admin section (Chapter 7) where we played around and added some bakery details? It's time to add more and watch it come to life! 
 
 That's all folks, you've built your first Django app. We're so proud of you!!!
 
