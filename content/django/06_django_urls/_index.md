@@ -6,15 +6,17 @@ chapter: true
 
 # Django URLs
 
-We're about to build our first webpage: a homepage for your blog! But first, let's learn a little bit about Django URLs.
+This is exciting - we're about to build our home page for our bakery app! But first, let's learn a little bit about Django URLs.
 
 ## What is a URL?
 
-A URL is a web address. You can see a URL every time you visit a website – it is visible in your browser's address bar. (Yes! `127.0.0.1:8000` is a URL! And `https://shecodes.com.au/` is also a URL.)
+A URL is a web address. You can see a URL every time you visit a website. (`127.0.0.1:8000` is a URL! And `https://shecodes.com.au/` is also a URL.)
 
 ![URL](images/url.png)
 
-Every page on the Internet needs its own URL. This way your application knows what it should show to a user who opens that URL. In Django, we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
+Every page on the Internet needs its own URL. Remember that letters analogy way back at the start? The URL is like your address, so the post office knows where to send your mail. Now imagine you live in an apartment building, you might need a way to differentiate your apartment from Bob's next door. In addresses that might be an apartment number or unit number within a building. In a URL it might be something like shecodes.com.au/mentor vs shecodes.com.au/shop - same building but different apartments.
+
+This way your application knows what it should show to a user who opens that URL. In Django, we use something called `URLconf` (URL configuration), which is a set of patterns that Django will try to match the requested URL to find the correct view.
 
 ## How do URLs work in Django?
 
@@ -59,18 +61,17 @@ In this tutorial, we’ll set up the URL configuration for your Django project s
 
 Time to create our first URL! We want 'http://127.0.0.1:8000/' to be the home page of our app and to display a list of bakeries.
 
-In your `bakery_project/urls.py` file please add the following lines:
+In your `bakery_project/urls.py` file please add the following lines under from django.contrib import admin :
 
 ```python
-from django.contrib import admin
--from django.urls import path
-+from django.urls import path, include
-+from bakeries.views import index
+
+from django.urls import path, include
+from bakeries.views import index
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-+   path('', index),
+    path('', index),
 ]
 ```
 
@@ -83,7 +84,7 @@ Next, we want to make our development experience smoother. One handy tool is **b
 
 To make that happen, we'll use a small Django package called `django-browser-reload`.
 
-Before we run the server again, we need to install the django-browser-reload package. Open your terminal and run:
+Before we run the server again, we need to install the Django browser reload package. Open your terminal and run:
 
 ```
 pip install django-browser-reload 
@@ -93,7 +94,7 @@ We also need to tell Django that it should use this package. We do that in the f
 
 Then update:
 
-In the INSTALLED_APPS list:
+In the INSTALLED_APPS list add this `'django_browser_reload'` so it looks like the below :
 
 ``` 
 INSTALLED_APPS = [
@@ -104,10 +105,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bakeries.apps.BakeriesConfig',
-+    'django_browser_reload',
+    'django_browser_reload',
 ]
 ```
-In the MIDDLEWARE list:
+And in the MIDDLEWARE list add `'django_browser_reload.middleware.BrowserReloadMiddleware'` so it looks like the below:
 
 ```
 MIDDLEWARE = [
@@ -118,52 +119,19 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-+    'django_browser_reload.middleware.BrowserReloadMiddleware',
+    'django_browser_reload.middleware.BrowserReloadMiddleware',
 ]
 
 ```
 
 
-Now in your `bakery_project/urls.py` file add this new line to the `urlpatterns` list:
+Now in your `bakery_project/urls.py` file add this new line to the `urlpatterns` list `path('__reload__/', include('django_browser_reload.urls'))`.  It should now look like the below:
 
 ```
 
 from django.contrib import admin
 from django.urls import path, include
 from bakeries.views import index
-
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', index),
-+    path('__reload__/', include('django_browser_reload.urls')),
-]
-
-```
-
-
-During development (while you're still building and testing your site), Django runs in something called DEBUG mode. 
-
-But in DEBUG mode, Django doesn’t automatically serve files like images (media) or CSS/JavaScript (static files). So, we need to tell Django where to find these files — and make sure it only tries to serve them when DEBUG is turned on.
-
-To do that, add the following lines to the bottom of your urls.py file:
-
-
-Now, we’re going to finish up this file by making sure your project can serve images, styles, and other files correctly.
-
-During development (when you're still building and testing your site), Django runs in something what's called `DEBUG mode`. This mode is helpful because it shows detailed error messages when things go wrong.
-
-While in `DEBUG mode`, Django doesn’t automatically serve things like images or CSS files. To fix that, we need to tell Django where to find those files and only do that when DEBUG is on.
-
-To do that, add the following lines to the bottom of the file:
-
-```python
-
-from django.contrib import admin
-from django.urls import path, include
-from bakeries.views import index
-+from django.conf import settings
-+from django.conf.urls.static import static
-
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -171,9 +139,21 @@ urlpatterns = [
     path('__reload__/', include('django_browser_reload.urls')),
 ]
 
-+if settings.DEBUG:
-+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+```
+
+Now, we’re going to finish up this file by making sure your project can serve images, styles, and other files correctly.
+
+During development (when you're still building and testing your site), Django runs in something what's called `DEBUG mode`. This mode is helpful because it shows detailed error messages when things go wrong.
+
+While in `DEBUG mode`, Django doesn’t automatically serve things like images or CSS files. To fix that, we need to tell Django where to find those files and only do that when DEBUG is on.
+
+To do that, add the following lines to the bottom of the file, underneath your URL patterns section:
+
+```python
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 ```
 
@@ -188,4 +168,4 @@ You now have:
 
 With your URLs configured, you're ready to start building out your app's logic and layout using views and templates!
 
-> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/5.1/topics/http/urls/
+> If you want to know more about Django URLconfs, look at the official [documentation](https://docs.djangoproject.com/en/5.1/topics/http/urls/)
