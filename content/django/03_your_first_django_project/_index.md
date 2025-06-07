@@ -28,12 +28,12 @@ Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv
 In your macOS or Linux console, run the following command. Don’t forget to add the period (or dot) `.` at the end! The period `.` is essential because it tells the script to install Django in your current directory (fun fact: the period `.` is a short-hand reference).
 
 ```
-(myvenv) bakeryapp% django-admin startproject bakery_project .
+(myvenv) bakery_site% django-admin startproject bakery_project .
 ```
 
 {{% notice note %}}
 
-When typing the command above, remember that you only type the part which starts with django-admin. The `(myvenv) ~/bakeryapp$` part shown here is just example of what your command line will be showing, waiting for your instructions. Yours may look different if your file is called something different or based on the settings on your device. If you're unsure - check in with a mentor!
+When typing the command above, remember that you only type the part which starts with django-admin. The `(myvenv) ~/bakery_site$` part shown here is just example of what your command line will be showing, waiting for your instructions. Yours may look different if your file is called something different or based on the settings on your device. If you're unsure - check in with a mentor!
 
 {{% /notice %}}
 
@@ -44,13 +44,13 @@ When typing the command above, remember that you only type the part which starts
 On your Windows terminal, run the following command. Don’t forget to add the period (or dot) `.` at the end! The period `.` is essential because it tells the script to install Django in your current directory (fun fact: the period `.` is a short-hand reference).
 
 ```
-(myvenv) C:\Users\Name\bakeryapp django-admin.exe startproject bakery_project .
+(myvenv) C:\Users\Name\bakery_site django-admin.exe startproject bakery_project .
 ```
 
 {{% notice note %}}
 
 When typing the command above, remember that you only type the part which starts by `django-admin.exe`.
-The `(myvenv) C:\Users\Name\bakeryapp` part shown here is just example of what your command line will be showing, waiting for your instructions. Yours may look different if your file is called something different or based on the settings on your device. If you're unsure - check in with a mentor!
+The `(myvenv) C:\Users\Name\bakery_site` part shown here is just example of what your command line will be showing, waiting for your instructions. Yours may look different if your file is called something different or based on the settings on your device. If you're unsure - check in with a mentor!
 
 {{% /notice %}}
 
@@ -63,7 +63,7 @@ The `(myvenv) C:\Users\Name\bakeryapp` part shown here is just example of what y
 `django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
 
 ```
-bakeryapp
+bakery_site
 ├── manage.py
 ├── bakery_project
 │   ├── asgi.py

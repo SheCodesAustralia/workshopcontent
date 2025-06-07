@@ -79,11 +79,11 @@ All you need to do is find a directory in which you want to create the virtualen
 
 #### Create a virtual environment
 
-For this tutorial we will be using a new directory bakeryapp from your home directory:
+For this tutorial we will be using a new directory bakery_site from your home directory:
 
 ```sh
-mkdir bakeryapp
-cd bakeryapp
+mkdir bakery_site
+cd bakery_site
 ```
 
 We will make a virtualenv called `myvenv`. The general command will be in the format:
@@ -133,7 +133,7 @@ Before we do that, we should make sure we have the latest version of pip, the so
 pip install --upgrade pip
 ```
 
-2. Find your `bakeryapp` folder on your device and open it in VS Code. Create a `requirements.txt` file and add:
+2. Find your `bakery_site` folder on your device and open it in VS Code. Create a `requirements.txt` file and add:
 
 ```
 Django~=5.1.2
