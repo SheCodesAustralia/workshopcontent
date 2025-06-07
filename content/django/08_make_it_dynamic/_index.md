@@ -32,7 +32,7 @@ This tells Django to prepare for using static files — like CSS stylesheets, im
 
 Notice in the snippet below we are removing the section in main from `<article>` down to `</article>` and replacing it with code that starts with {% for bakery in bakeries %} and ends with {% endfor %}. Watch carefully for the + and - lines in this one - it's easy to get caught out.
 
-```django
+```diff
 
 + {% load static %}
 

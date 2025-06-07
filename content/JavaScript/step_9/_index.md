@@ -95,9 +95,13 @@ This is what you should have in CodePen so far:
 let timeUp = false;
 let holes = document.querySelectorAll('.hole');
 let scoreBoard = document.querySelector('.score');
+	let score = 0;
 
 function startGame() {
     timeUp = false;
+		score = 0;
+		scoreBoard.textContent = score;
+	
     popUp();
 
     setTimeout(endGame, 10000);
@@ -109,7 +113,7 @@ function endGame() {
 
 function popUp() {
     console.log('Here I am!');
-    let hole = randomHole(holes);
+   	let hole = randomHole(holes);
     let time = 500;
 
     hole.classList.add('up');
@@ -123,6 +127,14 @@ function popUp() {
     }, time);
 }
 
+function smash(cupcake) {
+    console.log('smashed!');
+
+    cupcake.parentNode.classList.remove('up');
+		score = score + 1;
+		scoreBoard.textContent = score;
+}
+
 function randomHole(holes) {
     let holeNumber = Math.floor(Math.random() * holes.length);
     let hole = holes[holeNumber];
@@ -130,13 +142,6 @@ function randomHole(holes) {
     return hole;
 }
 
-function smash(cupcake) {
-    console.log('smashed!');
-
-    cupcake.parentNode.classList.remove('up');
-    score = score + 1;
-    scoreBoard.textContent = score;
-}
 ```
 
 > **Learning in Action:** You're using arrays and random number generation - key concepts in JavaScript!

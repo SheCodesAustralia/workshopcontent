@@ -23,3 +23,5 @@ To create your own copy of the game to work with, click the **Fork** button in t
 Once you have your own fork of the template in CodePen, we can start adding our JavaScript code.
 
 The CodePen screen is split into two sections. On the left (with the coloured background) is where you will be able to see the results of your code in action! This is the actual webpage/game that you will interact with. On the right is where you will write your JavaScript code. We've purposely minimised the HTML & CSS (content and styling) for you so that today you can focus on learning your way around JavaScript.
+
+_This tutorial was made with <3 by [Jo Minney](https://github.com/jomarieminney), [Kate Kiriwn](https://github.com/katekirwin), [Hayley Stewart](https://github.com/hayleycodes), [Amy Kapernick](https://github.com/amykapernick), [Brooke Pierson](https://github.com/Beerooke31), and [Gina Horch](https://github.com/GinaHorch)._
