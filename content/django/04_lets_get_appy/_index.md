@@ -53,7 +53,7 @@ Congratulations - you have an app now!
 
 Next, we want to set it up so that when someone visits the homepage (http://127.0.0.1:8000/), Django knows to run a specific function called a *view*. 
 
-The *view* is the brain behind what your user sees on the screen. It recieves the request, adds any extra logic we've added (like filtering, sorting, etc.) and pass it to a `template`. We'll create a *template* a bit later on.
+The *view* is the brain behind what your user sees on the screen. It receives the request, adds any extra logic we've added (like filtering, sorting, etc.) and pass it to a `template`. We'll create a *template* a bit later on.
 
 We will add our *views* to the `bakeries/views.py` file.
 
@@ -78,7 +78,7 @@ from django.http import HttpResponse
 
 def index(request):
     return HttpResponse("Hello, world. Welcome to our bakery.")
-
+```
 
 Make sure you hit save on that file and we will go on to URLs.
 
@@ -115,7 +115,7 @@ urlpatterns = [
 
 Time to create our first URL! We want 'http://127.0.0.1:8000/' to be the home page of our app and to display a list of bakeries.
 
-In your `bakery_project/urls.py` file please add the following lines under from django.contrib import admin :
+In your `bakery_project/urls.py` file please add the following lines under `from django.contrib import admin` :
 
 ```python
 

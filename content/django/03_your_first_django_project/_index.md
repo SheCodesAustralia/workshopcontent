@@ -6,7 +6,7 @@ chapter: true
 
 # Your first Django project!
 
-The first step is to create our Bakery Finder app is to start a new Django project. Django has some ~magic~ meaning that went we run some scripts, Django will create the skeleton of a Django project for us! The skeleton is a bunch of files that we will explain as we go.
+The first step to create our Bakery Finder app is to start a new Django project. Django has some ~magic~ meaning that when we run some scripts, Django will create the skeleton of a Django project for us! The skeleton is a bunch of files that we will explain as we go.
 
 Naming of these files and directories are very important. Django needs to maintain a certain structure to be able to find important bits of information. If they are renamed or moved, it might get confused or throw some unexpected errors. As such, you shouldn't rename the files that we are about to create, or move them around.
 

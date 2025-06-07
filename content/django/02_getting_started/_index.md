@@ -44,7 +44,7 @@ Check if Python is installed:
 python3 --version
 ```
 
-If not, install it based on your Linux distribution:
+If not, install it based on your Linux distribution. What's a Linux distribution? Distributions are packaged collections of software built on top of the Linux kernel, offering a complete operating system experience. We've pulled out a couple to get you started, if yours isn't there - Google is your friend, or ask a mentor for help.
 
 ```sh
 sudo apt install python3   # Debian/Ubuntu
@@ -133,14 +133,16 @@ Before we do that, we should make sure we have the latest version of pip, the so
 pip install --upgrade pip
 ```
 
-2. Create a `requirements.txt` file and add:
+2. Find your `bakeryapp` folder on your device and open it in VS Code. Create a `requirements.txt` file and add:
 
 ```
 Django~=5.1.2
 ```
+Hit save, and head back to your terminal.
 
 3. Install dependencies:
 
 ```sh
 pip install -r requirements.txt
 ```
+This is telling your machine to go and look at the requirements file we just created and install the things created within. If you're having any issues with this step, grab a mentor.

@@ -195,7 +195,7 @@ We've written you some starter code to get you going, copy and paste the below i
 </html>
 ```
 
-Now you can have a bit of a play, editing some of the items, what you page is called, whatever you like really!
+Now you can have a bit of a play, editing some of the items, what your page is called, whatever you like really!
 As a reminder of some HTML tags, you might want to:
 
 - Use `<h1>` to `<h6>` for headings.

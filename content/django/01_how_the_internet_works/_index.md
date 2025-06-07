@@ -6,7 +6,7 @@ chapter: true
 
 # How the Internet works
 
-ou probably use the internet every day — but have you ever wondered what actually happens when you type an address like `https://shecodes.com.au` into your browser and hit `enter`?
+You probably use the internet every day — but have you ever wondered what actually happens when you type an address like `https://shecodes.com.au` into your browser and hit `enter`?
 Let’s break it down.
 
 A website is really just a collection of files stored on a hard drive — just like your photos, music, or videos. What makes websites special is that they contain code, mainly HTML. Web browsers like Chrome, Safari, or Firefox are built to read this code, follow its instructions, and display the content in a way that makes sense to you.
