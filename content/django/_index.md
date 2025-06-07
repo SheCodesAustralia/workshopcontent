@@ -24,3 +24,6 @@ You’ll learn how to structure your project with Django’s models, views, and 
 **HTML/CSS websites are static:** You need to code each page by hand, which is fine for simple, unchanging content but not for interactive sites.
 
 **Django:** If you want a website that updates itself and interacts with users, Django is an excellent, beginner-friendly choice.
+
+
+_This tutorial was made with <3 by [Kate Kirwin](https://github.com/katekirwin), [Behnaz Shojaei](https://github.com/BehnazShojaei), [Cristiane Tanaka](https://github.com/cristianetanaka), [Matt Harley](https://github.com/mattharley), and [Marc Armstrong](https://github.com/neronymous)._
