@@ -36,6 +36,14 @@ py --version
 
 If the command returns `Python 3.Y.Z` congratulations you have Python installed! Otherwise you will have to install Python on your machine. How to do this will vary depending on your system, see below for instructions on how to do this for some common systems.
 
+
+### GitHub Codespaces
+
+If your local environment is restrictive, you can run the lab using GitHub Codespaces. It allows you to write code in the browser remotely! All you need is a GitHub account, then you can run the Codespaces from your browser.
+
+If you would like to give GitHub Codespaces a try, you can skill this section, and connect to VS Code using codespaces in the next section.
+
+
 ## Install on Windows
 
 First check whether your computer is running a 32-bit version or a 64-bit version of Windows, by pressing the Windows key + Pause/Break key which will open your System info, and look at the "System type" line. You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
